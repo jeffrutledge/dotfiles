@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+brew 'z'
+brew 'zsh-syntax-highlighting'
 brew 'wget'
 brew 'fzf'
 brew 'macvim'
