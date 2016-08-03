@@ -58,7 +58,7 @@ function prompt_char {
 }
 
 function battery_charge {
-    batChargeFile="/Users/JRut/bin/batcharge.py"
+    batChargeFile='/Users/JRut/bin/batcharge.py'
     if [ -e "$batChargeFile" ] ; then
         batCharge=`python ~/bin/batcharge.py`
         numEmpty=`expr "$batCharge" : '▹*'`
@@ -82,7 +82,7 @@ function battery_charge {
 
 export PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[yellow]%}$(collapse_pwd)%{$reset_color%}$(git_prompt_info)
-$(virtualenv_info)$(prompt_char) '
+$(prompt_char) '
 
 set_prompt () {
   export RPROMPT='$(battery_charge)'
