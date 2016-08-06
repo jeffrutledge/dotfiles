@@ -58,7 +58,7 @@ function prompt_char {
 }
 
 function battery_charge {
-    batChargeFile='~/bin/batcharge.py'
+    batChargeFile='batcharge.py'
     if [ -e "$batChargeFile" ] ; then
         batCharge=`python ~/bin/batcharge.py`
         numEmpty=`expr "$batCharge" : '▹*'`
