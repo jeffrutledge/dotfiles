@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'z'
+brew 'grc'
 brew 'zsh-syntax-highlighting'
 brew 'wget'
 brew 'fzf'
