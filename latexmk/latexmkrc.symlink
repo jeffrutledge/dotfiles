@@ -1,0 +1,2 @@
+$clean_ext = 'dvi synctex.gz bbl bib run.xml -blx.bib';
+$pdflatex = 'pdflatex -synctex=1 %O %S';

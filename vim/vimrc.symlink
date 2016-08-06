@@ -1,4 +1,87 @@
-syntax on
+""""Vundle Header""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'rust-lang/rust.vim'
+Plugin 'lervag/vimtex'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""User Settings"""""
+syntax on
+set relativenumber
+set cursorline
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+set laststatus=2
+set breakindent
+"Spelling
+highlight clear SpellBad
+highlight SpellBad gui=undercurl guisp=Red ctermfg=1 cterm=underline
+highlight clear SpellLocal
+"""""""""""""""""""""
+
+""""""""""Plugin Settings""""""""""
+"""solarized
+set background=dark
+colorscheme solarized
+
+"""YCM
+"c++ completion (default compile settings)
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+" Don't ask about config files
+let g:ycm_confirm_extra_conf = 0
+"let g:ycm_warning_symbol = '->'
+highlight YcmWarningSign guifg=DodgerBlue1
+"Misc
+let g:ycm_auto_trigger = 1
+let g:ycm_python_binary_path = '/usr/bin/python'
+let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
+
+"""fzf
+nmap <Leader>ff :Files<CR>
+
+"""airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file' ]
+"""""""""""""""""""""""""""""""""""
+
+"""Tab Settings""""""
+" set expandtab
+" set tabstop=2
+" set shiftwidth=2
+"""""""""""""""""""""
+
+"""Mappings""""""""""
+"Map spell check to F3
+nmap <F8> :setlocal spell! spelllang=en_us<CR>
+"Map write to F4
+nmap <F3> :w<CR>
+imap <F3> <Esc>:w<CR>a
+"Map :make to F5
+nmap <F5> :make<CR>
+"""""""""""""""""""""
