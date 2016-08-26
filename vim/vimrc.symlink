@@ -76,6 +76,9 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-f
 " set shiftwidth=2
 """""""""""""""""""""
 
+" Set defualt *.tex format to latex
+let g:tex_flavor = "latex"
+
 """Mappings""""""""""
 "Map spell check to F3
 nmap <F8> :setlocal spell! spelllang=en_us<CR>
@@ -84,4 +87,8 @@ nmap <F3> :w<CR>
 imap <F3> <Esc>:w<CR>a
 "Map :make to F5
 nmap <F5> :make<CR>
+"Map write and goto next buffer
+nmap <F9> :w<CR>:bn<CR>
+"Map write and goto previous buffer
+nmap <F7> :w<CR>:bp<CR>
 """""""""""""""""""""
