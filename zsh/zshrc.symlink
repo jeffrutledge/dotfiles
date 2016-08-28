@@ -2,7 +2,10 @@
 export ZSH=$HOME/.dotfiles
 
 # add z plugin
-`brew --prefix`/etc/profile.d/z.sh
+source `brew --prefix`/etc/profile.d/z.sh
+
+# add syntax highlighting
+source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
