@@ -55,7 +55,7 @@ alias py2='python2'
 alias py3='python3'
 
 # MacVim
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vim='mvim -v'
 alias vi='mvim'
 
 # Skim
