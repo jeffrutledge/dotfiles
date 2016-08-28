@@ -13,6 +13,7 @@ brew 'python3'
 brew 'valgrind'
 brew 'gcc'
 brew 'gdb'
+brew 'cmake'
 
 cask 'adium'
 cask 'spectacle'
