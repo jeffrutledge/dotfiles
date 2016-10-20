@@ -6,6 +6,6 @@ set shiftwidth=2
 highlight ColorColumn ctermbg=DarkGreen
 call matchadd('ColorColumn', '\%81v', 100)
 "Run Valgrind
-:command Vgrind !valgrind --leak-check=full ./%:r
+:command! Vgrind !valgrind --leak-check=full ./%:r
 nmap <F6> :Vgrind<CR>
 """""""""""""""""""""

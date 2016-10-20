@@ -39,6 +39,7 @@ set cursorline
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set breakindent
+set mouse=
 "Spelling
 highlight clear SpellBad
 highlight SpellBad gui=undercurl guisp=Red ctermfg=1 cterm=underline
