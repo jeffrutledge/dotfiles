@@ -14,7 +14,13 @@ set spell spelllang=en_us
 let g:vimtex_quickfix_mode = 2
 
 "clean on close
-:autocmd VimLeave *.tex :!latexmk -c
+":autocmd VimLeave *.tex :!latexmk -c
+":autocmd VimtexEventQuit :VimtexClean
+augroup vimtex_config
+  au!
+  au VimLeave *.tex :!latexmk -c
+  au User VimtexEventInitPost VimtexCompile
+augroup END
 
 "use Skim
 let g:vimtex_view_general_viewer
