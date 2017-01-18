@@ -80,6 +80,9 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-f
 " Set defualt *.tex format to latex
 let g:tex_flavor = "latex"
 
+" So Vim and Crontab work nicely together
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 """Mappings""""""""""
 "Map spell check to F3
 nmap <F8> :setlocal spell! spelllang=en_us<CR>
