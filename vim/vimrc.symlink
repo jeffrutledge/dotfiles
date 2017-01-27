@@ -10,12 +10,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'rust-lang/rust.vim'
 Plugin 'lervag/vimtex'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plugin 'junegunn/fzf.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,8 +61,14 @@ let g:ycm_auto_trigger = 1
 let g:ycm_python_binary_path = '/usr/bin/python'
 let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
 
-"""fzf
-nmap <Leader>ff :Files<CR>
+"""ctrlp
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 """airline
 let g:airline#extensions#tabline#enabled = 1
