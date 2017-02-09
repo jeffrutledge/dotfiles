@@ -15,6 +15,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,6 +64,9 @@ let g:ycm_python_binary_path = '/usr/bin/python'
 let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
 
 """ctrlp
+let g:ctrlp_open_multiple_files = '0v'
+let g:ctrlp_map = '<leader>f'
+nmap <leader>b :CtrlPBuffer<CR>
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
@@ -89,20 +93,19 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-f
 
 " Set defualt *.tex format to latex
 let g:tex_flavor = "latex"
-
 " So Vim and Crontab work nicely together
 autocmd filetype crontab setlocal nobackup nowritebackup
+" disable bell
+autocmd! GUIEnter * set vb t_vb=
 
 """Mappings""""""""""
-"Map spell check to F3
+"Map spell check to F8
 nmap <F8> :setlocal spell! spelllang=en_us<CR>
-"Map write to F4
-nmap <F3> :w<CR>
-imap <F3> <Esc>:w<CR>a
-"Map :make to F5
-nmap <F5> :make<CR>
-"Map write and goto next buffer
-nmap <F9> :w<CR>:bn<CR>
-"Map write and goto previous buffer
-nmap <F7> :w<CR>:bp<CR>
+"Map write to F3
+nmap <leader>w :w<CR>
+imap <leader>w <Esc>:w<CR>a
+"Map delete buffer
+nmap <leader>db :bd<CR>
+"Map jw to esc
+imap jw <Esc>
 """""""""""""""""""""
