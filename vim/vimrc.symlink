@@ -40,6 +40,7 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set breakindent
 set mouse=
+"set conceallevel=2
 "Spelling
 highlight clear SpellBad
 highlight SpellBad gui=undercurl guisp=Red ctermfg=1 cterm=underline
@@ -108,4 +109,12 @@ imap <leader>w <Esc>:w<CR>a
 nmap <leader>db :bd<CR>
 "Map jw to esc
 imap jw <Esc>
+"Map Quick Commands from Insert mode
+inoremap II <Esc>I
+inoremap AA <Esc>A
+inoremap OO <Esc>O
+inoremap CC <Esc>C
+inoremap SS <Esc>S
+inoremap DD <Esc>dd
+inoremap UU <Esc>u
 """""""""""""""""""""

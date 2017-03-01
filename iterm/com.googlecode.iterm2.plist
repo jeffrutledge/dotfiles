@@ -963,19 +963,19 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>0 192 918 498 0 0 1280 777 </string>
+	<string>0 218 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 25 640 752 0 0 1280 777 </string>
+	<string>640 0 640 777 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>640 4 640 773 0 0 1280 777 </string>
+	<string>640 4 640 768 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>640 4 640 773 0 0 1280 777 </string>
+	<string>640 6 640 768 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>639 4 640 773 0 0 1280 777 </string>
+	<string>640 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>640 59 640 716 0 0 1280 777 </string>
+	<string>640 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>299 61 640 716 0 0 1280 777 </string>
+	<string>2242 249 955 1041 1280 239 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4733,7 +4733,7 @@
 	<key>PrefsCustomFolder</key>
 	<string>~/.dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RightCommand</key>
@@ -4751,7 +4751,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-10T17:15:51Z</date>
+	<date>2017-02-22T04:05:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -4809,7 +4809,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.14</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>5</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

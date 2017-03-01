@@ -3,9 +3,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" View pdf on <F8>
-" nmap <F8> :VimtexView<CR>
-
 " Turn on spell check
 set spell
 set spell spelllang=en_us
@@ -14,8 +11,6 @@ set spell spelllang=en_us
 let g:vimtex_quickfix_mode = 2
 
 "clean on close
-":autocmd VimLeave *.tex :!latexmk -c
-":autocmd VimtexEventQuit :VimtexClean
 augroup vimtex_config
   au!
   au VimLeave *.tex :!latexmk -c
@@ -59,14 +54,47 @@ let g:ycm_semantic_triggers.tex = [
     \ 're!\\(include(only)?|input){[^}]*'
     \ ]
 
+""" turn on conceal syntax
+" set cole=2
+let g:tex_conceal= 'adgm'
+
 "" add insert mappings
+" Complex
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'cc',
+    \ 'rhs' : '\mathbb{C}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" Reals
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'rr',
+    \ 'rhs' : '\mathbb{R}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" Rationals
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'qq',
+    \ 'rhs' : '\mathbb{Q}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" Integers
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'zz',
+    \ 'rhs' : '\mathbb{Z}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" Naturals
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'nn',
+    \ 'rhs' : '\mathbb{N}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
 " sqrt
 call vimtex#imaps#add_map({
     \ 'lhs' : '/',
     \ 'rhs' : '\sqrt{',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
-
 " frac
 call vimtex#imaps#add_map({
     \ 'lhs' : '-',
