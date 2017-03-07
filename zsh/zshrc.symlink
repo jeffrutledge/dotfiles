@@ -1,11 +1,16 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# add z plugin
-source `brew --prefix`/etc/profile.d/z.sh
+# If we're on a Mac, let's install and setup homebrew.
+if [[ "$(uname -s)" == "Darwin" ]]
+then
+  echo Darwin
+  # add z plugin
+  source `brew --prefix`/etc/profile.d/z.sh
 
-# add syntax highlighting
-source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  # add syntax highlighting
+  source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
