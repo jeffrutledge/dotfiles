@@ -1,8 +1,8 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=~/.dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [[ "$(uname -s)" == "Darwin" ]]
+# If there is homebrew
+if test  $(which brew)
 then
   # add z plugin
   source `brew --prefix`/etc/profile.d/z.sh
