@@ -53,7 +53,7 @@ function collapse_pwd {
 }
 
 function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo '🐙 ' && return
+    git branch >/dev/null 2>/dev/null && echo 'ɣ' && return
     echo '○'
 }
 
@@ -84,15 +84,9 @@ export PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[yellow]%}$(collapse_pwd)%{$reset_color%} $(git_dirty)
 $(prompt_char) '
 
-set_prompt () {
+set_prompt() {
   export RPROMPT='$(battery_charge)'
 }
-
-
-# export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
-# set_prompt () {
-#   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
-# }
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
