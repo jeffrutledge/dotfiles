@@ -59,6 +59,18 @@ let g:ycm_semantic_triggers.tex = [
 let g:tex_conceal= 'adgm'
 
 "" add insert mappings
+" Probability
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'pp',
+    \ 'rhs' : '\mathbb{P}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" Expected Value
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'ee',
+    \ 'rhs' : '\mathbb{E}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
 " Complex
 call vimtex#imaps#add_map({
     \ 'lhs' : 'cc',
