@@ -963,15 +963,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>0 218 796 473 0 0 1280 777 </string>
+	<string>0 174 918 495 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>640 0 640 777 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>640 4 640 768 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>640 6 640 768 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
 	<string>640 4 640 773 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>640 4 640 773 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>640 9 640 768 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>640 9 640 768 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>640 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1584,11 +1584,11 @@
 			<key>Name</key>
 			<string>Solarized</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>Monaco 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DejaVuSansMono 12</string>
+			<string>DejaVuSansMono 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -4675,6 +4675,8 @@
 			<string>/Users/JRut</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -4751,7 +4753,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-22T04:05:09Z</date>
+	<date>2017-05-14T00:20:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -4809,7 +4811,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>5</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
