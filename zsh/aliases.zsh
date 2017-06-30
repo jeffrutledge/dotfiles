@@ -32,6 +32,8 @@ function mvcd() {
 # Alias
 ##############################################################
 
+alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
+
 # Mac OSX Exclusive aliases
 if [[ "$(uname -s)" == "Darwin" ]]
 then
@@ -47,7 +49,9 @@ then
 
   # Personal
   # Open and close notes
-  alias notes='hdiutil attach ~/gdrive/personal/notes.dmg && cd /Volumes/notes'
+  function onotes() {
+    hdiutil attach ~/gdrive/personal/notes.dmg && cd /Volumes/notes
+  }
   function qnotes() {
     cd ~
     local disk_name=$(hdiutil info | grep /Volumes/notes | cut -f1)
@@ -55,10 +59,11 @@ then
   }
   # Create a new journal entry
   function new_journal_entry() {
-    notes
-    echo '\n##'$(date +"%Y-%m-%d %H:%M")'\n' >> journal.md
-    vim -c 'startinsert' + journal.md
-    qnotes
+    if onotes; then
+      echo '\n##'$(date +"%Y-%m-%d %H:%M")'\n' >> journal.md
+      vim -c 'startinsert' + journal.md
+      qnotes
+    fi
   }
   alias nje=new_journal_entry
 fi

@@ -1,0 +1,1083 @@
+
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim)
+fchdir() to previous dir
+sourcing "$VIM/vimrc"
+finished sourcing $VIM/vimrc
+chdir(/Users/jrutledge)
+fchdir() to previous dir
+sourcing "$HOME/.vimrc"
+Searching for "ftoff.vim" in "/Users/jrutledge/.vim,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after"
+Searching for "/Users/jrutledge/.vim/ftoff.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/ftoff.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 3: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim"
+Error detected while processing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim:
+line   11:
+E216: No such group or event: filetypedetect *
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/ftoff.vim"
+Searching for "/Users/jrutledge/.vim/after/ftoff.vim"
+Searching for "autoload/vundle.vim" in "/Users/jrutledge/.vim,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim"
+Searching for "/Users/jrutledge/.vim/autoload/vundle.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/autoload/vundle.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/autoload/vundle.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/autoload/vundle.vim"
+Searching for "/Users/jrutledge/.vim/after/autoload/vundle.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle.vim"
+chdir(/Users/jrutledge/.vim/bundle/Vundle.vim/autoload)
+fchdir() to previous dir
+line 7: sourcing "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "autoload/vundle/config.vim" in "/Users/jrutledge/.vim,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim"
+Searching for "/Users/jrutledge/.vim/autoload/vundle/config.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/autoload/vundle/config.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/autoload/vundle/config.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/autoload/vundle/config.vim"
+Searching for "/Users/jrutledge/.vim/after/autoload/vundle/config.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle/config.vim"
+chdir(/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle)
+fchdir() to previous dir
+line 4: sourcing "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle/config.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/Vundle.vim/autoload/vundle/config.vim
+continuing in function vundle#begin[2]..vundle#rc
+Searching for "filetype.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 22: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+Searching for "ftdetect/*.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/a
+Searching for "/Users/jrutledge/.vim/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/ftdetect/*.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/ftdetect/*.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftdetect/*.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/ftdetect/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/ftdetect/*.vim"
+not found in 'runtimepath': "ftdetect/*.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/filetype.vim"
+Searching for "ftplugin.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 22: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/ftplugin.vim"
+Searching for "indent.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/after
+Searching for "/Users/jrutledge/.vim/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/indent.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/indent.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/indent.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 22: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/indent.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/indent.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/indent.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/indent.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 37: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim"
+Searching for "syntax/synload.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solariz
+Searching for "/Users/jrutledge/.vim/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/syntax/synload.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/syntax/synload.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/syntax/synload.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 19: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim"
+Searching for "syntax/syncolor.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solari
+Searching for "/Users/jrutledge/.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 21: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+continuing in /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/syntax/syncolor.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+continuing in /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "syntax/syncolor.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solari
+Searching for "/Users/jrutledge/.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 52: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+continuing in /Users/jrutledge/.vimrc
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/syntax/syncolor.vim"
+Searching for "colors/solarized.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solar
+Searching for "/Users/jrutledge/.vim/colors/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/colors/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/colors/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/colors/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/colors/solarized.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-colors-solarized/colors)
+fchdir() to previous dir
+line 53: sourcing "/Users/jrutledge/.vim/bundle/vim-colors-solarized/colors/solarized.vim"
+Searching for "syntax/syncolor.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solari
+Searching for "/Users/jrutledge/.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 228: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/vim-colors-solarized/colors/solarized.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/syntax/syncolor.vim"
+Searching for "syntax/syncolor.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solari
+Searching for "/Users/jrutledge/.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/syntax/syncolor.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax)
+fchdir() to previous dir
+line 230: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/vim-colors-solarized/colors/solarized.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/syntax/syncolor.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/syntax/syncolor.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-colors-solarized/colors/solarized.vim
+continuing in /Users/jrutledge/.vimrc
+Executing ColorScheme Auto commands for "*"
+autocommand if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
+
+finished sourcing $HOME/.vimrc
+Searching for "plugin/**/*.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/
+Searching for "/Users/jrutledge/.vim/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/YouCompleteMe/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/YouCompleteMe/plugin/youcompleteme.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/YouCompleteMe/plugin/youcompleteme.vim
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/YCM-Generator/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/YCM-Generator/plugin/ycm-generator.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/YCM-Generator/plugin/ycm-generator.vim
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/vim-airline/plugin/airline.vim"
+Searching for "autoload/airline.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solar
+Searching for "/Users/jrutledge/.vim/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload)
+fchdir() to previous dir
+line 65: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/vim-airline/plugin/airline.vim
+Searching for "autoload/airline/init.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-
+Searching for "/Users/jrutledge/.vim/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/init.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/init.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 145: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/init.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/init.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/vim-airline/plugin/airline.vim
+Searching for "autoload/airline/parts.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors
+Searching for "/Users/jrutledge/.vim/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/parts.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/parts.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 68: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/parts.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/parts.vim
+continuing in function airline#init#bootstrap
+No matching autocommands
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/plugin/airline.vim
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline-themes/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/vim-airline-themes/plugin/airline-themes.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline-themes/plugin/airline-themes.vim
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/ctrlp.vim/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim"
+Searching for "autoload/ctrlp/mrufiles.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-color
+Searching for "/Users/jrutledge/.vim/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/ctrlp/mrufiles.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim"
+chdir(/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp)
+fchdir() to previous dir
+line 42: sourcing "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/ctrlp.vim/plugin/ctrlp.vim
+finished sourcing /Users/jrutledge/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-clang-format/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/vim-clang-format/plugin/clang_format.vim"
+Searching for "autoload/operator/user.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors
+Searching for "/Users/jrutledge/.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/autoload/operator/user.vim"
+not found in 'runtimepath': "autoload/operator/user.vim"
+Searching for "autoload/operator/user.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors
+Searching for "/Users/jrutledge/.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/autoload/operator/user.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/autoload/operator/user.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/autoload/operator/user.vim"
+not found in 'runtimepath': "autoload/operator/user.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-clang-format/plugin/clang_format.vim
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-easymotion/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/vim-easymotion/plugin/EasyMotion.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-easymotion/plugin/EasyMotion.vim
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/plugin/**/*.vim"
+chdir(/Users/jrutledge/.vim/bundle/python-mode/plugin)
+fchdir() to previous dir
+sourcing "/Users/jrutledge/.vim/bundle/python-mode/plugin/pymode.vim"
+Searching for "autoload/pymode.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solari
+Searching for "/Users/jrutledge/.vim/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/autoload/pymode.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/autoload/pymode.vim"
+chdir(/Users/jrutledge/.vim/bundle/python-mode/autoload)
+fchdir() to previous dir
+line 8: sourcing "/Users/jrutledge/.vim/bundle/python-mode/autoload/pymode.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/python-mode/autoload/pymode.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/python-mode/plugin/pymode.vim
+Searching for "filetype.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 17: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/python-mode/plugin/pymode.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/filetype.vim"
+Searching for "ftplugin.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 17: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/python-mode/plugin/pymode.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/ftplugin.vim"
+Searching for "filetype.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/filetype.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 269: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/python-mode/plugin/pymode.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/filetype.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/filetype.vim"
+Searching for "ftplugin.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/aft
+Searching for "/Users/jrutledge/.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/ftplugin.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime)
+fchdir() to previous dir
+line 269: sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+continuing in /Users/jrutledge/.dotfiles/vim/vim.symlink/bundle/python-mode/plugin/pymode.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/ftplugin.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/ftplugin.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/python-mode/plugin/pymode.vim
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/plugin/**/*.vim"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/**/*.vim"
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/getscriptPlugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/getscriptPlugin.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/gzip.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/gzip.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/logiPat.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/logiPat.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/manpager.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/manpager.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/matchparen.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/matchparen.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/netrwPlugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/netrwPlugin.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/rrhelper.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/rrhelper.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/spellfile.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/spellfile.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/tarPlugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/tarPlugin.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/tohtml.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/tohtml.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/vimballPlugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/vimballPlugin.vim
+chdir(/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin)
+fchdir() to previous dir
+sourcing "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/zipPlugin.vim"
+finished sourcing /usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/plugin/zipPlugin.vim
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/plugin/**/*.vim"
+Searching for "pack/*/start/*" in "/Users/jrutledge/.vim,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after"
+Searching for "/Users/jrutledge/.vim/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/pack/*/start/*"
+Searching for "/Users/jrutledge/.vim/after/pack/*/start/*"
+not found in 'packpath': "pack/*/start/*"
+Searching for "pack/*/start/*" in "/Users/jrutledge/.vim,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after"
+Searching for "/Users/jrutledge/.vim/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime/pack/*/start/*"
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/pack/*/start/*"
+Searching for "/Users/jrutledge/.vim/after/pack/*/start/*"
+not found in 'packpath': "pack/*/start/*"
+Searching for "plugin/**/*.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-solarized/
+Searching for "/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-clang-format/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-easymotion/after/plugin/**/*.vim"
+Searching for "/Users/jrutledge/.vim/bundle/python-mode/after/plugin/**/*.vim"
+not found in 'runtimepath': "plugin/**/*.vim"
+Reading viminfo file "/Users/jrutledge/.viminfo" info oldfiles
+Executing BufWinEnter Auto commands for "*"
+autocommand call <sid>on_window_changed()
+
+Searching for "autoload/airline/extensions.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-c
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 6: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init
+Searching for "autoload/airline/extensions/quickfix.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bun
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/quickfix.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 16: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/netrw.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/netrw.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/netrw.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 25: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/netrw.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/netrw.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/ctrlp.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/ctrlp.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 39: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/whitespace.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/b
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/whitespace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 122: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/wordcount.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bu
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/wordcount.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 137: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/tabline.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bund
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 142: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load
+Searching for "autoload/airline/extensions/tabline/autoshow.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/autoshow.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/autoshow.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline)
+fchdir() to previous dir
+line 1: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/autoshow.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load[142]..airline#extensions#tabline#init[8]..<SNR>44_toggle_on
+Searching for "autoload/airline/extensions/tabline/tabs.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/tabs.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/tabs.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline)
+fchdir() to previous dir
+line 2: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/tabs.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load[142]..airline#extensions#tabline#init[8]..<SNR>44_toggle_on
+Searching for "autoload/airline/extensions/tabline/buffers.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/buffers.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buffers.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline)
+fchdir() to previous dir
+line 3: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buffers.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load[142]..airline#extensions#tabline#init[8]..<SNR>44_toggle_on
+Searching for "autoload/airline/extensions/tabline/ctrlspace.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/ctrlspace.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline)
+fchdir() to previous dir
+line 4: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[6]..airline#extensions#load[142]..airline#extensions#tabline#init[8]..<SNR>44_toggle_on
+Searching for "autoload/airline/section.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colo
+Searching for "/Users/jrutledge/.vim/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/section.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/section.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 3: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/section.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/section.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[7]..airline#init#sections
+Searching for "autoload/airline/highlighter.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-
+Searching for "/Users/jrutledge/.vim/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/highlighter.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/highlighter.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 2: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/highlighter.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/highlighter.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[7]..airline#init#sections[3]..airline#section#create_left[1]..<SNR>49_create[51]..<SNR>49_wrap_accent
+Searching for "autoload/airline/themes/solarized.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle
+Searching for "/Users/jrutledge/.vim/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/themes/solarized.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/airline/themes/solarized.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/airline/themes)
+fchdir() to previous dir
+line 5: sourcing "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/airline/themes/solarized.vim"
+Searching for "autoload/airline/themes.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-color
+Searching for "/Users/jrutledge/.vim/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/themes.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/themes.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 124: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/themes.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/themes.vim
+continuing in function airline#themes#solarized#refresh
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/airline/themes/solarized.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[20]..<SNR>15_on_colorscheme_changed[4]..airline#switch_matching_theme
+Searching for "autoload/airline/util.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-
+Searching for "/Users/jrutledge/.vim/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/util.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/util.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 1: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/util.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/util.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[20]..<SNR>15_on_colorscheme_changed[4]..airline#switch_matching_theme[6]..airline#switch_theme[14]..airline#load_theme[14]..airline#extensions#load_theme
+Searching for "autoload/airline/builder.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colo
+Searching for "/Users/jrutledge/.vim/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/builder.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/builder.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline)
+fchdir() to previous dir
+line 1: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/builder.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/builder.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[20]..<SNR>15_on_colorscheme_changed[4]..airline#switch_matching_theme[6]..airline#switch_theme[14]..airline#load_theme[15]..airline#update_statusline[18]..<SNR>16_invoke_funcrefs
+Searching for "autoload/airline/extensions/default.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bund
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions)
+fchdir() to previous dir
+line 2: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim
+continuing in function <SNR>15_on_window_changed[12]..<SNR>15_init[20]..<SNR>15_on_colorscheme_changed[4]..airline#switch_matching_theme[6]..airline#switch_theme[14]..airline#load_theme[15]..airline#update_statusline[18]..<SNR>16_invoke_funcrefs[2]..airline#util#exec_funcrefs
+No matching autocommands
+No matching autocommands
+Executing BufWinEnter Auto commands for "*"
+autocommand cal s:record(expand('<abuf>', 1))
+
+Executing BufEnter Auto commands for "*"
+autocommand sil call s:LocalBrowse(expand("<amatch>"))
+
+Executing VimEnter Auto commands for "*"
+autocommand call youcompleteme#Enable()
+
+Searching for "autoload/youcompleteme.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors
+Searching for "/Users/jrutledge/.vim/autoload/youcompleteme.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/youcompleteme.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/youcompleteme.vim"
+chdir(/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload)
+fchdir() to previous dir
+line 0: sourcing "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/youcompleteme.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/youcompleteme.vim
+continuing in VimEnter Auto commands for "*"
+Executing VimEnter Auto commands for "*"
+autocommand call <sid>on_window_changed()
+
+Executing VimEnter Auto commands for "*"
+autocommand sil call s:VimEnter(expand("<amatch>"))
+
+Executing CursorMoved Auto commands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Auto commands for "*"
+autocommand call <sid>sync_active_winnr()
+
+autocommand call s:update()
+
+Executing CursorMoved Auto commands for "*"
+autocommand call s:OnCursorMovedNormalMode()
+
+Searching for "autoload/airline/extensions/tabline/buflist.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/buflist.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buflist.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline)
+fchdir() to previous dir
+line 1: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buflist.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+continuing in function airline#extensions#tabline#get[15]..airline#extensions#tabline#buffers#get[12]..<SNR>47_get_visible_buffers
+Searching for "autoload/airline/extensions/tabline/formatters/default.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/
+Searching for "/Users/jrutledge/.vim/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/airline/extensions/tabline/formatters/default.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim"
+chdir(/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters)
+fchdir() to previous dir
+line 2: sourcing "/Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim
+continuing in function airline#extensions#tabline#get[15]..airline#extensions#tabline#buffers#get[12]..<SNR>47_get_visible_buffers[8]..airline#extensions#tabline#get_buffer_name
+Executing BufWinLeave Auto commands for "*"
+autocommand cal s:record(expand('<abuf>', 1))
+
+Executing BufUnload Auto commands for "*"
+autocommand call <sid>on_window_changed()
+
+Executing BufUnload Auto commands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufUnload Auto commands for "*"
+autocommand call s:OnBufferUnload()
+
+Executing VimLeavePre Auto commands for "*"
+autocommand cal s:savetofile(s:mergelists())
+
+Searching for "autoload/ctrlp/utils.vim" in "/Users/jrutledge/.vim,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/YouCompleteMe,/Users/jrutledge/.vim/bundle/YCM-Generator,/Users/jrutledge/.vim/bundle/vim-colors-solarized,/Users/jrutledge/.vim/bundle/vimtex,/Users/jrutledge/.vim/bundle/vim-airline,/Users/jrutledge/.vim/bundle/vim-airline-themes,/Users/jrutledge/.vim/bundle/ctrlp.vim,/Users/jrutledge/.vim/bundle/vim-clang-format,/Users/jrutledge/.vim/bundle/vim-easymotion,/Users/jrutledge/.vim/bundle/python-mode,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/Resources/vim/vimfiles/after,/Users/jrutledge/.vim/after,/Users/jrutledge/.vim/bundle/Vundle.vim,/Users/jrutledge/.vim/bundle/Vundle.vim/after,/Users/jrutledge/.vim/bundle/YouCompleteMe/after,/Users/jrutledge/.vim/bundle/YCM-Generator/after,/Users/jrutledge/.vim/bundle/vim-colors-s
+Searching for "/Users/jrutledge/.vim/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/Vundle.vim/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YouCompleteMe/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/YCM-Generator/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-colors-solarized/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vimtex/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/vim-airline-themes/autoload/ctrlp/utils.vim"
+Searching for "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/utils.vim"
+chdir(/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp)
+fchdir() to previous dir
+line 2: sourcing "/Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/utils.vim"
+finished sourcing /Users/jrutledge/.vim/bundle/ctrlp.vim/autoload/ctrlp/utils.vim
+continuing in function <SNR>21_mergelists[1]..ctrlp#mrufiles#cachefile
+Writing viminfo file "/Users/jrutledge/.viminfo"
+Executing VimLeave Auto commands for "*"
+autocommand call s:OnVimLeave()
