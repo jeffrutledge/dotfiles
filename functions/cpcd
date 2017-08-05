@@ -1,0 +1,12 @@
+#!/bin/sh
+# Copy and Change Directory
+#
+# args[in] $1 Target
+#      $2 Destination
+#
+# post: Target copied to destination directory
+#   and current directory is destination directory
+function cpcd() {
+  cp $1 $2
+  cd $2
+}

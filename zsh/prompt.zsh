@@ -83,12 +83,3 @@ function battery_charge {
 export PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[yellow]%}$(collapse_pwd)%{$reset_color%} $(git_dirty)
 $(prompt_char) '
-
-set_prompt() {
-  export RPROMPT='$(battery_charge)'
-}
-
-precmd() {
-  title "zsh" "%m" "%55<...<%~"
-  set_prompt
-}

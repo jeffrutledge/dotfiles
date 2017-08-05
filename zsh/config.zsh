@@ -37,6 +37,5 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
-zle -N newtab
-
 bindkey -v
+bindkey -M viins 'jw' vi-cmd-mode

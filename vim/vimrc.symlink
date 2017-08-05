@@ -66,8 +66,8 @@ let g:ycm_python_binary_path = '/usr/bin/python'
 let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
 
 """ctrlp
-let g:ctrlp_open_multiple_files = '2v'
-let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_open_multiple_files = '2h'
+let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_map = '<leader>f'
 nmap <leader>b :CtrlPBuffer<CR>
 if executable('ag')
@@ -78,10 +78,14 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
-"""ClangFormat
-" map to <Leader>cf in C++ code
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+"""Auto Format
+" ClangFormat
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>af :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>af :ClangFormat<CR>
+" Lint Auto Format
+autocmd FileType python nnoremap <buffer><Leader>af :PymodeLintAuto<CR>
+autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
+
 
 """airline
 let g:airline#extensions#tabline#enabled = 1

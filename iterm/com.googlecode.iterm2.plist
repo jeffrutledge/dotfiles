@@ -911,6 +911,8 @@
 	<integer>32</integer>
 	<key>HotkeyCode</key>
 	<integer>49</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>524288</integer>
 	<key>IRMemory</key>
@@ -962,20 +964,22 @@
 	<true/>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>0 174 918 495 0 0 1280 777 </string>
+	<string>0 218 770 429 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>640 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>640 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>640 9 640 768 0 0 1280 777 </string>
+	<string>0 4 1280 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>640 9 640 768 0 0 1280 777 </string>
+	<string>1 4 640 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>640 4 640 773 0 0 1280 777 </string>
+	<string>1 27 640 750 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>2242 249 955 1041 1280 239 1920 1057 </string>
+	<string>582 -18 640 773 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4753,7 +4757,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-14T00:20:40Z</date>
+	<date>2017-07-02T21:07:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -4763,7 +4767,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -4811,7 +4815,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.beta.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>5</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

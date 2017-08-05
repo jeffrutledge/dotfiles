@@ -129,28 +129,44 @@ install_dotfiles () {
   info 'installing dotfiles'
 
   local overwrite_all=false backup_all=false skip_all=false
+  local OSX=osx, ARCH=arch, BASE=base
+
+  user "Which set of dotfiles would you like to install?\n\
+  [O]SX, [A]rch, or just install [b]ase files?"
+  read -n 1 operating_system
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
   do
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
+  echo 'Base dotfiles installed'
+
+  
+  case "$operating_system" in
+    O )
+      for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.osx' -not -path '*.git*')
+      do
+        dst="$HOME/.$(basename "${src%.*}")"
+        link_file "$src" "$dst"
+      done
+      echo 'OSX dotfiles installed';;
+    A )
+      for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.arch' -not -path '*.git*')
+      do
+        dst="$HOME/.$(basename "${src%.*}")"
+        link_file "$src" "$dst"
+      done
+      echo 'Arch dotfiles installed';;
+    b )
+      ;;
+    * )
+      ;;
+  esac
 }
 
 setup_gitconfig
 install_dotfiles
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot > /tmp/dotfiles-dot 2>&1
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
 
 echo ''
 echo '  All installed!'

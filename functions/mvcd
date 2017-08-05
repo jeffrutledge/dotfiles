@@ -1,0 +1,12 @@
+#!/bin/sh
+# Move and Change Directory
+#
+# args[in] $1 Target
+#      $2 Destination
+#
+# post: Target moved to destination directory
+#   and current directory is destination directory
+mvcd() {
+  mv $1 $2
+  cd $2
+}

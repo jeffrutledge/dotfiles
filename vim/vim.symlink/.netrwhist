@@ -1,9 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/jrutledge/.dotfiles/git'
-let g:netrw_dirhist_2='/Users/jrutledge/.dotfiles/zsh'
-let g:netrw_dirhist_3='/Users/jrutledge/.dotfiles/vim/vim.symlink'
-let g:netrw_dirhist_4='/Users/jrutledge/gdrive/personal/notes/bad_moments'
-let g:netrw_dirhist_5='/Users/jrutledge/gdrive/temp/opencv_test/CMakeFiles'
-let g:netrw_dirhist_6='/Users/jrutledge/VirtualBox VMs'
-let g:netrw_dirhist_7='/Users/jrutledge/gdrive/lair/icex/notes/stuff_to_leave_for_chris.md'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/jrutledge/.dotfiles'
+let g:netrw_dirhist_2='/Users/jrutledge/F-dotfiles/zsh/.zsh'
+let g:netrw_dirhist_3='/Users/jrutledge/safe/lair/icex/sonar_scans/sliema_proposals/datasets/1/proposals'
+let g:netrw_dirhist_4='/Users/jrutledge/safe/lair/icex/sonar_scans/gladiator_proposals/datasets/stddev5/proposals'
+let g:netrw_dirhist_5='/Users/jrutledge/.dotfiles'
+let g:netrw_dirhist_6='/Users/jrutledge/F-dotfiles/zsh/.zsh'
