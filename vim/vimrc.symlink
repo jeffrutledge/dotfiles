@@ -33,21 +33,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""User Settings"""""
-syntax on
-set relativenumber
-set cursorline
-set breakindent
-set laststatus=2
-set mouse=
-set scrolloff=999
-"set conceallevel=2
-"Spelling
-highlight clear SpellBad
-highlight SpellBad gui=undercurl guisp=Red ctermfg=1 cterm=underline
-highlight clear SpellLocal
-"""""""""""""""""""""
-
 """"""""""Plugin Settings""""""""""
 """solarized
 set background=dark
@@ -95,11 +80,19 @@ let g:pymode_breakpoint = 0
 let g:pymode_rope_completion = 0
 """""""""""""""""""""""""""""""""""
 
-"""Tab Settings""""""
-" set expandtab
-" set tabstop=2
-" set shiftwidth=2
-"""""""""""""""""""""
+"""User Settings"""""
+syntax on
+set relativenumber
+set cursorline
+set breakindent
+set laststatus=2
+set mouse=
+set scrolloff=999
+"set conceallevel=2
+"Spelling
+highlight clear SpellBad
+highlight SpellBad gui=undercurl guisp=Red ctermfg=1 cterm=underline
+highlight clear SpellLocal
 
 " Set defualt *.tex format to latex
 let g:tex_flavor = "latex"
@@ -107,6 +100,12 @@ let g:tex_flavor = "latex"
 autocmd filetype crontab setlocal nobackup nowritebackup
 " disable bell
 autocmd! GUIEnter * set vb t_vb=
+" remove gui elements from gvim
+:set guioptions-=M  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
+"""""""""""""""""""""
 
 """Mappings""""""""""
 "Map spell check to F8
