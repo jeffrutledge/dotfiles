@@ -101,10 +101,11 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 " disable bell
 autocmd! GUIEnter * set vb t_vb=
 " remove gui elements from gvim
-:set guioptions-=M  "remove menu bar
+:set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
+:set guifont=dejavu
 """""""""""""""""""""
 
 """Mappings""""""""""

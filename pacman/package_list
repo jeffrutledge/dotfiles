@@ -1,0 +1,12 @@
+clang
+python3
+xorg-xinit
+i3
+dmenu
+ttf-dejavu
+ssh
+pulseaudio
+pavucontrol
+gvim
+chromium
+vlc
