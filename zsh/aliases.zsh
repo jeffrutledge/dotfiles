@@ -1,3 +1,4 @@
+alias ls='ls --color=auto'
 alias reload!='. ~/.zshrc'
 
 alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
