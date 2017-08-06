@@ -51,7 +51,6 @@ then
   # add syntax highlighting
   source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-echo "$(uname -s)"
 if [[ "$(uname -s)" == "Linux" ]]
 then
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
