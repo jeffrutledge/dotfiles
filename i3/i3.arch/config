@@ -4,11 +4,62 @@
 
 set $mod Mod1
 
+##### Solarized Colors
+# Solarized color scheme for the X Window System
+# 
+# http://ethanschoonover.com/solarized
+
+# Common
+
+set $S_yellow        #b58900
+set $S_orange        #cb4b16
+set $S_red           #dc322f
+set $S_magenta       #d33682
+set $S_violet        #6c71c4
+set $S_blue          #268bd2
+set $S_cyan          #2aa198
+set $S_green         #859900
+
+
+# Dark
+
+set $S_base03        #002b36
+set $S_base02        #073642
+set $S_base01        #586e75
+set $S_base00        #657b83
+set $S_base0         #839496
+set $S_base1         #93a1a1
+set $S_base2         #eee8d5
+set $S_base3         #fdf6e3
+
+
+# Light
+
+# set $S_base03        #fdf6e3
+# set $S_base02        #eee8d5
+# set $S_base01        #93a1a1
+# set $S_base00        #839496
+# set $S_base0         #657b83
+# set $S_base1         #586e75
+# set $S_base2         #073642
+# set $S_base3         #002b36
+
 ###########################################################
 # Appearance
 ###########################################################
 
 font pango:DejaVu Sans Mono 8
+
+new_window pixel 2
+
+# class                 border      backgr.     text        indicator     child_border
+client.focused          $S_blue     $S_blue     $S_base3    $S_cyan       $S_blue
+client.focused_inactive $S_base02   $S_base02   $S_base2    $S_cyan       $S_base02
+client.unfocused        $S_base02   $S_base02   $S_base1    $S_base01     $S_base02
+client.urgent           $S_magenta  $magneta    $S_base3    $S_red        $S_magenta
+client.placeholder      #000000     #0c0c0c     #ffffff     #000000       #0c0c0c
+
+client.background       #ffffff
 
 ###########################################################
 # Bar
