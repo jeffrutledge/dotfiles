@@ -41,3 +41,18 @@ setopt complete_aliases
 
 bindkey -v
 bindkey -M viins 'jw' vi-cmd-mode
+
+# add some plugins
+if test $(which brew) &>/dev/null
+then
+  # add z plugin
+  source `brew --prefix`/etc/profile.d/z.sh
+
+  # add syntax highlighting
+  source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+echo "$(uname -s)"
+if [[ "$(uname -s)" == "Linux" ]]
+then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
