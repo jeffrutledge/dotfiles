@@ -7,20 +7,30 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
+if [ -f $sysresources ]
+then
+  xrdb -merge $sysresources
 fi
 
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
+if [ -f $sysmodmap ]
+then
+  xmodmap $sysmodmap
 fi
 
-if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
+if [ -f "$userresources" ]
+then
+  xrdb -merge "$userresources"
 fi
 
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+if [ -f "$usermodmap" ]
+then
+  xmodmap "$usermodmap"
+fi
+
+# Set background using feh config
+if [[ -a ~/.fehbg ]]
+then
+  ~/.fehbg &
 fi
 
 exec i3
