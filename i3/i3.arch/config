@@ -3,6 +3,7 @@
 ###########################################################
 
 set $mod Mod1
+set $move_mod Shift
 
 ##### Solarized Colors
 # Solarized color scheme for the X Window System
@@ -97,7 +98,7 @@ bindsym $mod+c exec chromium
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+$move_mod+q kill
 
 ###########################################################
 # Window Focus
@@ -141,28 +142,28 @@ bindsym $mod+0 workspace 10
 ###########################################################
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+$move_mod+h move left
+bindsym $mod+$move_mod+j move down
+bindsym $mod+$move_mod+k move up
+bindsym $mod+$move_mod+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+$move_mod+Left move left
+bindsym $mod+$move_mod+Down move down
+bindsym $mod+$move_mod+Up move up
+bindsym $mod+$move_mod+Right move right
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+$move_mod+1 move container to workspace 1
+bindsym $mod+$move_mod+2 move container to workspace 2
+bindsym $mod+$move_mod+3 move container to workspace 3
+bindsym $mod+$move_mod+4 move container to workspace 4
+bindsym $mod+$move_mod+5 move container to workspace 5
+bindsym $mod+$move_mod+6 move container to workspace 6
+bindsym $mod+$move_mod+7 move container to workspace 7
+bindsym $mod+$move_mod+8 move container to workspace 8
+bindsym $mod+$move_mod+9 move container to workspace 9
+bindsym $mod+$move_mod+0 move container to workspace 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -186,7 +187,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+$move_mod+space floating toggle
 
 ###########################################################
 # Resize Mode
