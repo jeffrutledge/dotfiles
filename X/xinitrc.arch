@@ -33,4 +33,7 @@ then
   ~/.fehbg &
 fi
 
+# Bind keys
+xbindkeys -p
+
 exec i3
