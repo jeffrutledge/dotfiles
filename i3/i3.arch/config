@@ -2,7 +2,7 @@
 # Variables
 ###########################################################
 
-set $mod Mod4
+set $mod Mod1
 set $move_mod Shift
 
 ##### Solarized Colors
@@ -85,13 +85,13 @@ bindsym $mod+c exec chromium
 # start dmenu
 # bindsym $mod+d exec dmenu_run
 # start dmenu with desktop applications only
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn DejaVu-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
 
 # kill focused window
 bindsym $mod+$move_mod+q kill
 
 ###########################################################
-# Window Focus
+# Focus
 ###########################################################
 
 # change focus
@@ -128,7 +128,7 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 ###########################################################
-# Window Movement
+# Movement
 ###########################################################
 
 # move focused window
@@ -220,16 +220,19 @@ bar {
 	position bottom
 	status_command i3status
 
-    colors {
-        background $S_base03
-        statusline $S_base3
-        separator $S_base0
+	colors {
+		background $S_base03
+		statusline $S_base3
+		separator $S_base0
 
-        focused_workspace  $S_blue $S_base02 $S_base3
-        active_workspace  $S_cyan $S_base02 $S_base3
-        inactive_workspace $S_base03 $S_base03 $S_base0
-        urgent_workspace   $S_red $S_base02 $S_base3
-        binding_mode       $S_base2 $S_base0 $S_base3
-    }
+		focused_workspace  $S_blue $S_base02 $S_base3
+		active_workspace  $S_cyan $S_base02 $S_base3
+		inactive_workspace $S_base03 $S_base03 $S_base0
+		urgent_workspace   $S_red $S_base02 $S_base3
+		binding_mode       $S_base2 $S_base0 $S_base3
+	}
+	# disable scrolling in bar
+	bindsym button4 nop
+	bindsym button5 nop
 }
 
