@@ -1,1 +1,2 @@
-sudo pacman -S `cat package_list`
+pacman -Sy
+pacman -S `cat package_list`
