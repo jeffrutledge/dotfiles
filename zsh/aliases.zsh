@@ -1,4 +1,3 @@
-alias ls='ls --color=auto'
 alias reload!='. ~/.zshrc'
 
 alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
@@ -15,6 +14,12 @@ alias 70clang='clang++ -std=c++11 -pedantic -Wall -Wextra'
 # Python
 alias py2='python2'
 alias py3='python3'
+
+# Linux Exclusive aliases
+if [[ "$(uname -s)" == "Linux" ]]
+then
+  alias ls='ls --color=auto'
+fi
 
 # Mac OSX Exclusive aliases
 if [[ "$(uname -s)" == "Darwin" ]]
