@@ -1,11 +1,11 @@
 zsh-syntax-highlighting
-feh
+base-devel
 clang
-make
 cmake
 python3
 xorg-xinit
 i3
+feh
 dmenu
 ttf-dejavu
 openssh
