@@ -3,7 +3,9 @@ base-devel
 clang
 cmake
 python3
+xorg
 xorg-xinit
+xterm
 i3
 feh
 dmenu
