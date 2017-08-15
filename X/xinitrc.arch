@@ -36,4 +36,10 @@ fi
 # Bind keys
 xbindkeys -p
 
-exec i3
+# Open i3 if installed
+if pacman -Qs i3-wm > /dev/null
+then
+  exec i3
+else
+  echo "Not launching gui, i3-wm not installed."
+fi
