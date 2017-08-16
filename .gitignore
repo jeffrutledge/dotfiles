@@ -2,4 +2,4 @@ vim/vim.symlink/bundle/
 
 git/gitconfig.local.symlink
 
-i3/i3_mod.local.arch
+i3/i3wm_mod.local.arch
