@@ -76,6 +76,7 @@ autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file' ]
 """pymode
+let g:pymode_python = 'python3'
 let g:pymode_breakpoint = 0
 let g:pymode_rope_completion = 0
 """""""""""""""""""""""""""""""""""
