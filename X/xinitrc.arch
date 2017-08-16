@@ -28,9 +28,10 @@ then
 fi
 
 # Load local i3wm mod variable
-if [ -f "$HOME/.i3_wm.local" ]
+i3local=$HOME/.i3wm_mod.local
+if [ -f "$i3local" ]
 then
-  xrdb -merge "$HOME/.i3_wm.local"
+  xrdb -merge $i3local
 fi
 
 # Set background using feh config
