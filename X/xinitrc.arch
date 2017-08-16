@@ -27,6 +27,12 @@ then
   xmodmap "$usermodmap"
 fi
 
+# Load local i3wm mod variable
+if [ -f "$HOME/.i3_wm.local" ]
+then
+  xrdb -merge "$HOME/.i3_wm.local"
+fi
+
 # Set background using feh config
 if [[ -a ~/.fehbg ]]
 then

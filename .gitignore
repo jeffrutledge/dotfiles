@@ -1,3 +1,5 @@
 vim/vim.symlink/bundle/
 
 git/gitconfig.local.symlink
+
+i3/i3_mod.local.arch
