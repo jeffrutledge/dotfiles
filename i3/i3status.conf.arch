@@ -77,7 +77,7 @@ battery all {
         format = "%status%percentage %remaining"
 	format_down = ""
 	status_full = ""
-	status_chr = "⚡"
+	status_chr = "⚡ "
 	status_bat = ""
 	low_threshold = 20
 	threshold_type = time
