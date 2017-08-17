@@ -5,6 +5,7 @@ cmake
 python3
 xorg
 xorg-xinit
+xorg-xbacklight
 xbindkeys
 xterm
 i3
