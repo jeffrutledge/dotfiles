@@ -83,3 +83,5 @@ function battery_charge {
 export PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[yellow]%}$(collapse_pwd)%{$reset_color%} $(git_dirty)
 $(prompt_char) '
+
+export RPROMPT='%1(j.%j jobs.)'
