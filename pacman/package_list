@@ -5,6 +5,7 @@ cmake
 python3
 xorg
 xorg-xinit
+xbindkeys
 xterm
 i3
 feh
