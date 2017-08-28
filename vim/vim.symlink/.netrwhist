@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/jrutledge/.dotfiles'
 let g:netrw_dirhist_2='/Users/jrutledge/F-dotfiles/zsh/.zsh'
 let g:netrw_dirhist_3='/Users/jrutledge/safe/lair/icex/sonar_scans/sliema_proposals/datasets/1/proposals'
 let g:netrw_dirhist_4='/Users/jrutledge/safe/lair/icex/sonar_scans/gladiator_proposals/datasets/stddev5/proposals'
 let g:netrw_dirhist_5='/Users/jrutledge/.dotfiles'
 let g:netrw_dirhist_6='/Users/jrutledge/F-dotfiles/zsh/.zsh'
+let g:netrw_dirhist_7='/home/jrutledge'
