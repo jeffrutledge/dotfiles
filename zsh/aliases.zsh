@@ -19,6 +19,7 @@ alias py3='python3'
 if [[ "$(uname -s)" == "Linux" ]]
 then
   alias ls='ls --color=auto'
+  alias vim='vim --servername vim' # for vimtex latexmk callbacks
 fi
 
 # Mac OSX Exclusive aliases

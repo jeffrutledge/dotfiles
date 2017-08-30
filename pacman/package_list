@@ -5,7 +5,9 @@ cmake
 python3
 xorg
 xorg-xinit
+xorg-xbacklight
 xbindkeys
+xautolock
 xterm
 i3
 feh
@@ -20,5 +22,6 @@ thunderbird
 zathura
 zathura-pdf-mupdf
 texlive-most
+xdotool
 libreoffice-fresh
 vlc

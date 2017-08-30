@@ -95,12 +95,12 @@ bindsym $mod+$move_mod+q kill
 ###########################################################
 
 exec thunderbird
+exec_always --no-startup-id xautolock -time 1 -corners -000 -locker "systemctl suspend" 
 
 ###########################################################
 # Assigned Workspaces
 ###########################################################
 
-# Assign URxvt terminals to workspace 2
 assign [class="Thunderbird"] mail
 
 ###########################################################
@@ -197,8 +197,23 @@ bindsym $mod+e layout toggle split
 # bindsym $mod+$move_mod+space floating toggle
 
 ###########################################################
-# Resize Mode
+# Modes
 ###########################################################
+
+# exit i3
+set $i3exit /home/jrutledge/.dotfiles/bin/i3exit
+mode "exit" {
+    bindsym l mode "default", exec --no-startup-id $i3exit lock
+    bindsym e mode "default", exec --no-startup-id $i3exit logout
+    bindsym s mode "default", exec --no-startup-id $i3exit suspend
+    bindsym h mode "default", exec --no-startup-id $i3exit hibernate
+    bindsym r mode "default", exec --no-startup-id $i3exit reboot
+    bindsym p mode "default", exec --no-startup-id $i3exit poweroff
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+p mode "exit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -223,7 +238,6 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
 ###########################################################
