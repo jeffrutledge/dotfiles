@@ -201,7 +201,7 @@ bindsym $mod+e layout toggle split
 ###########################################################
 
 # exit i3
-set $i3exit /home/jrutledge/.dotfiles/bin/i3exit
+set $i3exit $HOME/.dotfiles/bin/i3exit
 mode "exit" {
     bindsym l mode "default", exec --no-startup-id $i3exit lock
     bindsym e mode "default", exec --no-startup-id $i3exit logout

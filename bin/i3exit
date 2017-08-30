@@ -2,7 +2,7 @@
 
 case "$1" in
     lock)
-        /home/jrutledge/.dotfiles/bin/lock
+        $HOME/.dotfiles/bin/lock
         ;;
     logout)
         i3-msg exit
