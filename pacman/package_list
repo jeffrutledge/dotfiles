@@ -23,5 +23,9 @@ zathura
 zathura-pdf-mupdf
 texlive-most
 xdotool
+cups
+cups-pdf
+gtk3-print-backends
+samba
 libreoffice-fresh
 vlc
