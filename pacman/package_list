@@ -3,6 +3,7 @@ base-devel
 clang
 cmake
 python3
+python-setuptools
 xorg
 xorg-xinit
 xorg-xbacklight

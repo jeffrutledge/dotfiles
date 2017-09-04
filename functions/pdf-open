@@ -1,0 +1,5 @@
+#!/bin/zsh
+# Open file in zathura and detach
+pdf-open() {
+  zathura $1 &|
+}
