@@ -69,7 +69,7 @@ weather_yahoo {
 	forecast_days = 2
 	woeid = 2380633
 	forecast_text_separator = " → "
-	format_today = "{icon}{temp} ∍"
+	format_today = "{temp}{icon} ∍"
 	format_forecast = "({low},{high}){icon}"
 }
 

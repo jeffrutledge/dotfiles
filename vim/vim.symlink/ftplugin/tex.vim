@@ -17,7 +17,7 @@ augroup vimtex_config
   au User VimtexEventInitPost VimtexCompile
 augroup END
 
-
+let g:vimtex_view_general_viewer = 'zathura'
 if has('macunix')
   "use Skim
   let g:vimtex_view_general_viewer
@@ -44,7 +44,6 @@ if has('macunix')
     endif
   endfunction
 endif
-let g:vimtex_view_general_viewer = 'zathura'
 
 " let auto complete work with YCM
 if !exists('g:ycm_semantic_triggers')
@@ -62,7 +61,9 @@ let g:ycm_semantic_triggers.tex = [
 " set cole=2
 let g:tex_conceal= 'adgm'
 
-"" add insert mappings
+""" add insert mappings
+
+"" Math Bolds
 " Probability
 call vimtex#imaps#add_map({
     \ 'lhs' : 'pp',
@@ -105,6 +106,27 @@ call vimtex#imaps#add_map({
     \ 'rhs' : '\mathbb{N}',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
+"" Math Scripts
+" Riemann Integrable
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'sr',
+    \ 'rhs' : '\mathscr{R}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" P
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'sp',
+    \ 'rhs' : '\mathscr{P}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+"" Math Vars
+" varPhi
+call vimtex#imaps#add_map({
+    \ 'lhs' : 'vf',
+    \ 'rhs' : '\varphi',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+"" Operators
 " sqrt
 call vimtex#imaps#add_map({
     \ 'lhs' : '/',

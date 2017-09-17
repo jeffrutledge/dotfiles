@@ -188,3 +188,6 @@ associativity
 nonidentity
 decompositions
 hyperparameter
+injective
+homomorphism
+surjection
