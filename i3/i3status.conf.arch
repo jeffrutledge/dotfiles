@@ -65,10 +65,12 @@ order += "tztime local"
 
 weather_yahoo {
 	cache_timeout = 900
-	forecast_days = 1
+	forecast_include_today = true
+	forecast_days = 2
 	woeid = 2380633
-	format_today = "{icon}{temp}°{units}"
-	format_forecast = "→ {icon}{high}({low})°{units}"
+	forecast_text_separator = " → "
+	format_today = "{icon}{temp} ∍"
+	format_forecast = "({high},{low}){icon}"
 }
 
 wireless _first_ {
