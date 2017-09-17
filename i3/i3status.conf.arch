@@ -54,7 +54,6 @@ general {
 	color_bad       = '#dc322f'
 }
 
-# order += "ipv6"
 order += "weather_yahoo"
 order += "disk /"
 order += "wireless _first_"
@@ -76,6 +75,19 @@ weather_yahoo {
 wireless _first_ {
         format_up = "W: %essid at%quality, %ip"
         format_down = ""
+}
+
+group ethernet {
+	click_mode = "all"
+	format = "{output}"
+	button_toggle = 1
+	ethernet _first_ {
+	        format_up = "E"
+	        format_down = ""
+	}
+	load {
+	        format = "%1min"
+	}
 }
 
 ethernet _first_ {
