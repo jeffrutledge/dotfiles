@@ -70,7 +70,7 @@ weather_yahoo {
 	woeid = 2380633
 	forecast_text_separator = " → "
 	format_today = "{icon}{temp} ∍"
-	format_forecast = "({low},{high},{low}){icon}"
+	format_forecast = "({low},{high}){icon}"
 }
 
 wireless _first_ {
