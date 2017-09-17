@@ -95,7 +95,7 @@ bindsym $mod+$move_mod+q kill
 ###########################################################
 
 exec thunderbird
-exec_always --no-startup-id xautolock -time 1 -corners -000 -locker "systemctl suspend" 
+# exec_always --no-startup-id xautolock -time 5 -corners -000 -locker "systemctl suspend" 
 
 ###########################################################
 # Assigned Workspaces
@@ -249,7 +249,7 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango:DejaVu Sans Mono 8.2
 	position bottom
-	status_command i3status
+	status_command py3status
 
 	colors {
 		background $S_base03

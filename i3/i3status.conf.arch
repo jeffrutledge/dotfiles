@@ -47,7 +47,7 @@ general {
 	# # S_base2       = '#073642'
 	# # S_base3       = '#002b36'
 
-	interval = 5
+	interval = 1
 	colors = true
 	color_good      = '#859900'
 	color_degraded  = '#b58900'
@@ -55,12 +55,21 @@ general {
 }
 
 # order += "ipv6"
+order += "weather_yahoo"
 order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "load"
 order += "tztime local"
+
+weather_yahoo {
+	cache_timeout = 900
+	forecast_days = 1
+	woeid = 2380633
+	format_today = "{icon}{temp}°{units}"
+	format_forecast = "→ {icon}{high}({low})°{units}"
+}
 
 wireless _first_ {
         format_up = "W: %essid at%quality, %ip"
@@ -83,6 +92,7 @@ battery all {
 	threshold_type = percentage
 	hide_seconds = true
 	integer_battery_capacity = true
+	last_full_capacity = true
 }
 
 tztime local {

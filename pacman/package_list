@@ -3,6 +3,7 @@ base-devel
 clang
 cmake
 python3
+python-setuptools
 xorg
 xorg-xinit
 xorg-xbacklight
@@ -23,5 +24,9 @@ zathura
 zathura-pdf-mupdf
 texlive-most
 xdotool
+cups
+cups-pdf
+gtk3-print-backends
+samba
 libreoffice-fresh
 vlc

@@ -15,6 +15,9 @@ alias 70clang='clang++ -std=c++11 -pedantic -Wall -Wextra'
 alias py2='python2'
 alias py3='python3'
 
+# Suffix
+alias -s pdf='pdf-open'
+
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
 then
