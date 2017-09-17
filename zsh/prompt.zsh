@@ -57,31 +57,15 @@ function prompt_char {
     echo '○'
 }
 
-function battery_charge {
-    batChargeFile='batcharge.py'
-    if [ -e "$batChargeFile" ] ; then
-        batCharge=`python ~/bin/batcharge.py`
-        numEmpty=`expr "$batCharge" : '▹*'`
-        numFull=$((10 - $numEmpty / 3))
-
-        colorgreen=%{$fg[green]%}
-        coloryellow=%{$fg[yellow]%}
-        colorred=%{$fg[red]%}
-        colorreset=%{$reset_color%}
-        
-        if (( $numFull > 6 )) ; then
-            outColor=$colorgreen
-        elif (( $numFull > 4 )) ; then
-            outColor=$coloryellow
-        else
-            outColor=$colorred
-        fi
-        echo $outColor $batCharge
-    fi
-} 
-
 export PROMPT='
 %{$fg[cyan]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[yellow]%}$(collapse_pwd)%{$reset_color%} $(git_dirty)
 $(prompt_char) '
-
 export RPROMPT='%1(j.%j jobs.)'
+
+precmd() {
+  case $TERM in
+    xterm*)
+      print -Pn "\e]0;%n at %m: %~\a"
+      ;;
+  esac
+}
