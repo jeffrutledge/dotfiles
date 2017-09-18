@@ -73,7 +73,8 @@ weather_yahoo {
 }
 
 wireless _first_ {
-        format_up = "W: %essid at%quality, %ip"
+        # format_up = "W: %essid at%quality, %ip"
+        format_up = "W:%quality"
         format_down = ""
 }
 
