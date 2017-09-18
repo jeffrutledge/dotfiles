@@ -35,8 +35,8 @@ filetype plugin indent on    " required
 
 """"""""""Plugin Settings""""""""""
 """solarized
-set background=dark
 colorscheme solarized
+" set bg=dark
 
 """YCM
 "c++ completion (default compile settings)
