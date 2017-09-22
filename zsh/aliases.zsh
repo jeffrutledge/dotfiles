@@ -19,7 +19,7 @@ alias py3='python3'
 alias -s pdf='pdf-open'
 
 # md -> pdf
-pandoc -V geometry:margin=1in -o 
+alias md_to_pdf='pandoc -V geometry:margin=1in -o '
 
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
