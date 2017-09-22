@@ -18,6 +18,9 @@ alias py3='python3'
 # Suffix
 alias -s pdf='pdf-open'
 
+# md -> pdf
+pandoc -V geometry:margin=1in -o 
+
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
 then
@@ -58,4 +61,3 @@ then
   }
   alias nje=new_journal_entry
 fi
-
