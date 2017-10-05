@@ -39,7 +39,6 @@ flags = [
     '-Wall',
     '-Wextra',
     '-std=c++11',
-    '-isystem', '/Users/JRut/apps/googletest/googletest/include',
 ]
 
 
