@@ -106,6 +106,7 @@ call vimtex#imaps#add_map({
     \ 'rhs' : '\mathbb{N}',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
+
 "" Math Scripts
 " Riemann Integrable
 call vimtex#imaps#add_map({
@@ -119,6 +120,7 @@ call vimtex#imaps#add_map({
     \ 'rhs' : '\mathscr{P}',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
+
 "" Math Vars
 " varPhi
 call vimtex#imaps#add_map({
@@ -126,6 +128,7 @@ call vimtex#imaps#add_map({
     \ 'rhs' : '\varphi',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
+
 "" Operators
 " sqrt
 call vimtex#imaps#add_map({
@@ -137,5 +140,11 @@ call vimtex#imaps#add_map({
 call vimtex#imaps#add_map({
     \ 'lhs' : '-',
     \ 'rhs' : '\frac{',
+    \ 'wrapper' : 'vimtex#imaps#wrap_math'
+    \})
+" duel
+call vimtex#imaps#add_map({
+    \ 'lhs' : '^',
+    \ 'rhs' : '\widehat ',
     \ 'wrapper' : 'vimtex#imaps#wrap_math'
     \})
