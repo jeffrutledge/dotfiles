@@ -1,0 +1,24 @@
+#!/bin/sh
+# Manage external display
+#
+# 
+function external_display() {
+  case $1 in
+    on)
+      echo "turning display on above" >&2
+      xrandr --output LVDS1 --auto --output HDMI1 --auto --above LVDS1
+      ;;
+    off)
+      echo "turning display off" >&2
+      xrandr --output LVDS1 --auto --output HDMI1 --off
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+}
