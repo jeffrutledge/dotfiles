@@ -195,6 +195,9 @@ nonnegative
 Branfman
 abelian
 bijections
+nonnegative
+integrable
+hyperparameters
 Capoeira
 capture
 generalness
@@ -212,3 +215,8 @@ Fontessa's
 circulant
 subring
 eigenspaces
+normalizer
+circulant
+subring
+quaternion
+cosets
