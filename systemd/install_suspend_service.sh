@@ -6,7 +6,8 @@
 
 echo -e "\t - enabling suspend lock service."
 sudo cp ./suspend@.service /etc/systemd/system/
-systemctl enable suspend@$USER
+sudo systemctl enable suspend@$USER
+sudo systemctl start suspend@$USER
 
 cursive_monagram_dir=~/safe/personal/graphics/sketches/cursive_monagram
 
