@@ -6,8 +6,7 @@ Before=sleep.target
 User=%I
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/i3lock -i $Home/safe/personal/developer/python/dynamic_desktop_background/graphics/solarized_bg_set/clear.png
-# ExecStartPost=/usr/bin/sleep 1
+ExecStart=/usr/bin/i3lock -i /home/%I/.lock_screen_image.png
 
 [Install]
 WantedBy=sleep.target
