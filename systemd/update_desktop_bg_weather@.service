@@ -1,0 +1,8 @@
+[Unit]
+Description=Run python script to fetch weather and update desktop bg
+
+[Service]
+User=%I
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/python3 /home/jrutledge/safe/personal/developer/python/dynamic_desktop_background/update_desktop_bg_to_weather.py
