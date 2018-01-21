@@ -15,8 +15,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'easymotion/vim-easymotion'
 Plugin 'python-mode/python-mode'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -71,14 +71,25 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>af :ClangFormat<CR>
 autocmd FileType python nnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 
-
 """airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file' ]
+
 """pymode
 let g:pymode_python = 'python3'
 let g:pymode_breakpoint = 0
 let g:pymode_rope_completion = 0
+
+"""easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+nmap <space>f <Plug>(easymotion-overwin-f)
+nmap <space>w <Plug>(easymotion-overwin-w)
+nmap <space>e <Plug>(easymotion-bd-e)
+map <space>l <Plug>(easymotion-overwin-line)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""

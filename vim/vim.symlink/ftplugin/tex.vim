@@ -17,7 +17,8 @@ augroup vimtex_config
   au User VimtexEventInitPost VimtexCompile
 augroup END
 
-let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_view_method = 'zathura'
+
 if has('macunix')
   "use Skim
   let g:vimtex_view_general_viewer

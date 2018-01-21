@@ -220,3 +220,5 @@ circulant
 subring
 quaternion
 cosets
+exponentiate
+recurse
