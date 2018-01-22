@@ -83,13 +83,14 @@ let g:pymode_rope_completion = 0
 """easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
-nmap <space>f <Plug>(easymotion-overwin-f)
-nmap <space>w <Plug>(easymotion-overwin-w)
-nmap <space>e <Plug>(easymotion-bd-e)
-map <space>l <Plug>(easymotion-overwin-line)
+map <space>f <Plug>(easymotion-bd-f)
+map <space>w <Plug>(easymotion-bd-w)
+map <space>e <Plug>(easymotion-bd-e)
+map <space>l <Plug>(easymotion-bd-jk)
 
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
+" let g:EasyMotion_disable_two_key_combo = 0
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""
