@@ -8,6 +8,10 @@ function external_display() {
       echo "turning display on above" >&2
       xrandr --output LVDS1 --auto --output HDMI1 --auto --above LVDS1
       ;;
+    underscan)
+      echo "turning display on above with underscan" >&2
+      xrandr --output LVDS1 --auto --output HDMI1 --auto --above LVDS1 --set underscan on --set "underscan hborder" $2 --set "underscan vborder" $3
+      ;;
     off)
       echo "turning display off" >&2
       xrandr --output LVDS1 --auto --output HDMI1 --off

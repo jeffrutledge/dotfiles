@@ -55,9 +55,9 @@ new_window pixel 2
 
 # class                 border      backgr.     text        indicator     child_border
 client.focused          $S_blue     $S_blue     $S_base3    $S_cyan       $S_blue
-client.focused_inactive $S_base02   $S_base02   $S_base2    $S_cyan       $S_base02
-client.unfocused        $S_base02   $S_base02   $S_base1    $S_base01     $S_base02
-client.urgent           $S_magenta  $magneta    $S_base3    $S_red        $S_magenta
+client.focused_inactive $S_base02   $S_base03   $S_base2    $S_cyan       $S_base02
+client.unfocused        $S_base02   $S_base03   $S_base1    $S_base01     $S_base02
+client.urgent           $S_magenta  $S_magneta  $S_base3    $S_red        $S_magenta
 client.placeholder      #000000     #0c0c0c     #ffffff     #000000       #0c0c0c
 
 client.background       #ffffff
@@ -95,6 +95,7 @@ bindsym $mod+$move_mod+q kill
 ###########################################################
 
 exec thunderbird
+exec --no-startup-id dunst -config ~/.dunst
 # exec_always --no-startup-id xautolock -time 5 -corners -000 -locker "systemctl suspend" 
 
 ###########################################################
