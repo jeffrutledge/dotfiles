@@ -1,8 +1,8 @@
-"sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%""
+"sh -c "pactl set-sink-volume @DEFAULT_SINK@ +2% ; pactl set-sink-mute @DEFAULT_SINK@ false""
     m:0x0 + c:123
     XF86AudioRaiseVolume
 
-"sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%""
+"sh -c "pactl set-sink-volume @DEFAULT_SINK@ -2% ; pactl set-sink-mute @DEFAULT_SINK@ false""
     m:0x0 + c:122
     XF86AudioLowerVolume
 

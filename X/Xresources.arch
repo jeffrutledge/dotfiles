@@ -1,5 +1,5 @@
 XTerm*termName: xterm-256color
-xterm*faceName: dejavu:pixelsize=12
+xterm*faceName: dejavusansmono:pixelsize=11
 
 ! Solarized color scheme for the X Window System
 !
@@ -71,4 +71,3 @@ xterm*faceName: dejavu:pixelsize=12
 *color13:                 S_violet
 *color14:                 S_base1
 *color15:                 S_base3
-
