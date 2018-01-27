@@ -100,7 +100,7 @@ set cursorline
 set breakindent
 set laststatus=2
 set mouse=
-set scrolloff=999
+set scrolloff=5
 "set conceallevel=2
 "Spelling
 highlight clear SpellBad
