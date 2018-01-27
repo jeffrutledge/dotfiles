@@ -55,12 +55,18 @@ general {
 }
 
 order += "weather_yahoo"
+order += "mpris"
 order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "load"
 order += "tztime local"
+
+mpris {
+    format = "{previous}[[{artist}: {title}]|[{title}]]{next}"
+    format_none = "no player"
+}
 
 weather_yahoo {
 	cache_timeout = 900

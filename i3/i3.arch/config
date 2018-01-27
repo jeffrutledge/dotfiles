@@ -51,16 +51,18 @@ set $S_base3         #fdf6e3
 
 font pango:DejaVu Sans Mono 8
 
-new_window pixel 2
+new_window pixel 1
 
 # class                 border      backgr.     text        indicator     child_border
-client.focused          $S_blue     $S_blue     $S_base3    $S_cyan       $S_blue
-client.focused_inactive $S_base02   $S_base03   $S_base2    $S_cyan       $S_base02
-client.unfocused        $S_base02   $S_base03   $S_base1    $S_base01     $S_base02
-client.urgent           $S_magenta  $S_magneta  $S_base3    $S_red        $S_magenta
+client.focused          $S_blue     $S_base02   $S_base1    $S_cyan       $S_blue
+client.focused_inactive $S_base02   $S_base03   $S_base01   $S_cyan       $S_base02
+client.unfocused        $S_base02   $S_base03   $S_base00   $S_base01     $S_base02
+client.urgent           $S_red      $S_base3    $S_base01   $S_magenta    $S_red
 client.placeholder      #000000     #0c0c0c     #ffffff     #000000       #0c0c0c
 
 client.background       #ffffff
+
+hide_edge_borders smart
 
 ###########################################################
 # i3 Bindings
@@ -103,6 +105,7 @@ exec_always --no-startup-id dunst -config ~/.dunstrc
 ###########################################################
 
 assign [class="Thunderbird"] mail
+for_window [class="Spotify"] move to workspace music
 
 ###########################################################
 # Focus
@@ -121,7 +124,7 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -142,6 +145,7 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 bindsym $mod+t workspace todo
 bindsym $mod+m workspace mail
+bindsym $mod+period workspace music
 
 ###########################################################
 # Movement
@@ -172,6 +176,7 @@ bindsym $mod+$move_mod+9 move container to workspace 9
 bindsym $mod+$move_mod+0 move container to workspace 10
 bindsym $mod+$move_mod+t move container to workspace todo
 bindsym $mod+$move_mod+m move container to workspace mail
+bindsym $mod+$move_mod+greater move container to workspace music
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -207,7 +212,7 @@ mode "exit" {
     bindsym l mode "default", exec --no-startup-id $i3exit lock
     bindsym e mode "default", exec --no-startup-id $i3exit logout
     bindsym s mode "default", exec --no-startup-id $i3exit suspend
-    bindsym h mode "default", exec --no-startup-id $i3exit hibernate
+    # bindsym h mode "default", exec --no-startup-id $i3exit hibernate
     bindsym r mode "default", exec --no-startup-id $i3exit reboot
     bindsym p mode "default", exec --no-startup-id $i3exit poweroff
 
@@ -218,26 +223,26 @@ bindsym $mod+p mode "exit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
 
@@ -245,26 +250,24 @@ bindsym $mod+r mode "resize"
 # Bar
 ###########################################################
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-	font pango:DejaVu Sans Mono 8.2
-	position bottom
-	status_command py3status
+    font pango:DejaVu Sans Mono 8.2
+    position bottom
+    status_command py3status
 
-	colors {
-		background $S_base03
-		statusline $S_base3
-		separator $S_base0
+    colors {
+        background $S_base03
+        statusline $S_base1
+        separator $S_base1
 
-		focused_workspace  $S_blue $S_base02 $S_base3
-		active_workspace  $S_cyan $S_base02 $S_base3
-		inactive_workspace $S_base03 $S_base03 $S_base0
-		urgent_workspace   $S_red $S_base02 $S_base3
-		binding_mode       $S_base2 $S_base0 $S_base3
-	}
-	# disable scrolling in bar
-	bindsym button4 nop
-	bindsym button5 nop
+        focused_workspace   	$S_blue $S_base02 $S_base1
+        active_workspace  	$S_cyan $S_base02 $S_base1
+        inactive_workspace 	$S_base03 $S_base03 $S_base01
+        urgent_workspace   	$S_red $S_base3 $S_base01
+        binding_mode       	$S_green $S_base02 $S_base1
+    }
+
+    # disable scrolling in bar
+    bindsym button4 nop
+    bindsym button5 nop
 }
-
