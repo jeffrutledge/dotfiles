@@ -35,7 +35,7 @@ then
 fi
 
 # Set background using feh config
-if [[ -a ~/.fehbg ]]
+if [ -e ~/.fehbg ]
 then
   ~/.fehbg &
 fi
