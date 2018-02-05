@@ -4,6 +4,10 @@
 
 set_from_resource $mod i3wm.i3wm_mod Mod1
 set $move_mod Shift
+set $second_monitor_mod Mod4
+
+set $monitor_internal LVDS1
+set $monitor_external HDMI1
 
 ##### Solarized Colors
 # Solarized color scheme for the X Window System
@@ -55,7 +59,7 @@ new_window pixel 1
 
 # class                 border      backgr.     text        indicator     child_border
 client.focused          $S_blue     $S_base02   $S_base1    $S_cyan       $S_blue
-client.focused_inactive $S_base02   $S_base03   $S_base01   $S_cyan       $S_base02
+client.focused_inactive $S_violet   $S_base03   $S_base01   $S_cyan       $S_base02
 client.unfocused        $S_base02   $S_base03   $S_base00   $S_base01     $S_base02
 client.urgent           $S_red      $S_base3    $S_base01   $S_magenta    $S_red
 client.placeholder      #000000     #0c0c0c     #ffffff     #000000       #0c0c0c
@@ -101,11 +105,37 @@ exec_always --no-startup-id dunst -config ~/.dunstrc
 # exec_always --no-startup-id xautolock -time 5 -corners -000 -locker "systemctl suspend" 
 
 ###########################################################
-# Assigned Workspaces
+# Assigned Windows
 ###########################################################
 
 assign [class="Thunderbird"] mail
 for_window [class="Spotify"] move to workspace music
+
+###########################################################
+# Assigned Workspaces
+###########################################################
+
+workspace 1  output $monitor_internal
+workspace 2  output $monitor_internal
+workspace 3  output $monitor_internal
+workspace 4  output $monitor_internal
+workspace 5  output $monitor_internal
+workspace 6  output $monitor_internal
+workspace 7  output $monitor_internal
+workspace 8  output $monitor_internal
+workspace 9  output $monitor_internal
+workspace 10 output $monitor_internal
+
+workspace e1  output $monitor_external
+workspace e2  output $monitor_external
+workspace e3  output $monitor_external
+workspace e4  output $monitor_external
+workspace e5  output $monitor_external
+workspace e6  output $monitor_external
+workspace e7  output $monitor_external
+workspace e8  output $monitor_external
+workspace e9  output $monitor_external
+workspace e10 output $monitor_external
 
 ###########################################################
 # Focus
@@ -147,6 +177,18 @@ bindsym $mod+t workspace todo
 bindsym $mod+m workspace mail
 bindsym $mod+period workspace music
 
+# second monitor
+bindsym $mod+F1 workspace e1
+bindsym $mod+F2 workspace e2
+bindsym $mod+F3 workspace e3
+bindsym $mod+F4 workspace e4
+bindsym $mod+F5 workspace e5
+bindsym $mod+F6 workspace e6
+bindsym $mod+F7 workspace e7
+bindsym $mod+F8 workspace e8
+bindsym $mod+F9 workspace e9
+bindsym $mod+F10 workspace e10
+
 ###########################################################
 # Movement
 ###########################################################
@@ -177,6 +219,18 @@ bindsym $mod+$move_mod+0 move container to workspace 10
 bindsym $mod+$move_mod+t move container to workspace todo
 bindsym $mod+$move_mod+m move container to workspace mail
 bindsym $mod+$move_mod+greater move container to workspace music
+
+#second monitor
+bindsym $mod+$move_mod+F1 move container to workspace e1
+bindsym $mod+$move_mod+F2 move container to workspace e2
+bindsym $mod+$move_mod+F3 move container to workspace e3
+bindsym $mod+$move_mod+F4 move container to workspace e4
+bindsym $mod+$move_mod+F5 move container to workspace e5
+bindsym $mod+$move_mod+F6 move container to workspace e6
+bindsym $mod+$move_mod+F7 move container to workspace e7
+bindsym $mod+$move_mod+F8 move container to workspace e8
+bindsym $mod+$move_mod+F9 move container to workspace e9
+bindsym $mod+$move_mod+F10 move container to workspace e10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -261,7 +315,7 @@ bar {
         separator $S_base1
 
         focused_workspace   	$S_blue $S_base02 $S_base1
-        active_workspace  	$S_cyan $S_base02 $S_base1
+        active_workspace  	$S_violet $S_base02 $S_base1
         inactive_workspace 	$S_base03 $S_base03 $S_base01
         urgent_workspace   	$S_red $S_base3 $S_base01
         binding_mode       	$S_green $S_base02 $S_base1
