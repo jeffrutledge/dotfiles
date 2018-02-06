@@ -1,0 +1,39 @@
+#!/bin/zsh
+# Manage external display
+
+case $1 in
+  on)
+    echo "turning display on above" >&2
+    xrandr --output LVDS1 --auto --output HDMI1 --auto --above LVDS1
+    ;;
+  right)
+    echo "turning display on right" >&2
+    xrandr --output LVDS1 --auto --output HDMI1 --auto --right-of LVDS1
+    ;;
+  desk)
+    echo "setting up displays for desktop" >&2
+    xrandr --output LVDS1 --auto --pos 0x730 --output HDMI1 --auto --pos 1280x0
+    ;;
+  underscan)
+    echo "turning display on above with underscan" >&2
+    xrandr --output LVDS1 --auto --output HDMI1 --auto --above LVDS1 --set underscan on --set "underscan hborder" $2 --set "underscan vborder" $3
+    ;;
+  off)
+    echo "turning display off" >&2
+    xrandr --output LVDS1 --auto --output HDMI1 --off
+    ;;
+  \?)
+    echo "Invalid option: -$OPTARG" >&2
+    exit 1
+    ;;
+  :)
+    echo "Option -$OPTARG requires an argument." >&2
+    exit 1
+    ;;
+esac
+
+# update desktop background to correct resolution
+if [ -e ~/.fehbg ]
+then
+  ~/.fehbg
+fi
