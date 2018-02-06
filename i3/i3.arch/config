@@ -25,7 +25,6 @@ set $S_blue          #268bd2
 set $S_cyan          #2aa198
 set $S_green         #859900
 
-
 # Dark
 
 set $S_base03        #002b36
@@ -108,8 +107,8 @@ exec_always --no-startup-id dunst -config ~/.dunstrc
 # Assigned Windows
 ###########################################################
 
-assign [class="Thunderbird"] mail
-for_window [class="Spotify"] move to workspace music
+assign [class="Thunderbird"] 90:mail
+for_window [class="Spotify"] move to workspace 92:music
 
 ###########################################################
 # Assigned Workspaces
@@ -126,16 +125,19 @@ workspace 8  output $monitor_internal
 workspace 9  output $monitor_internal
 workspace 10 output $monitor_internal
 
-workspace e1  output $monitor_external
-workspace e2  output $monitor_external
-workspace e3  output $monitor_external
-workspace e4  output $monitor_external
-workspace e5  output $monitor_external
-workspace e6  output $monitor_external
-workspace e7  output $monitor_external
-workspace e8  output $monitor_external
-workspace e9  output $monitor_external
-workspace e10 output $monitor_external
+workspace 11:e1  output $monitor_external
+workspace 12:e2  output $monitor_external
+workspace 13:e3  output $monitor_external
+workspace 14:e4  output $monitor_external
+workspace 15:e5  output $monitor_external
+workspace 16:e6  output $monitor_external
+workspace 17:e7  output $monitor_external
+workspace 18:e8  output $monitor_external
+workspace 19:e9  output $monitor_external
+workspace 20:e10 output $monitor_external
+workspace 90:mail output $monitor_external
+workspace 91:todo output $monitor_external
+workspace 92:music output $monitor_external
 
 ###########################################################
 # Focus
@@ -173,21 +175,21 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
-bindsym $mod+t workspace todo
-bindsym $mod+m workspace mail
-bindsym $mod+period workspace music
 
 # second monitor
-bindsym $mod+F1 workspace e1
-bindsym $mod+F2 workspace e2
-bindsym $mod+F3 workspace e3
-bindsym $mod+F4 workspace e4
-bindsym $mod+F5 workspace e5
-bindsym $mod+F6 workspace e6
-bindsym $mod+F7 workspace e7
-bindsym $mod+F8 workspace e8
-bindsym $mod+F9 workspace e9
-bindsym $mod+F10 workspace e10
+bindsym $mod+F1     workspace 11:e1
+bindsym $mod+F2     workspace 12:e2
+bindsym $mod+F3     workspace 13:e3
+bindsym $mod+F4     workspace 14:e4
+bindsym $mod+F5     workspace 15:e5
+bindsym $mod+F6     workspace 16:e6
+bindsym $mod+F7     workspace 17:e7
+bindsym $mod+F8     workspace 18:e8
+bindsym $mod+F9     workspace 19:e9
+bindsym $mod+F10    workspace 20:e10
+bindsym $mod+m      workspace 90:mail
+bindsym $mod+t      workspace 91:todo
+bindsym $mod+period workspace 92:music
 
 ###########################################################
 # Movement
@@ -216,21 +218,21 @@ bindsym $mod+$move_mod+7 move container to workspace 7
 bindsym $mod+$move_mod+8 move container to workspace 8
 bindsym $mod+$move_mod+9 move container to workspace 9
 bindsym $mod+$move_mod+0 move container to workspace 10
-bindsym $mod+$move_mod+t move container to workspace todo
-bindsym $mod+$move_mod+m move container to workspace mail
-bindsym $mod+$move_mod+greater move container to workspace music
 
 #second monitor
-bindsym $mod+$move_mod+F1 move container to workspace e1
-bindsym $mod+$move_mod+F2 move container to workspace e2
-bindsym $mod+$move_mod+F3 move container to workspace e3
-bindsym $mod+$move_mod+F4 move container to workspace e4
-bindsym $mod+$move_mod+F5 move container to workspace e5
-bindsym $mod+$move_mod+F6 move container to workspace e6
-bindsym $mod+$move_mod+F7 move container to workspace e7
-bindsym $mod+$move_mod+F8 move container to workspace e8
-bindsym $mod+$move_mod+F9 move container to workspace e9
-bindsym $mod+$move_mod+F10 move container to workspace e10
+bindsym $mod+$move_mod+F1       move container to workspace 11:e1
+bindsym $mod+$move_mod+F2       move container to workspace 12:e2
+bindsym $mod+$move_mod+F3       move container to workspace 13:e3
+bindsym $mod+$move_mod+F4       move container to workspace 14:e4
+bindsym $mod+$move_mod+F5       move container to workspace 15:e5
+bindsym $mod+$move_mod+F6       move container to workspace 16:e6
+bindsym $mod+$move_mod+F7       move container to workspace 17:e7
+bindsym $mod+$move_mod+F8       move container to workspace 18:e8
+bindsym $mod+$move_mod+F9       move container to workspace 19:e9
+bindsym $mod+$move_mod+F10      move container to workspace 20:e10
+bindsym $mod+$move_mod+m        move container to workspace 90:mail
+bindsym $mod+$move_mod+t        move container to workspace 91:todo
+bindsym $mod+$move_mod+greater  move container to workspace 92:music
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -308,6 +310,7 @@ bar {
     font pango:DejaVu Sans Mono 8.2
     position bottom
     status_command py3status
+    strip_workspace_numbers yes
 
     colors {
         background $S_base03

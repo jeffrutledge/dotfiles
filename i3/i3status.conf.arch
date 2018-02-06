@@ -54,7 +54,6 @@ general {
 	color_bad       = '#dc322f'
 }
 
-order += "weather_yahoo"
 order += "mpris"
 order += "disk /"
 order += "wireless _first_"
@@ -62,6 +61,10 @@ order += "ethernet _first_"
 order += "battery all"
 order += "load"
 order += "tztime local"
+
+pomodoro {
+    format = "{mmss}"
+}
 
 mpris {
     format = "{previous}[[{artist}: {title}]|[{title}]]{next}"
