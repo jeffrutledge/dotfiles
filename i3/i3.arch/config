@@ -123,16 +123,16 @@ workspace 8  output $monitor_internal
 workspace 9  output $monitor_internal
 workspace 10 output $monitor_internal
 
-workspace 11:e1  output $monitor_external
-workspace 12:e2  output $monitor_external
-workspace 13:e3  output $monitor_external
-workspace 14:e4  output $monitor_external
-workspace 15:e5  output $monitor_external
-workspace 16:e6  output $monitor_external
-workspace 17:e7  output $monitor_external
-workspace 18:e8  output $monitor_external
-workspace 19:e9  output $monitor_external
-workspace 20:e10 output $monitor_external
+workspace 11:f1  output $monitor_external
+workspace 12:f2  output $monitor_external
+workspace 13:f3  output $monitor_external
+workspace 14:f4  output $monitor_external
+workspace 15:f5  output $monitor_external
+workspace 16:f6  output $monitor_external
+workspace 17:f7  output $monitor_external
+workspace 18:f8  output $monitor_external
+workspace 19:f9  output $monitor_external
+workspace 20:f10 output $monitor_external
 workspace 90:mail output $monitor_external
 workspace 91:todo output $monitor_external
 workspace 92:music output $monitor_external
@@ -175,16 +175,16 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # second monitor
-bindsym $mod+F1     workspace 11:e1
-bindsym $mod+F2     workspace 12:e2
-bindsym $mod+F3     workspace 13:e3
-bindsym $mod+F4     workspace 14:e4
-bindsym $mod+F5     workspace 15:e5
-bindsym $mod+F6     workspace 16:e6
-bindsym $mod+F7     workspace 17:e7
-bindsym $mod+F8     workspace 18:e8
-bindsym $mod+F9     workspace 19:e9
-bindsym $mod+F10    workspace 20:e10
+bindsym $mod+F1     workspace 11:f1
+bindsym $mod+F2     workspace 12:f2
+bindsym $mod+F3     workspace 13:f3
+bindsym $mod+F4     workspace 14:f4
+bindsym $mod+F5     workspace 15:f5
+bindsym $mod+F6     workspace 16:f6
+bindsym $mod+F7     workspace 17:f7
+bindsym $mod+F8     workspace 18:f8
+bindsym $mod+F9     workspace 19:f9
+bindsym $mod+F10    workspace 20:f10
 bindsym $mod+m      workspace 90:mail
 bindsym $mod+t      workspace 91:todo
 bindsym $mod+period workspace 92:music
@@ -218,16 +218,16 @@ bindsym $mod+$move_mod+9 move container to workspace 9
 bindsym $mod+$move_mod+0 move container to workspace 10
 
 #second monitor
-bindsym $mod+$move_mod+F1       move container to workspace 11:e1
-bindsym $mod+$move_mod+F2       move container to workspace 12:e2
-bindsym $mod+$move_mod+F3       move container to workspace 13:e3
-bindsym $mod+$move_mod+F4       move container to workspace 14:e4
-bindsym $mod+$move_mod+F5       move container to workspace 15:e5
-bindsym $mod+$move_mod+F6       move container to workspace 16:e6
-bindsym $mod+$move_mod+F7       move container to workspace 17:e7
-bindsym $mod+$move_mod+F8       move container to workspace 18:e8
-bindsym $mod+$move_mod+F9       move container to workspace 19:e9
-bindsym $mod+$move_mod+F10      move container to workspace 20:e10
+bindsym $mod+$move_mod+F1       move container to workspace 11:f1
+bindsym $mod+$move_mod+F2       move container to workspace 12:f2
+bindsym $mod+$move_mod+F3       move container to workspace 13:f3
+bindsym $mod+$move_mod+F4       move container to workspace 14:f4
+bindsym $mod+$move_mod+F5       move container to workspace 15:f5
+bindsym $mod+$move_mod+F6       move container to workspace 16:f6
+bindsym $mod+$move_mod+F7       move container to workspace 17:f7
+bindsym $mod+$move_mod+F8       move container to workspace 18:f8
+bindsym $mod+$move_mod+F9       move container to workspace 19:f9
+bindsym $mod+$move_mod+F10      move container to workspace 20:f10
 bindsym $mod+$move_mod+m        move container to workspace 90:mail
 bindsym $mod+$move_mod+t        move container to workspace 91:todo
 bindsym $mod+$move_mod+greater  move container to workspace 92:music
