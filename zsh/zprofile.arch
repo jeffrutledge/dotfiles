@@ -3,6 +3,6 @@ if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
   then
     exec startx
   else
-    echo "Not executin startx, i3-wm not installed."
+    echo "Not executing startx, i3-wm not installed."
   fi
 fi
