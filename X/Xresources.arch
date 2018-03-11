@@ -1,5 +1,7 @@
-XTerm*termName: xterm-256color
+xterm*termName: xterm-256color
 xterm*faceName: dejavusansmono:pixelsize=11
+xterm*borderWidth:0
+xcursor.size: 8
 
 ! Solarized color scheme for the X Window System
 !
