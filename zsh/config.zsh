@@ -54,4 +54,5 @@ if [[ "$(uname -s)" == "Linux" ]]
 then
   source ~/manual_packages/z/z.sh
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source /usr/share/fzf/completion.zsh
 fi
