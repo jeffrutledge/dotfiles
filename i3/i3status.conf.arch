@@ -68,7 +68,8 @@ pomodoro {
 
 mpris {
     format = "{previous}[[{artist}: {title}]|[{title}]]{next}"
-    format_none = "no player"
+    format_none = ''
+    color_paused = '#268bd2'
 }
 
 weather_yahoo {
