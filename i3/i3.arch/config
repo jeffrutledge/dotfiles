@@ -154,7 +154,7 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # change focus between tiling / floating windows
-bindsym $mod+space floating mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -252,9 +252,6 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 
-# toggle tiling / floating
-# bindsym $mod+$move_mod+space floating toggle
-
 ###########################################################
 # Modes
 ###########################################################
@@ -305,6 +302,10 @@ mode "resize" {
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
     bindsym Right resize grow width 10 px or 10 ppt
+
+    # toggle tiling / floating
+    bindsym space floating toggle
+
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
