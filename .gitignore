@@ -5,3 +5,9 @@ vim/vim.symlink/.netrwhist
 git/gitconfig.local.symlink
 
 i3/i3wm_mod.local.arch
+
+# Ignore all of emacs.d, which is mostly compiled/downloaded scripts.
+emacs/emacs.d/*
+# But don't ignore these specific locations.
+!configs/emacs.d/init.el
+!configs/emacs.d/custom.el
