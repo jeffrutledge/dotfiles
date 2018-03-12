@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/JRut/gdrive/developer'
-let g:netrw_dirhist_2='/Users/JRut/.vim/bundle/rust.vim/indent'
-let g:netrw_dirhist_3='/Users/JRut/gdrive/courses/cs70/hw5_jjoseph_jrutledge/.git'
-let g:netrw_dirhist_4='/Users/JRut/dotfiles/.git'
-let g:netrw_dirhist_5='/Users/JRut/.vim/bundle/Vundle.vim'
-let g:netrw_dirhist_6='/Users/JRut/dotfiles/homebrew'
-let g:netrw_dirhist_7='/Users/JRut/dotfiles/vim/vim.symlink'
