@@ -1,3 +1,6 @@
+;;; init.el -- My Emacs configuration
+;;; Commentary:
+;;; Code:
 (require 'package)
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
@@ -6,6 +9,7 @@
 
 (package-initialize)
 (setq package-enable-at-startup nil)
+
 
 ;; Install use-package
 (unless (package-installed-p 'use-package)
@@ -17,12 +21,22 @@
 
 ;; Basic Settings
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono Book 9"))
+(setq-default indicate-empty-lines t)
 
-;; Don't litter my init file
+; Split Settings
+; (setq split-height-threshold nil)
+; (setq split-width-threshold 1)
+
+; Backup File Settings
+(defvar backup-dir "~/.emacs.d/backups/")
+(setq backup-directory-alist (list (cons "." backup-dir)))
+(setq make-backup-files nil)
+
+; Don't litter my init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
-;; GUI Settings
+; GUI Settings
 (setq inhibit-splash-screen t
       inhibit-startup-message t
       inhibit-startup-echo-area-message t)
@@ -30,43 +44,65 @@
 (tool-bar-mode -1)
 (when (boundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
-(show-paren-mode 1)
-(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-(setq-default left-fringe-width nil)
-(setq-default indicate-empty-lines t)
-(setq-default indent-tabs-mode nil)
+(show-paren-mode t)
 
+;; Setup user init file loading
+(defconst user-init-dir
+  (expand-file-name "init_dir"
+		    (cond ((boundp 'user-emacs-directory)
+			   user-emacs-directory)
+			  ((boundp 'user-init-directory)
+			   user-init-directory)
+			  (t "~/.emacs.d/"))))
+
+(defun load-user-file (file)
+  "Load a FILE in current user's USER-INIT-DIR."
+  (interactive "f")
+  (load-file (expand-file-name file user-init-dir)))
+
+;; Load init files
+(load-user-file "evil.el")
+(load-user-file "company.el")
+(load-user-file "latex.el")
 
 ;; Use use-package to install other packages
-(use-package evil
-  :ensure t
-  :config
-  (evil-mode 1)
-  (use-package evil-escape
-    :init
-    (setq evil-escape-key-sequence "jw")
-    :config
-    (define-key evil-normal-state-map "ZZ" 'evil-save-modified-and-close)
-    (define-key evil-normal-state-map "ZQ" 'evil-quit)
-    (evil-escape-mode 1))
-  ;; More configuration goes here
-  )
-
-
 (use-package helm
   :ensure t
-  :config
-  (helm-mode 1)
-  (define-key helm-map (kbd "C-j") 'helm-next-line)
-  (define-key helm-map (kbd "C-k") 'helm-previous-line)
   :bind (("M-x" . helm-M-x)
-         ("C-x C-f" . helm-find-files)))
+         ("C-x C-f" . helm-find-files)
+	 ; bind open other
+         :map helm-map
+         ("C-j" . 'helm-next-line)
+         ("C-k" . 'helm-previous-line)
+         ("C-h" . 'helm-find-files-up-one-level))
+  :config
+  (helm-autoresize-mode 1)
+  (helm-mode 1))
 
 
-(use-package solarized-theme
+(use-package projectile
   :ensure t
   :config
-  (load-theme 'solarized-dark))
+  (projectile-mode 1))
+
+
+(use-package helm-projectile
+  :ensure t
+  :after (projectile helm))
+
+
+(use-package flyspell-mode
+  :hook (TeX-mode))
+
+
+(use-package flycheck
+  :ensure t
+  :after (evil evil-leader)
+  :config
+  (evil-define-key 'normal flycheck-mode-map (kbd "]e") 'flycheck-next-error)
+  (evil-define-key 'normal flycheck-mode-map (kbd "[e") 'flycheck-previous-error)
+  (evil-leader/set-key (kbd "e") 'flycheck-list-errors)
+  (add-hook 'after-init-hook 'global-flycheck-mode))
 
 
 ;;; If `display-line-numbers-mode' is available (only in Emacs 26),
@@ -74,10 +110,31 @@
 (if (functionp 'display-line-numbers-mode)
     (and (add-hook 'display-line-numbers-mode-hook
                    (lambda () (setq display-line-numbers-type 'relative)))
-         (add-hook 'prog-mode-hook #'display-line-numbers-mode))
+         (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+         (add-hook 'TeX-mode-hook #'display-line-numbers-mode))
   (use-package nlinum-relative
     :ensure t
+    :custom
+    (nlinum-relative-redisplay-delay 0)
     :config
     (nlinum-relative-setup-evil)
-    (setq nlinum-relative-redisplay-delay 0)
-    (add-hook 'prog-mode-hook #'nlinum-relative-mode)))
+    (add-hook 'prog-mode-hook #'nlinum-relative-mode))
+    (add-hook 'TeX-mode-hook #'nlinum-relative-mode))
+
+
+(use-package solarized-theme
+  :ensure t
+  :custom
+  (x-underline-at-descent-line t)
+  :config
+  (load-theme 'solarized-dark))
+
+
+(use-package powerline
+  :ensure t
+  :config
+  (powerline-center-evil-theme))
+
+
+(provide 'init)
+;;; init.el ends here
