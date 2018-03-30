@@ -15,10 +15,13 @@ feh
 dmenu
 ttf-dejavu
 openssh
+encfs
 pulseaudio
 pavucontrol
 the_silver_searcher
 gvim
+emacs
+aspell
 chromium
 dunst
 thunderbird
