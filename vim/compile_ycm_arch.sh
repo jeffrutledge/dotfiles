@@ -5,10 +5,6 @@
 # This compiles ycm
 
 echo -e "\t - compiling YCM."
-echo -e "\t\t - no compile script found for YCM."
-exit 0
-
-echo -e "\t - compiling YCM."
 if [ ! -e ~/.vim/bundle/YouCompleteMe/install.py ]
 then
   echo -e "\t\t - no compile script found for YCM."
