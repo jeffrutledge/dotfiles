@@ -9,35 +9,35 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 if [ -f $sysresources ]
 then
-  xrdb -merge $sysresources
+    xrdb -merge $sysresources
 fi
 
 if [ -f $sysmodmap ]
 then
-  xmodmap $sysmodmap
+    xmodmap $sysmodmap
 fi
 
 if [ -f "$userresources" ]
 then
-  xrdb -merge "$userresources"
+    xrdb -merge "$userresources"
 fi
 
 if [ -f "$usermodmap" ]
 then
-  xmodmap "$usermodmap"
+    xmodmap "$usermodmap"
 fi
 
 # Load local i3wm mod variable
 i3local=$HOME/.i3wm_mod.local
 if [ -f "$i3local" ]
 then
-  xrdb -merge $i3local
+    xrdb -merge $i3local
 fi
 
 # Set background using feh config
 if [ -e ~/.fehbg ]
 then
-  ~/.fehbg &
+    ~/.fehbg &
 fi
 
 # Bind keys
@@ -46,7 +46,7 @@ xbindkeys -p
 # Open i3 if installed
 if pacman -Qs i3-wm > /dev/null
 then
-  exec i3
+    exec i3
 else
-  echo "Not launching gui, i3-wm not installed."
+    echo "Not launching gui, i3-wm not installed."
 fi
