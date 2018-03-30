@@ -82,6 +82,8 @@ bindsym $mod+Shift+r restart
 
 # start a terminal
 bindsym $mod+Return exec uxterm
+# start a terminal
+bindsym $mod+apostrophe exec emacsclient -nc
 # start chromium
 bindsym $mod+c exec chromium
 
