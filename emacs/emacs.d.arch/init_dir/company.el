@@ -10,6 +10,7 @@
   (company-idle-delay 0)
   (company-minimum-prefix-length 1)
   :config
+  ;; (add-to-list 'company-backends 'company-yasnippet)
   (global-company-mode 1))
 
 
@@ -21,14 +22,14 @@
   (evil-leader/set-key (kbd "gtd") 'ycmd-goto-definition)
   (evil-leader/set-key (kbd "gtD") 'ycmd-goto-declaration)
   (evil-leader/set-key (kbd "gtr") 'ycmd-goto-references)
-  ; (add-hook 'after-init-hook #'global-ycmd-mode)
+  ;; (add-hook 'after-init-hook #'global-ycmd-mode)
   (add-hook 'c++-mode-hook 'ycmd-mode)
   (add-hook 'python-mode-hook 'ycmd-mode))
 (use-package company-ycmd
   :ensure t
   :after (ycmd)
   :config
-  (company-ycmd-setup))
+  (add-hook 'ycmd-mode-hook 'company-ycmd-setup))
 (use-package ycmd-eldoc
   :after (ycmd company-ycmd)
   :config

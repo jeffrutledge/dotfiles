@@ -10,7 +10,6 @@
 (package-initialize)
 (setq package-enable-at-startup nil)
 
-
 ;; Install use-package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -65,12 +64,32 @@
 (load-user-file "company.el")
 (load-user-file "latex.el")
 
-;; Use use-package to install other packages
+;; Use use-package to install and configure other packages
+(defadvice term-sentinel (around my-advice-term-sentinel (proc msg))
+  "Kill term buffer when term is ended."
+  (if (memq (process-status proc) '(signal exit))
+      (let ((buffer (process-buffer proc)))
+        ad-do-it
+        (kill-buffer buffer))
+    ad-do-it))
+
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (setq aggressive-indent-excluded-modes
+	(cl-set-difference aggressive-indent-excluded-modes
+			   (list 'text-mode 'yaml-mode)))
+  (global-aggressive-indent-mode 1))
+
+(use-package adaptive-wrap
+  :ensure t
+  :config
+  (add-hook 'TeX-mode-hook 'adaptive-wrap-prefix-mode))
+
 (use-package helm
   :ensure t
   :bind (("M-x" . helm-M-x)
          ("C-x C-f" . helm-find-files)
-	 ; bind open other
          :map helm-map
          ("C-j" . 'helm-next-line)
          ("C-k" . 'helm-previous-line)
@@ -79,21 +98,27 @@
   (helm-autoresize-mode 1)
   (helm-mode 1))
 
+(use-package term
+  :after (helm)
+  :config
+  (define-key term-raw-map (kbd "C-b") 'helm-mini)
+  (ad-activate 'term-sentinel))
 
 (use-package projectile
   :ensure t
+  :custom
+  (projectile-globally-ignored-file-suffixes '("pyc" "pdf" "log" "fls" "aux" "fdb_latexmk" "synctex.gz"))
   :config
+  (add-to-list 'projectile-globally-ignored-directories "env")
+  (add-to-list 'projectile-globally-ignored-directories "__pycache__")
   (projectile-mode 1))
-
 
 (use-package helm-projectile
   :ensure t
   :after (projectile helm))
 
-
 (use-package flyspell-mode
   :hook (TeX-mode))
-
 
 (use-package flycheck
   :ensure t
@@ -121,7 +146,6 @@
     (add-hook 'prog-mode-hook #'nlinum-relative-mode))
     (add-hook 'TeX-mode-hook #'nlinum-relative-mode))
 
-
 (use-package solarized-theme
   :ensure t
   :custom
@@ -129,12 +153,20 @@
   :config
   (load-theme 'solarized-dark))
 
-
 (use-package powerline
   :ensure t
   :config
   (powerline-center-evil-theme))
 
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1))
+
+(use-package py-autopep8
+  :ensure t
+  :config
+  (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
 
 (provide 'init)
 ;;; init.el ends here

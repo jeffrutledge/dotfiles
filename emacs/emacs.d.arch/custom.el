@@ -3,6 +3,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(LaTeX-math-abbrev-prefix ",")
+ '(LaTeX-math-list (quote (("=s" LaTeX-math-mathscr "" nil))))
+ '(TeX-clean-confirm nil)
+ '(TeX-debug-bad-boxes t)
+ '(TeX-debug-warnings t)
+ '(TeX-error-overview-open-after-TeX-run t)
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
@@ -14,6 +20,7 @@
  '(package-selected-packages
    (quote
     (py-autopep8 helm-bibtex use-package solarized-theme powerline nlinum-relative latex-preview-pane helm-projectile helm-ebdb flycheck evil-leader evil-escape company-math company-auctex)))
+ '(projectile-globally-ignored-file-suffixes nil)
  '(x-underline-at-descent-line t)
  '(ycmd-server-command
    (quote

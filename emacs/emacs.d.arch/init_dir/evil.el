@@ -32,6 +32,7 @@
     :custom
     (evil-escape-key-sequence "jw")
     (evil-escape-delay 0.2)
+    (evil-escape-excluded-major-modes '(term-mode))
     :init
     :config
     (evil-escape-mode 1))
