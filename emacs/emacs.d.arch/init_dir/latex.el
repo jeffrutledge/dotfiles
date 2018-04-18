@@ -17,12 +17,16 @@
   :config
   (add-hook 'TeX-mode-hook
 	    (lambda () (add-hook 'before-save-hook
-				 (lambda () (LaTeX-fill-buffer nil))
+				 (lambda () (LaTeX-fill-environment nil))
 				 nil 'local)))
   ;; Compile and forward search on write
   (add-hook 'TeX-mode-hook
 	    (lambda () (add-hook 'after-save-hook
-				 (lambda () (TeX-command-run-all nil))
+				 (lambda () (TeX-command-sequence t t))
+				 nil 'local)))
+  (add-hook 'TeX-mode-hook
+	    (lambda () (add-hook 'after-save-hook
+				 (lambda () (TeX-view))
 				 nil 'local)))
   ;; Delete TeX compilation files on TeX buffer close
   (add-hook 'TeX-mode-hook
