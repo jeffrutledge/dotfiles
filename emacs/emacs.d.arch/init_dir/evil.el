@@ -19,6 +19,7 @@
     "i" 'helm-imenu
     "x" 'helm-M-x
     "kb" (lambda () (interactive) (kill-buffer nil))
+    "kz" (lambda () (interactive) (progn (kill-buffer nil) (evil-quit)))
     "kpb" 'projectile-kill-buffers)
   (evil-leader/set-key-for-mode 'latex-mode
     "le" 'LaTeX-environment
