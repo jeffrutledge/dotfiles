@@ -21,6 +21,7 @@ alias -s pdf='pdf-open'
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
 then
+  alias e='emacsclient -nc'
   alias ls='ls --color=auto'
   alias vim='vim --servername vim' # for vimtex latexmk callbacks
 fi

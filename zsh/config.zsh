@@ -4,7 +4,7 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
-export EDITOR='vim'
+export EDITOR='emacsclient -nc'
 
 export CLICOLOR=true
 
