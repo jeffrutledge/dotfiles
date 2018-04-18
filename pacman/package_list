@@ -11,6 +11,7 @@ xbindkeys
 xautolock
 xterm
 i3
+tlp
 feh
 dmenu
 ttf-dejavu
