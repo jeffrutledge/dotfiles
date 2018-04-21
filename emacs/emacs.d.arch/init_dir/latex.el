@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (require 'evil)
+(require 'evil-leader)
 
 (use-package tex
   :ensure auctex
@@ -15,18 +16,19 @@
   (TeX-error-overview-open-after-TeX-run t)
   (TeX-clean-confirm nil)
   :config
-  (add-hook 'TeX-mode-hook
-	    (lambda () (add-hook 'before-save-hook
-				 (lambda () (LaTeX-fill-environment nil))
-				 nil 'local)))
+  (evil-leader/set-key-for-mode 'latex-mode
+    "le" 'LaTeX-environment
+    "lf" 'LaTeX-fill-environment
+    "la" (lambda () (interactive)
+	   (save-buffer) (TeX-command-run-all nil)(evil-write nil nil))
+    "lv" 'TeX-view
+    "lb" (lambda () (interactive) (TeX-run-Biber)))
+  (add-hook 'TeX-mode-hook 'turn-on-auto-fill)
   ;; Compile and forward search on write
   (add-hook 'TeX-mode-hook
 	    (lambda () (add-hook 'after-save-hook
-				 (lambda () (TeX-command-sequence t t))
-				 nil 'local)))
-  (add-hook 'TeX-mode-hook
-	    (lambda () (add-hook 'after-save-hook
-				 (lambda () (TeX-view))
+				 (lambda () (progn (TeX-command-sequence t t)
+						   (TeX-view)))
 				 nil 'local)))
   ;; Delete TeX compilation files on TeX buffer close
   (add-hook 'TeX-mode-hook
@@ -74,10 +76,6 @@
   "Insert \mathscr{Upercase CHAR}."
   (interactive "*cscript")
   (insert "\\mathscr{" (char-to-string (upcase char)) "}"))
-
-(evil-leader/set-key-for-mode 'latex-mode
-  "lfb" 'LaTeX-math-mathbb
-  "lfs" 'LaTeX-math-mathscr)
 
 (provide 'latex)
 ;;; latex.el ends here

@@ -21,12 +21,6 @@
     "kb" (lambda () (interactive) (kill-buffer nil))
     "kz" (lambda () (interactive) (progn (kill-buffer nil) (evil-quit)))
     "kpb" 'projectile-kill-buffers)
-  (evil-leader/set-key-for-mode 'latex-mode
-    "le" 'LaTeX-environment
-    "la" (lambda () (interactive)
-	   (save-buffer) (TeX-command-run-all nil)(evil-write nil nil))
-    "lv" 'TeX-view
-    "lb" (lambda () (interactive) (TeX-run-Biber)))
   (global-evil-leader-mode t))
 (use-package evil-escape
   :ensure t
