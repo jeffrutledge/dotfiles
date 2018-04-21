@@ -22,20 +22,20 @@
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono Book 9"))
 (setq-default indicate-empty-lines t)
 
-; Split Settings
-; (setq split-height-threshold nil)
-; (setq split-width-threshold 1)
+;;  Split Settings
+;;  (setq split-height-threshold nil)
+;;  (setq split-width-threshold 1)
 
-; Backup File Settings
+;; Backup File Settings
 (defvar backup-dir "~/.emacs.d/backups/")
 (setq backup-directory-alist (list (cons "." backup-dir)))
 (setq make-backup-files nil)
 
-; Don't litter my init file
+;; Don't litter my init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
-; GUI Settings
+;; GUI Settings
 (setq inhibit-splash-screen t
       inhibit-startup-message t
       inhibit-startup-echo-area-message t)
