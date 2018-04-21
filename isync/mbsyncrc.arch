@@ -1,0 +1,26 @@
+IMAPAccount hmc
+# Address to connect to
+Host imap.gmail.com
+User jrutledge@g.hmc.edu
+PassCmd "pass google.com/mail/jrutledge@hmc.edu"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore hmc-remote
+Account hmc
+
+MaildirStore hmc-local
+Subfolders Verbatim
+# The trailing "/" is important
+Path ~/.mail/hmc/
+Inbox ~/.mail/hmc/inbox
+
+Channel hmc
+Master :hmc-remote:
+Slave :hmc-local:
+# Exclude everything under the internal [Gmail] folder, except the interesting folders
+Patterns !* ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail"
+# Automatically create missing mailboxes, both locally and on the server
+Create Slave
+# Save the synchronization state files in the relevant directory
+SyncState *
