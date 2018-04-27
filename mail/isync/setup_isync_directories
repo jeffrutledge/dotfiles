@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# mail/isync
+#
+# creates the root mail directories for isync
+
+echo -e "\t - setup isync directories."
+mkdir -p ~/.mail/hmc
+mkdir -p ~/.mail/personal
+
+exit 0

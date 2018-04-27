@@ -45,5 +45,5 @@ Master :personal-remote:
 Slave :personal-local:
 Patterns !* "INBOX" "Sent" "Archive" "Trash"
 Create Slave
-# Expunge Both
+Expunge Both
 SyncState *

@@ -73,6 +73,23 @@
         (kill-buffer buffer))
     ad-do-it))
 
+(use-package notmuch
+  :after (evil)
+  :config
+  (evil-define-key 'normal notmuch-search-mode-map
+    (kbd "q") 'notmuch-search-quit
+    (kbd "n") 'notmuch-search-next-thread
+    (kbd "p") 'notmuch-search-previous-thread
+    (kbd "RET") 'notmuch-search-show-thread)
+  (evil-add-hjkl-bindings notmuch-search-mode-map 'emacs)
+  (evil-add-hjkl-bindings notmuch-show-mode-map 'emacs)
+  (evil-set-initial-state 'notmuch-search-mode 'emacs)
+  (evil-set-initial-state 'notmuch-show-mode 'emacs))
+
+(use-package message
+  :config
+  (setq message-kill-buffer-on-exit t))
+
 (use-package aggressive-indent
   :ensure t
   :config
