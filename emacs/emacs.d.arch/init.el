@@ -76,6 +76,7 @@
 (use-package notmuch
   :after (evil)
   :config
+  (setq notmuch-search-oldest-first nil)
   (evil-define-key 'normal notmuch-search-mode-map
     (kbd "q") 'notmuch-search-quit
     (kbd "n") 'notmuch-search-next-thread
