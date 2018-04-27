@@ -18,9 +18,32 @@ Inbox ~/.mail/hmc/inbox
 Channel hmc
 Master :hmc-remote:
 Slave :hmc-local:
-# Exclude everything under the internal [Gmail] folder, except the interesting folders
 Patterns !* ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail"
-# Automatically create missing mailboxes, both locally and on the server
 Create Slave
-# Save the synchronization state files in the relevant directory
+SyncState *
+
+IMAPAccount personal
+# Address to connect to
+Host imap.mail.me.com
+User soccer21
+PassCmd "pass icloud.com"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore personal-remote
+Account personal
+
+MaildirStore personal-local
+Subfolders Verbatim
+# The trailing "/" is important
+Path ~/.mail/personal/
+Inbox ~/.mail/personal/inbox
+Trash Trash
+
+Channel personal
+Master :personal-remote:
+Slave :personal-local:
+Patterns !* "INBOX" "Sent" "Archive" "Trash"
+Create Slave
+# Expunge Both
 SyncState *
