@@ -157,6 +157,11 @@ install_dotfiles () {
 		dst="$HOME/.$(basename "${src%.*}")"
 		link_file "$src" "$dst"
 	    done
+	    for src in $(find -H "$DOTFILES_ROOT" -maxdepth 3 -name '*.arch_conf' -not -path '*.git*')
+	    do
+		dst="$HOME/.config/$(basename "${src%.*}")"
+		link_file "$src" "$dst"
+	    done
 	    echo 'Arch dotfiles installed';;
 	b )
 	;;
