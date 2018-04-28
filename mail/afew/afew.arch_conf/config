@@ -1,0 +1,15 @@
+[FolderNameFilter]
+folder_explicit_list = personal hmc Junk Spam Sent 'Sent Mail'
+folder_transforms = Junk:spam Spam:spam Sent:sent 'Sent Mail':sent
+maildir_separator = /
+[SpamFilter]
+[KillThreadsFilter]
+[ListMailsFilter]
+[ArchiveSentMailsFilter]
+sent_tag=sent
+[InboxFilter]
+[MailMover]
+folders = personal/inbox hmc/inbox
+personal/inbox = 'tag:sent':personal/Sent 'tag:spam':personal/Junk 'not tag:sent and not tag:inbox':personal/Archive
+hmc/inbox = 'tag:sent':'hmc/[Gmail]/Sent Mail' 'tag:spam':hmc/[Gmail]/Spam 'not tag:sent and not tag:inbox':'hmc/[Gmail]/All Mail'
+rename = True

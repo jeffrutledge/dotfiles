@@ -48,7 +48,7 @@ other_email=jeff_rutledge@icloud.com;
 #		in the mail store.
 #
 [new]
-tags=new;
+tags=new
 ignore=
 
 # Search configuration
