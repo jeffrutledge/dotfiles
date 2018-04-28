@@ -18,7 +18,7 @@ Inbox ~/.mail/hmc/inbox
 Channel hmc
 Master :hmc-remote:
 Slave :hmc-local:
-Patterns !* ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail"
+Patterns !* ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail" "[Gmail]/Spam" "INBOX"
 Create Slave
 SyncState *
 
@@ -43,7 +43,7 @@ Trash Trash
 Channel personal
 Master :personal-remote:
 Slave :personal-local:
-Patterns !* "INBOX" "Sent" "Archive" "Trash"
+Patterns !* "INBOX" "Sent" "Archive" "Trash" "Junk"
 Create Slave
 Expunge Both
 SyncState *
