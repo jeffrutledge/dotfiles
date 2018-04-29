@@ -55,16 +55,13 @@ general {
 }
 
 order += "mpris"
+order += "notmuch_status"
 order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "load"
 order += "tztime local"
-
-pomodoro {
-    format = "{mmss}"
-}
 
 mpris {
     format = "{previous}[[{artist}: {title}]|[{title}]]{next}"
