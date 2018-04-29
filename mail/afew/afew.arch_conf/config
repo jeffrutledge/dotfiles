@@ -7,6 +7,12 @@ maildir_separator = /
 [ListMailsFilter]
 [ArchiveSentMailsFilter]
 sent_tag=sent
+
+[Filter.1]
+message = Archive emails from uninteresting lists
+query = 'tag:lists/shop-users-l'
+tags = -new
+
 [InboxFilter]
 [MailMover]
 folders = personal/inbox hmc/inbox
