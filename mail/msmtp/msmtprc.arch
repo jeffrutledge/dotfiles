@@ -1,0 +1,17 @@
+# Set default values for all following accounts.
+defaults
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+
+# hmc
+account        hmc
+host           smtp.gmail.com
+port           465
+from           jrutledge@hmc.edu
+auth	       on
+user           jrutledge@g.hmc.edu
+passwordeval   pass google.com/mail/jrutledge@hmc.edu
+tsl	       on
+
+# Set a default account
+account default : hmc
