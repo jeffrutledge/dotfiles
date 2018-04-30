@@ -76,6 +76,9 @@
 (use-package notmuch
   :after (evil)
   :config
+  (setq notmuch-hello-sections '(notmuch-hello-insert-saved-searches
+				 notmuch-hello-insert-recent-searches
+				 notmuch-hello-insert-alltags))
   (setq notmuch-search-oldest-first nil)
   (evil-define-key 'normal notmuch-search-mode-map
     (kbd "q") 'notmuch-search-quit
@@ -86,6 +89,14 @@
   (evil-add-hjkl-bindings notmuch-show-mode-map 'emacs)
   (evil-set-initial-state 'notmuch-search-mode 'emacs)
   (evil-set-initial-state 'notmuch-show-mode 'emacs))
+
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
 
 (use-package message
   :config

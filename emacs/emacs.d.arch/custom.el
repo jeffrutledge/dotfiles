@@ -6,8 +6,9 @@
  '(LaTeX-math-abbrev-prefix "`" t)
  '(LaTeX-math-list
    (quote
-    ((",b" LaTeX-math-mathbb "" nil)
-     (",s" LaTeX-math-mathscr "" nil))) t)
+    ((";b" LaTeX-math-mathbb "" nil)
+     (";e" LaTeX-environment "" nil)
+     (";s" LaTeX-math-mathscr "" nil))) t)
  '(TeX-clean-confirm nil)
  '(TeX-debug-bad-boxes t)
  '(TeX-debug-warnings t)
