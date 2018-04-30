@@ -1,4 +1,6 @@
 #!/bin/sh
 
-afew -vv --tag --new
-afew -vv --move-mail --new
+notmuch tag +sent -- 'folder:"hmc/[Gmail]/Sent Mail"'
+afew -vv --tag --new 2>&1
+afew -vv --move-mail --all 2>&1
+notmuch tag -unread -- tag:draft or tag:sent

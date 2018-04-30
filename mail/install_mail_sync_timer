@@ -11,8 +11,8 @@ echo -e "\t - setup sync timer and service."
 
 # Copy and activate system daemon components
 echo -e "\t\t - copying timer and service files to ~/.config/systemd/user/"
-sudo cp mail_sync.service ~/.config/systemd/user/
-sudo cp mail_sync.timer ~/.config/systemd/user/
+sudo ln -rs mail_sync.service ~/.config/systemd/user/
+sudo ln -rs mail_sync.timer ~/.config/systemd/user/
 echo -e "\t\t - starting and enabling mail_sync.timer"
 systemctl --user enable mail_sync.timer
 systemctl --user start mail_sync.timer

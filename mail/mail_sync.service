@@ -4,5 +4,6 @@ Description=Mailbox synchronization service
 [Service]
 Environment=DISPLAY=:0
 Type=oneshot
+ExecStartPre=/usr/bin/afew -vv --move-mail 2>&1
 ExecStart=/usr/bin/mbsync -Va
 ExecStartPost=/usr/bin/notmuch new

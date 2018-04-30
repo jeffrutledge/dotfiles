@@ -1,21 +1,29 @@
 [FolderNameFilter]
-folder_explicit_list = personal hmc Junk Spam Sent 'Sent Mail'
-folder_transforms = Junk:spam Spam:spam Sent:sent 'Sent Mail':sent
+folder_explicit_list = personal hmc Junk Spam Sent 'Sent Mail' Drafts
+folder_transforms = Junk:spam Spam:spam Sent:sent 'Sent Mail':sent Drafts:draft
 maildir_separator = /
 [SpamFilter]
 [KillThreadsFilter]
 [ListMailsFilter]
-[ArchiveSentMailsFilter]
-sent_tag=sent
 
 [Filter.1]
+# Filter to remove unread from sent and draft is in post-new because
+# afew doesn't allow for removing unread
+message = remove new from draft and sent
+query = tag:draft or tag:sent
+tags = -new
+[Filter.2]
 message = Archive emails from uninteresting lists
 query = 'tag:lists/shop-users-l'
 tags = -new
 
+[ArchiveSentMailsFilter]
+sent_tag = sent
 [InboxFilter]
+tags = +inbox;+unread
+
 [MailMover]
 folders = personal/inbox hmc/inbox
-personal/inbox = 'tag:sent':personal/Sent 'tag:spam':personal/Junk 'not tag:sent and not tag:inbox':personal/Archive
-hmc/inbox = 'tag:sent':'hmc/[Gmail]/Sent Mail' 'tag:spam':hmc/[Gmail]/Spam 'not tag:sent and not tag:inbox':'hmc/[Gmail]/All Mail'
+personal/inbox = 'tag:sent':personal/Sent 'tag:spam':personal/Junk 'not tag:sent and not tag:spam and not tag:inbox':personal/Archive
+hmc/inbox = 'tag:sent':'hmc/[Gmail]/Sent Mail' 'tag:spam':hmc/[Gmail]/Spam 'not tag:sent and not tag:spam and not tag:inbox':'hmc/[Gmail]/All Mail'
 rename = True
