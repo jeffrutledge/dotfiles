@@ -75,13 +75,15 @@
 
 (use-package notmuch
   :after (evil)
+  :bind (:map notmuch-hello-mode-map
+	      ("m" . (lambda () (interactive) (notmuch-mua-new-mail t))))
   :config
   (setq notmuch-hello-sections '(notmuch-hello-insert-saved-searches
 				 notmuch-hello-insert-recent-searches
 				 notmuch-hello-insert-alltags))
   (setq notmuch-search-oldest-first nil)
   (evil-define-key 'normal notmuch-search-mode-map
-    (kbd "q") 'notmuch-search-quit
+    (kbd "q") 'notmuch-bury-or-kill-this-buffer
     (kbd "n") 'notmuch-search-next-thread
     (kbd "p") 'notmuch-search-previous-thread
     (kbd "RET") 'notmuch-search-show-thread)
