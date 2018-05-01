@@ -1,6 +1,8 @@
 ;;; company.el -- Initialize company mode
 ;;; Commentary:
 ;;; Code:
+(require 'evil-leader)
+
 (use-package company
   :ensure t
   :bind (:map company-active-map
