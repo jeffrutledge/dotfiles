@@ -78,20 +78,19 @@
   :ensure t
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
-         ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
-
-(use-package message
+	 ("\\.md\\'" . markdown-mode)
+	 ("\\.markdown\\'" . markdown-mode))
+  :init
+  (setq markdown-command "pandoc -f markdown -t html5 ")
   :config
-  (setq message-kill-buffer-on-exit t))
+  (add-hook 'gfm-mode-hook 'turn-on-auto-fill)
+  (add-hook 'gfm-mode-hook
+	    (lambda () (setq-local markdown-command "pandoc -f gfm -t html5 ")))
+  (add-hook 'markdown-mode-hook 'turn-on-auto-fill))
 
 (use-package aggressive-indent
   :ensure t
   :config
-  (setq aggressive-indent-excluded-modes
-	(cl-set-difference aggressive-indent-excluded-modes
-			   (list 'text-mode 'yaml-mode)))
   (global-aggressive-indent-mode 1))
 
 (use-package adaptive-wrap
@@ -131,7 +130,7 @@
   :after (projectile helm))
 
 (use-package flyspell-mode
-  :hook (TeX-mode))
+  :hook (text-mode TeX-mode notmuch-message-mode))
 
 (use-package flycheck
   :ensure t

@@ -3,6 +3,6 @@
 #
 # args[in]
 #       $1 filename without .md
-md_to_pdf() {
-  pandoc $1.md -V geometry:margin=1in -o $1.pdf
+md_to_pdf () {
+  pandoc -f markdown -t latex -o $1.pdf $1.md
 }

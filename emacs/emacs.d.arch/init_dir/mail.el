@@ -12,6 +12,7 @@
 
 (use-package message
   :config
+  (setq message-kill-buffer-on-exit t)
   (setq message-sendmail-envelope-from 'header)
   (setq message-default-mail-headers "Cc: \nBcc: \n"))
 
