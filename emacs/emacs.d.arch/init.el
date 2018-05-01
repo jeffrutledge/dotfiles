@@ -90,8 +90,8 @@
   :bind (:map notmuch-hello-mode-map
 	      ("m" . (lambda () (interactive) (notmuch-mua-new-mail t))))
   :config
-  (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent")
-			   ("jeff_rutledge@icloud.com" . "personal/Sent +sent")))
+  (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent +hc")
+			   ("jeff_rutledge@icloud.com" . "personal/Sent +sent +personal")))
   (setq notmuch-hello-sections '(notmuch-hello-insert-saved-searches
 				 notmuch-hello-insert-recent-searches
 				 notmuch-hello-insert-alltags))
