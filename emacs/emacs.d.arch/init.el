@@ -73,11 +73,25 @@
         (kill-buffer buffer))
     ad-do-it))
 
+(use-package sendmail
+  :config
+  (setq send-mail-function 'sendmail-send-it)
+  (setq mail-specify-envelope-from t)
+  (setq mail-envelope-from 'header))
+
+
+(use-package message
+  :config
+  (setq message-sendmail-envelope-from 'header)
+  (setq message-default-mail-headers "Cc: \nBcc: \n"))
+
 (use-package notmuch
   :after (evil)
   :bind (:map notmuch-hello-mode-map
 	      ("m" . (lambda () (interactive) (notmuch-mua-new-mail t))))
   :config
+  (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent")
+			   ("jeff_rutledge@icloud.com" . "personal/Sent +sent")))
   (setq notmuch-hello-sections '(notmuch-hello-insert-saved-searches
 				 notmuch-hello-insert-recent-searches
 				 notmuch-hello-insert-alltags))

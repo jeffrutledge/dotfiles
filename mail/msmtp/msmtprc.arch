@@ -11,7 +11,19 @@ from           jrutledge@hmc.edu
 auth	       on
 user           jrutledge@g.hmc.edu
 passwordeval   pass google.com/mail/jrutledge@hmc.edu
-tsl	       on
+tls	       on
+tls_starttls   off
+
+# personal
+account        personal
+host           smtp.mail.me.com
+port           587
+from           jeff_rutledge@icloud.com
+auth	       on
+user           soccer21
+passwordeval   pass icloud.com
+tls	       on
+tls_starttls   on
 
 # Set a default account
 account default : hmc
