@@ -21,7 +21,9 @@
   :bind (:map notmuch-hello-mode-map
 	      ("m" . (lambda () (interactive) (notmuch-mua-new-mail t))))
   :config
-  (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent +hc")
+  ;; Uses an injection to modify completion query
+  (setq notmuch-address-internal-completion '(received "not tag:spam) or (not tag:spam"))
+  (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent +hmc")
 			   ("jeff_rutledge@icloud.com" . "personal/Sent +sent +personal")))
   (setq notmuch-hello-sections '(notmuch-hello-insert-saved-searches
 				 notmuch-hello-insert-recent-searches
