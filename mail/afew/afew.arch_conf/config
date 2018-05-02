@@ -14,7 +14,7 @@ query = tag:draft or tag:sent
 tags = -new
 [Filter.2]
 message = Archive emails from uninteresting lists
-query = 'tag:lists/shop-users-l'
+query = tag:lists/shop-users-l
 tags = -new
 
 [ArchiveSentMailsFilter]
