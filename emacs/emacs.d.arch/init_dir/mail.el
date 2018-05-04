@@ -22,6 +22,8 @@
 	      ("m" . (lambda () (interactive) (notmuch-mua-new-mail t))))
   :config
   ;; Uses an injection to modify completion query
+  (add-to-list 'notmuch-saved-searches '(:name "next" :query "tag:next" :key "n"))
+  (setq notmuch-archive-tags '("-inbox" "-next"))
   (setq notmuch-address-internal-completion '(received "not tag:spam) or (not tag:spam"))
   (setq notmuch-fcc-dirs '(("jrutledge@hmc.edu" . "\"hmc/[Gmail]/Sent Mail\" +sent +hmc")
 			   ("jeff_rutledge@icloud.com" . "personal/Sent +sent +personal")))

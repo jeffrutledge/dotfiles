@@ -14,5 +14,5 @@ class Py3status:
             unread_count = len(list(unread))
         return {
             'full_text': 'M: {}({})'.format(inbox_count, unread_count),
-            'cached_until': self.py3.time_in(60)
+            'cached_until': self.py3.time_in(5)
         }
