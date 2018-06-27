@@ -14,6 +14,6 @@ def switch_to_navigation_mode(event):
 
 if getattr(ip, 'pt_cli'):
     registry = ip.pt_cli.application.key_bindings_registry
-    registry.add_binding(u'j', u'k',
+    registry.add_binding(u'j', u'w',
                          filter=(HasFocus(DEFAULT_BUFFER)
                                  & ViInsertMode()))(switch_to_navigation_mode)
