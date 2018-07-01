@@ -85,7 +85,7 @@ bindsym $mod+Return exec uxterm
 # start a terminal
 bindsym $mod+apostrophe exec emacsclient -nc
 # start chromium
-bindsym $mod+c exec chromium
+bindsym $mod+c exec chromium --app=https://google.com
 
 # start dmenu with desktop applications only
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn DejaVuSansMono-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
@@ -98,9 +98,7 @@ bindsym $mod+$move_mod+q kill
 # Auto startup
 ###########################################################
 
-# exec --no-startup-id thunderbird
 exec_always --no-startup-id dunst -config ~/.dunstrc
-# exec_always --no-startup-id xautolock -time 5 -corners -000 -locker "systemctl suspend" 
 
 ###########################################################
 # Assigned Windows

@@ -27,6 +27,13 @@ then
     xmodmap "$usermodmap"
 fi
 
+# Remap caps lock to escape
+xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
+xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
+
+# Bind keys
+xbindkeys -p
+
 # Load local i3wm mod variable
 i3local=$HOME/.i3wm_mod.local
 if [ -f "$i3local" ]
@@ -39,9 +46,6 @@ if [ -e ~/.fehbg ]
 then
     ~/.fehbg &
 fi
-
-# Bind keys
-xbindkeys -p
 
 # Open i3 if installed
 if pacman -Qs i3-wm > /dev/null
