@@ -148,6 +148,7 @@
     (and (add-hook 'display-line-numbers-mode-hook
                    (lambda () (setq display-line-numbers-type 'relative)))
          (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+         (add-hook 'conf-mode-hook #'display-line-numbers-mode)
          (add-hook 'TeX-mode-hook #'display-line-numbers-mode))
   (use-package nlinum-relative
     :ensure t
@@ -156,7 +157,7 @@
     :config
     (nlinum-relative-setup-evil)
     (add-hook 'prog-mode-hook #'nlinum-relative-mode))
-    (add-hook 'TeX-mode-hook #'nlinum-relative-mode))
+  (add-hook 'TeX-mode-hook #'nlinum-relative-mode))
 
 (use-package solarized-theme
   :ensure t
