@@ -85,7 +85,7 @@ bindsym $mod+Return exec uxterm
 # start a terminal
 bindsym $mod+apostrophe exec emacsclient -nc
 # start chromium
-bindsym $mod+c exec chromium --app=https://google.com
+bindsym $mod+c exec chromium #--app=https://google.com
 
 # start dmenu with desktop applications only
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn DejaVuSansMono-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
