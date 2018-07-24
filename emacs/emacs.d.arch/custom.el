@@ -22,13 +22,16 @@
  '(evil-escape-excluded-major-modes (quote (term-mode)))
  '(evil-escape-key-sequence "jw")
  '(nlinum-relative-redisplay-delay 0)
+ '(package-selected-packages
+   (quote
+    (use-package solarized-theme realgud py-autopep8 powerline nlinum-relative markdown-mode latex-preview-pane helm-projectile helm-ebdb helm-bibtex flycheck evil-leader evil-escape company-ycmd company-math company-jedi company-auctex aggressive-indent adaptive-wrap)))
  '(projectile-globally-ignored-file-suffixes
    (quote
     ("pyc" "pdf" "log" "fls" "aux" "fdb_latexmk" "synctex.gz")))
  '(x-underline-at-descent-line t)
  '(ycmd-server-command
    (quote
-    ("python" "/home/jrutledge/manual_packages/ycmd/ycmd/"))))
+    ("python" "/home/jrutledge/manual_packages/ycmd/ycmd"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

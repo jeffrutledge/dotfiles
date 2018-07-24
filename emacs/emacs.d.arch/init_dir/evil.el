@@ -6,6 +6,7 @@
   :after (evil-leader)
   :config
   (evil-mode 1))
+
 (use-package evil-leader
   :ensure t
   :config
@@ -19,19 +20,33 @@
     "i" 'helm-imenu
     "x" 'helm-M-x
     "kb" (lambda () (interactive) (kill-buffer nil))
-    "kz" (lambda () (interactive) (progn (kill-buffer nil) (evil-quit)))
+    "kz" (lambda () (interactive) (progn (evil-write)
+					 (kill-buffer nil)
+					 (evil-quit)))
     "kpb" 'projectile-kill-buffers)
   (global-evil-leader-mode t))
-(use-package evil-escape
+
+(use-package evil-org
   :ensure t
-  :after (evil)
-  :custom
-  (evil-escape-key-sequence "jw")
-  (evil-escape-delay 0.2)
-  (evil-escape-excluded-major-modes '(term-mode))
-  :init
+  :after org
   :config
-  (evil-escape-mode 1))
+  (add-hook 'org-mode-hook 'evil-org-mode)
+  (add-hook 'evil-org-mode-hook
+            (lambda ()
+              (evil-org-set-key-theme)))
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
+
+;; (use-package evil-escape
+;; :ensure t
+;; :after (evil)
+;; :custom
+;; (evil-escape-key-sequence "jw")
+;; (evil-escape-delay 0.2)
+;; (evil-escape-excluded-major-modes '(term-mode))
+;; :init
+;; :config
+;; (evil-escape-mode 1))
 
 (provide 'evil)
 ;;; evil.el ends here

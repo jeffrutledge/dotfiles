@@ -22,7 +22,7 @@
 (use-package ycmd
   :ensure t
   :custom
-  (ycmd-server-command '("python" "/home/jrutledge/manual_packages/ycmd/ycmd/"))
+  (ycmd-server-command '("python" "/home/jrutledge/manual_packages/ycmd/ycmd"))
   :config
   (evil-leader/set-key (kbd "gtd") 'ycmd-goto-definition)
   (evil-leader/set-key (kbd "gtD") 'ycmd-goto-declaration)
