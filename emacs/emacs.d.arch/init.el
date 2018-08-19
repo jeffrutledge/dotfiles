@@ -21,6 +21,8 @@
 ;; Basic Settings
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono Book 9"))
 (setq-default indicate-empty-lines t)
+;;; esc always quits
+(global-set-key [escape] 'keyboard-escape-quit)
 
 ;;  Split Settings
 ;;  (setq split-height-threshold nil)

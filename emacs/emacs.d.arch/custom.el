@@ -20,7 +20,7 @@
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(evil-escape-delay 0.2)
  '(evil-escape-excluded-major-modes (quote (term-mode)))
- '(evil-escape-key-sequence "jw")
+ '(evil-escape-key-sequence "ESC")
  '(nlinum-relative-redisplay-delay 0)
  '(package-selected-packages
    (quote

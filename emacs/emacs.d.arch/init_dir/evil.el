@@ -26,27 +26,16 @@
     "kpb" 'projectile-kill-buffers)
   (global-evil-leader-mode t))
 
-(use-package evil-org
-  :ensure t
-  :after org
-  :config
-  (add-hook 'org-mode-hook 'evil-org-mode)
-  (add-hook 'evil-org-mode-hook
-            (lambda ()
-              (evil-org-set-key-theme)))
-  (require 'evil-org-agenda)
-  (evil-org-agenda-set-keys))
-
-;; (use-package evil-escape
+;; (use-package evil-org
 ;; :ensure t
-;; :after (evil)
-;; :custom
-;; (evil-escape-key-sequence "jw")
-;; (evil-escape-delay 0.2)
-;; (evil-escape-excluded-major-modes '(term-mode))
-;; :init
+;; :after org
 ;; :config
-;; (evil-escape-mode 1))
+;; (add-hook 'org-mode-hook 'evil-org-mode)
+;; (add-hook 'evil-org-mode-hook
+;; (lambda ()
+;; (evil-org-set-key-theme)))
+;; (require 'evil-org-agenda)
+;; (evil-org-agenda-set-keys))
 
 (provide 'evil)
 ;;; evil.el ends here
