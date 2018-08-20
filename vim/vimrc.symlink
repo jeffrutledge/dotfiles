@@ -73,7 +73,7 @@ autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 
 """airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file' ]
+let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
 
 """pymode
 let g:pymode_python = 'python3'
@@ -132,12 +132,4 @@ imap <leader>w <Esc>:w<CR>a
 nmap <leader>db :bd<CR>
 "Map jw to esc
 imap jw <Esc>
-"Map Quick Commands from Insert mode
-" inoremap II <Esc>I
-" inoremap AA <Esc>A
-" inoremap OO <Esc>O
-" inoremap CC <Esc>C
-" inoremap SS <Esc>S
-" inoremap DD <Esc>dd
-" inoremap UU <Esc>u
 """""""""""""""""""""
