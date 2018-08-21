@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+if [[ -a $1/pre_install.sh ]] && sh $1/pre_install.sh
+then
+  echo pre install hook succeded
+  stow $1
+  if [[ -a $1/post_install.sh ]] && sh $1/post_install.sh
+  then
+    echo post install hook succeded
+  else
+    echo !! post install hook failed
+  fi
+else
+  echo !! pre install hook failed
+fi
+
