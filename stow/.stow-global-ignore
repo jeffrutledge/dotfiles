@@ -2,8 +2,9 @@
 .git
 .gitignore
 .local
-.*.example
 README.*
+.*.example
+alias.zsh
 
 pre_install.sh
 post_install.sh

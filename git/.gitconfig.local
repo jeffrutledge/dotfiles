@@ -1,0 +1,5 @@
+[user]
+        name = Jeffrey Rutledge
+        email = jeff_rutledge@icloud.com
+[credential]
+	    helper = /usr/bin/pass-git-helper
