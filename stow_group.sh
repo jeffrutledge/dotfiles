@@ -2,10 +2,10 @@
 
 $stow_hook=./bin/bin/stow_hook
 
-echo setting up stow and bin
-if stow stow && stow bin
+echo setting up stow
+if stow stow
 then
-  echo finished setting up stow and bin
+  echo finished setting up stow
 
   for dotpackage in `cat $1`
   do
