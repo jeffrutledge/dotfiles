@@ -6,6 +6,9 @@ fi
 
 export EDITOR='emacsclient -nc'
 
+# compile with multiple jobs
+export MAKEFLAGS='-j'
+
 export CLICOLOR=true
 
 fpath=($ZSH/functions $fpath)
