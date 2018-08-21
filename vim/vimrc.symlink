@@ -48,7 +48,8 @@ highlight YcmWarningSign guifg=DodgerBlue1
 "Misc
 let g:ycm_auto_trigger = 1
 let g:ycm_python_binary_path = '/usr/bin/python'
-let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.6.0/src'
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 """ctrlp
 let g:ctrlp_open_multiple_files = '2h'
