@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if mkdir -p ~/.mail/hmc && mkdir -p ~/.mail/personal
 then

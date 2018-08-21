@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if systemctl --now --user enable mail_sync.timer
 then

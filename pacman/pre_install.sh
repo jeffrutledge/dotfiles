@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if pacman -Syu && pacman -S `cat package_list`
 then
