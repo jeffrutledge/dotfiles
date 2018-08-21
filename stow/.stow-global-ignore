@@ -4,3 +4,6 @@
 .local
 .*.example
 README.*
+
+pre_install.sh
+post_install.sh
