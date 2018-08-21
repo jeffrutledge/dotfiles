@@ -1,4 +1,7 @@
 # Dotfiles
-Thank you very much to Zach Holman for the [great dotfile template](https://github.com/holman/dotfiles).
 
-Not much to say, just my dot files.
+Uses GNU `stow`.
+
+## Setup
+Run `stow_group.sh [dotfile group]`.
+Dotfile groups can be found in `dotfile_groups`
