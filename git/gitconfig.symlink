@@ -12,12 +12,10 @@
         excludesfile = ~/.gitignore
         editor = vim
 [diff]
-	tool = vimdiff
+        tool = vimdiff
 [difftool]
-        prompt = false
+        prompt = true
 [help]
         autocorrect = 1
 [push]
         default = simple
-[credential]
-	helper = /usr/bin/pass-git-helper
