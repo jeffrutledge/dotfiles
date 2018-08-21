@@ -9,8 +9,8 @@ git/gitconfig.local.symlink
 i3/i3wm_mod.local.arch
 
 # Ignore all of emacs.d, which is mostly compiled/downloaded scripts.
-emacs/emacs.d.arch/*
+emacs/.emacs.d/*
 # But don't ignore these specific locations.
-!emacs/emacs.d.arch/init.el
-!emacs/emacs.d.arch/custom.el
-!emacs/emacs.d.arch/init_dir
+!emacs/.emacs.d/init.el
+!emacs/.emacs.d/custom.el
+!emacs/.emacs.d/init_dir
