@@ -1,20 +1,12 @@
 # temporarily fix systemd bug
-export LC_ALL=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
 
 # shortcut to this dotfiles path is $ZSH
-export ZSH=~/.dotfiles
-
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
-fi
+export DOTFILES=~/.dotfiles
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}

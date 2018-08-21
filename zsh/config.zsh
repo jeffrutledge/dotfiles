@@ -39,6 +39,6 @@ if [[ "$(uname -s)" == "Linux" ]]
 then
   for p in $manual_package_paths
   do
-    [[ -a $p ]] && source $p && echo sourced $p
+    [[ -a $p ]] && source $p
   done
 fi
