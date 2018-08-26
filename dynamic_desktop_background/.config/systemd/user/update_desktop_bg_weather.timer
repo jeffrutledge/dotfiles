@@ -4,7 +4,7 @@ Description=Run service updating the desktop background to display current weath
 [Timer]
 OnBootSec=1min
 OnUnitActiveSec=15min
-Unit=update_desktop_bg_to_weather.service
+Unit=update_desktop_bg_weather.service
 
 [Install]
 WantedBy=timers.target
