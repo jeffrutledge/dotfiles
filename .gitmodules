@@ -1,0 +1,3 @@
+[submodule "_dynamic_desktop_background"]
+	path = _dynamic_desktop_background
+	url = https://github.com/jeffrutledge/dynamic_desktop_background.git
