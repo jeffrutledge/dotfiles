@@ -4,7 +4,7 @@
 .local
 README.*
 .*.example
-alias.zsh
+.*.zsh
 
 pre_install.sh
 post_install.sh
