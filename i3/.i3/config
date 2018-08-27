@@ -256,7 +256,7 @@ bindsym $mod+w layout tabbed
 ###########################################################
 
 # exit i3
-set $i3exit $HOME/.dotfiles/bin/i3exit
+set $i3exit $HOME/bin/i3exit
 mode "exit" {
     bindsym l mode "default", exec --no-startup-id $i3exit lock
     bindsym e mode "default", exec --no-startup-id $i3exit logout
@@ -271,7 +271,7 @@ mode "exit" {
 bindsym $mod+p mode "exit"
 
 # external display
-set $external_display $HOME/.dotfiles/bin/external_display
+set $external_display $HOME/bin/external_display
 mode "display" {
     bindsym o mode "default", exec --no-startup-id $external_display off
     bindsym a mode "default", exec --no-startup-id $external_display on
