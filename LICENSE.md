@@ -1,7 +1,6 @@
 The MIT License
 
-Original work Copyright (c) 2016 Zach Holman, http://zachholman.com
-Modified work Copyright 2016 Jeffrey Rutledge
+Original work Copyright 2018 Jeffrey Rutledge
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
