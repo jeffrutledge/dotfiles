@@ -1,13 +1,7 @@
 #!/bin/sh
-#
-# systemd
-#
-# This enables a service that locks on suspend
 
-echo -e "\t - enabling suspend lock service."
-sudo cp ./suspend@.service /etc/systemd/system/
-sudo systemctl enable suspend@$USER
-sudo systemctl start suspend@$USER
+cp ./suspend@.service /etc/systemd/system/
+systemctl enable --now suspend@$USER
 
 cursive_monagram_dir=~/safe/personal/graphics/sketches/cursive_monagram
 
@@ -32,5 +26,3 @@ then
 else
   echo -e "\t\t Rember to make your own ~/.lock_screen_image.png!"
 fi
-
-exit 0
