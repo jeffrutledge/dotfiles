@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-$stow_dotpackage=./bin/bin/stow_dotpackage
+stow_dotpackage=./bin/bin/stow_dotpackage
 
 echo setting up stow
 if stow stow
