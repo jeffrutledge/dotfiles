@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cp ./suspend@.service /etc/systemd/system/
-systemctl enable --now suspend@$USER
+systemctl enable suspend@$USER
 
 cursive_monagram_dir=~/safe/personal/graphics/sketches/cursive_monagram
 
