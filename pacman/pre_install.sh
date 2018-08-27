@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if pacman -Syu && pacman -S `cat package_list`
+if pacman -Syu && pacman -S `cat _package_list`
 then
   echo installed pacman package list
 else
