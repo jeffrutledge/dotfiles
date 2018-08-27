@@ -2,7 +2,7 @@
 # export LC_ALL=en_US.UTF-8
 
 # shortcut to this dotfiles path is $ZSH
-export DOTFILES=~/.dotfiles
+export DOTFILES=~/dotfiles
 
 # all of our zsh files
 typeset -U config_files
