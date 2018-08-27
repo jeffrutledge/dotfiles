@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-$stow_hook=./bin/bin/stow_hook
+$stow_dotpackage=./bin/bin/stow_dotpackage
 
 echo setting up stow
 if stow stow
@@ -10,7 +10,7 @@ then
   for dotpackage in `cat $1`
   do
     echo stowing $dotpackage
-    if $stow_hook $dotpackage
+    if $stow_dotpackage $dotpackage
     then
       echo finished stowing $dotpackage
     else
