@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 echo "Installing TLP"
 
 pacman -S tlp
