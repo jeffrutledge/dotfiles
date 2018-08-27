@@ -5,6 +5,7 @@
 README.*
 .*.example
 .*.zsh
+_.*
 
 pre_install.sh
 post_install.sh
