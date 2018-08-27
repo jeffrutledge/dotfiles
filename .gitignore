@@ -1,7 +1,7 @@
 __pycache__
 
-vim/vim.symlink/bundle/
-vim/vim.symlink/.netrwhist
+vim/.vim/bundle
+vim/.vim/.netrwhist
 *.spl
 
 git/gitconfig.local.symlink
