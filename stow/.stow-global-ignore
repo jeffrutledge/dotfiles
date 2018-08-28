@@ -4,6 +4,7 @@
 .local
 README.*
 .*.example
+.*.pem
 .*.zsh
 _.*
 
