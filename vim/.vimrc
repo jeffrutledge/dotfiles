@@ -1,37 +1,16 @@
-""""Vundle Header""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'lervag/vimtex'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'python-mode/python-mode'
-Plugin 'easymotion/vim-easymotion'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+Plug 'VundleVim/Vundle.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator'
+Plug 'altercation/vim-colors-solarized'
+Plug 'lervag/vimtex'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rhysd/vim-clang-format'
+Plug 'python-mode/python-mode'
+Plug 'easymotion/vim-easymotion'
+call plug#end()
 
 """"""""""Plugin Settings""""""""""
 """solarized

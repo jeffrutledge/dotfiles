@@ -1,17 +1,18 @@
 #!/bin/sh
 
-vundledir=~/.vim/bundle/Vundle.vim
-if [[ ! -d $vundledir ]]
+plug=~/.vim/autoload/plug.vim
+if [[ ! -a $plug ]]
 then
-  echo "installing vundle."
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  echo "installing vim-plug."
+  curl -fLo $plug --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-echo "installing vundle packages."
-vim +PluginInstall +qall
+
+echo "installing plug packages."
+vim -u None +PlugInstall +qall
 
 echo -e "Compiling YCM."
-if [[ ! -e ~/.vim/bundle/YouCompleteMe/install.py ]]
+if [[ ! -e ~/.vim/plugged/YouCompleteMe/install.py ]]
 then
   echo "No compile script found for YCM. Check YCM is installed properly."
   exit 1

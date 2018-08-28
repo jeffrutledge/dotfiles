@@ -1,6 +1,7 @@
 __pycache__
 
-vim/.vim/bundle
+vim/.vim/plugged
+vim/.vim/autoload/plug.vim
 vim/.vim/.netrwhist
 *.spl
 
