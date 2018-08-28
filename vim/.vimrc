@@ -15,7 +15,7 @@ call plug#end()
 """"""""""Plugin Settings""""""""""
 """solarized
 silent! colorscheme solarized
-" set bg=dark
+set bg=dark
 
 """YCM
 "c++ completion (default compile settings)
