@@ -42,13 +42,13 @@ then
     local disk_name=$(hdiutil info | grep /Volumes/notes | cut -f1)
     hdiutil detach $disk_name
   }
-# Create a new journal entry
-function new_journal_entry() {
-  if onotes; then
-    echo '\n##'$(date +"%Y-%m-%d %H:%M")'\n' >> journal.md
-    vim -c 'startinsert' + journal.md
-    qnotes
-  fi
-}
-alias nje=new_journal_entry
+  # Create a new journal entry
+  function new_journal_entry() {
+    if onotes; then
+      echo '\n##'$(date +"%Y-%m-%d %H:%M")'\n' >> journal.md
+      vim -c 'startinsert' + journal.md
+      qnotes
+    fi
+  }
+  alias nje=new_journal_entry
 fi

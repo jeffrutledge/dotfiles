@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # compile with multiple jobs
 export MAKEFLAGS='-j'
