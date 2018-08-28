@@ -10,6 +10,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'python-mode/python-mode'
 Plug 'easymotion/vim-easymotion'
+
+Plug 'blindFS/vim-taskwarrior'
 call plug#end()
 
 """"""""""Plugin Settings""""""""""
