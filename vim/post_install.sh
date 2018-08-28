@@ -9,7 +9,7 @@ fi
 
 
 echo "installing plug packages."
-vim -u None +PlugInstall +qall
+vim -u NONE +PlugInstall +qall
 
 echo -e "Compiling YCM."
 if [[ ! -e ~/.vim/plugged/YouCompleteMe/install.py ]]
@@ -18,4 +18,4 @@ then
   exit 1
 fi
 
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer --system-libclang
+~/.vim/plugged/YouCompleteMe/install.py --clang-completer --system-libclang
