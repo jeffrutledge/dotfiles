@@ -10,6 +10,14 @@
 
 # Use the command 'task show' to see all defaults and overrides
 
+# intheam
+taskd.certificate=/home/jrutledge/dotfiles/taskwarrior/private.certificate.pem
+taskd.key=/home/jrutledge/dotfiles/taskwarrior/private.key.pem
+taskd.ca=/home/jrutledge/dotfiles/taskwarrior/ca.cert.pem
+taskd.server=taskwarrior.inthe.am:53589
+taskd.credentials=inthe_am/soccer2196/611bb1f8-eb77-479b-8ae2-0c883c407e9d
+taskd.trust=ignore hostname
+
 # Files
 data.location=~/.task
 
