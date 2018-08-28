@@ -9,13 +9,4 @@ fi
 
 
 echo "installing plug packages."
-vim -u NONE +PlugInstall +qall
-
-echo -e "Compiling YCM."
-if [[ ! -e ~/.vim/plugged/YouCompleteMe/install.py ]]
-then
-  echo "No compile script found for YCM. Check YCM is installed properly."
-  exit 1
-fi
-
-~/.vim/plugged/YouCompleteMe/install.py --clang-completer --system-libclang
+vim +PlugInstall +qall

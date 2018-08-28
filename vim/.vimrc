@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
 Plug 'rdnetto/YCM-Generator'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lervag/vimtex'
@@ -14,7 +14,7 @@ call plug#end()
 
 """"""""""Plugin Settings""""""""""
 """solarized
-colorscheme solarized
+silent! colorscheme solarized
 " set bg=dark
 
 """YCM
