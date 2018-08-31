@@ -24,7 +24,7 @@
  '(nlinum-relative-redisplay-delay 0)
  '(package-selected-packages
    (quote
-    (use-package solarized-theme realgud py-autopep8 powerline nlinum-relative markdown-mode latex-preview-pane helm-projectile helm-ebdb helm-bibtex flycheck evil-leader evil-escape company-ycmd company-math company-jedi company-auctex aggressive-indent adaptive-wrap)))
+    (yasnippet use-package solarized-theme realgud py-autopep8 powerline nlinum-relative markdown-mode latex-preview-pane helm-projectile helm-ebdb helm-bibtex flycheck evil-leader evil-escape company-ycmd company-math company-jedi company-auctex aggressive-indent adaptive-wrap)))
  '(projectile-globally-ignored-file-suffixes
    (quote
     ("pyc" "pdf" "log" "fls" "aux" "fdb_latexmk" "synctex.gz")))
