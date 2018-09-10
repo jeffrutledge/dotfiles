@@ -9,6 +9,11 @@ set spell spelllang=en_us
 
 """ Vimtex settings
 let g:vimtex_quickfix_mode = 2
+let g:vimtex_quickfix_open_on_warning = 0
+
+""" Mapping
+"toggle if warnings open quickfix window
+nnoremap <leader>lw :let vimtex_quickfix_open_on_warning=!vimtex_quickfix_open_on_warning<CR>:echo vimtex_quickfix_open_on_warning<CR>
 
 "clean on close
 augroup vimtex_config
