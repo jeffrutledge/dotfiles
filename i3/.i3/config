@@ -11,7 +11,7 @@ set $monitor_external HDMI1
 
 ##### Solarized Colors
 # Solarized color scheme for the X Window System
-# 
+#
 # http://ethanschoonover.com/solarized
 
 # Common
@@ -111,26 +111,26 @@ for_window [class="Spotify"] move to workspace 92:music
 # Assigned Workspaces
 ###########################################################
 
-workspace 1  output $monitor_internal
-workspace 2  output $monitor_internal
-workspace 3  output $monitor_internal
-workspace 4  output $monitor_internal
-workspace 5  output $monitor_internal
-workspace 6  output $monitor_internal
-workspace 7  output $monitor_internal
-workspace 8  output $monitor_internal
-workspace 9  output $monitor_internal
-workspace 10 output $monitor_internal
+workspace 1:1  output $monitor_internal
+workspace 3:2  output $monitor_internal
+workspace 5:3  output $monitor_internal
+workspace 7:4  output $monitor_internal
+workspace 9:5  output $monitor_internal
+workspace 11:6  output $monitor_internal
+workspace 13:7  output $monitor_internal
+workspace 15:8  output $monitor_internal
+workspace 17:9  output $monitor_internal
+workspace 19:10 output $monitor_internal
 
-workspace 11:f1  output $monitor_external
-workspace 12:f2  output $monitor_external
-workspace 13:f3  output $monitor_external
-workspace 14:f4  output $monitor_external
-workspace 15:f5  output $monitor_external
-workspace 16:f6  output $monitor_external
-workspace 17:f7  output $monitor_external
-workspace 18:f8  output $monitor_external
-workspace 19:f9  output $monitor_external
+workspace 2:f1  output $monitor_external
+workspace 4:f2  output $monitor_external
+workspace 6:f3  output $monitor_external
+workspace 8:f4  output $monitor_external
+workspace 10:f5  output $monitor_external
+workspace 12:f6  output $monitor_external
+workspace 14:f7  output $monitor_external
+workspace 16:f8  output $monitor_external
+workspace 18:f9  output $monitor_external
 workspace 20:f10 output $monitor_external
 workspace 90:mail output $monitor_external
 workspace 91:todo output $monitor_external
@@ -162,27 +162,27 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace 1:1
+bindsym $mod+2 workspace 3:2
+bindsym $mod+3 workspace 5:3
+bindsym $mod+4 workspace 7:4
+bindsym $mod+5 workspace 9:5
+bindsym $mod+6 workspace 11:6
+bindsym $mod+7 workspace 13:7
+bindsym $mod+8 workspace 15:8
+bindsym $mod+9 workspace 17:9
+bindsym $mod+0 workspace 19:10
 
 # second monitor
-bindsym $mod+F1     workspace 11:f1
-bindsym $mod+F2     workspace 12:f2
-bindsym $mod+F3     workspace 13:f3
-bindsym $mod+F4     workspace 14:f4
-bindsym $mod+F5     workspace 15:f5
-bindsym $mod+F6     workspace 16:f6
-bindsym $mod+F7     workspace 17:f7
-bindsym $mod+F8     workspace 18:f8
-bindsym $mod+F9     workspace 19:f9
+bindsym $mod+F1     workspace 2:f1
+bindsym $mod+F2     workspace 4:f2
+bindsym $mod+F3     workspace 6:f3
+bindsym $mod+F4     workspace 8:f4
+bindsym $mod+F5     workspace 10:f5
+bindsym $mod+F6     workspace 12:f6
+bindsym $mod+F7     workspace 14:f7
+bindsym $mod+F8     workspace 16:f8
+bindsym $mod+F9     workspace 18:f9
 bindsym $mod+F10    workspace 20:f10
 bindsym $mod+m      workspace 90:mail
 bindsym $mod+t      workspace 91:todo
@@ -205,27 +205,27 @@ bindsym $mod+$move_mod+Up move up
 bindsym $mod+$move_mod+Right move right
 
 # move focused container to workspace
-bindsym $mod+$move_mod+1 move container to workspace 1
-bindsym $mod+$move_mod+2 move container to workspace 2
-bindsym $mod+$move_mod+3 move container to workspace 3
-bindsym $mod+$move_mod+4 move container to workspace 4
-bindsym $mod+$move_mod+5 move container to workspace 5
-bindsym $mod+$move_mod+6 move container to workspace 6
-bindsym $mod+$move_mod+7 move container to workspace 7
-bindsym $mod+$move_mod+8 move container to workspace 8
-bindsym $mod+$move_mod+9 move container to workspace 9
-bindsym $mod+$move_mod+0 move container to workspace 10
+bindsym $mod+$move_mod+1 move container to workspace 1:1
+bindsym $mod+$move_mod+2 move container to workspace 3:2
+bindsym $mod+$move_mod+3 move container to workspace 5:3
+bindsym $mod+$move_mod+4 move container to workspace 7:4
+bindsym $mod+$move_mod+5 move container to workspace 9:5
+bindsym $mod+$move_mod+6 move container to workspace 11:6
+bindsym $mod+$move_mod+7 move container to workspace 13:7
+bindsym $mod+$move_mod+8 move container to workspace 15:8
+bindsym $mod+$move_mod+9 move container to workspace 17:9
+bindsym $mod+$move_mod+0 move container to workspace 19:10
 
 #second monitor
-bindsym $mod+$move_mod+F1       move container to workspace 11:f1
-bindsym $mod+$move_mod+F2       move container to workspace 12:f2
-bindsym $mod+$move_mod+F3       move container to workspace 13:f3
-bindsym $mod+$move_mod+F4       move container to workspace 14:f4
-bindsym $mod+$move_mod+F5       move container to workspace 15:f5
-bindsym $mod+$move_mod+F6       move container to workspace 16:f6
-bindsym $mod+$move_mod+F7       move container to workspace 17:f7
-bindsym $mod+$move_mod+F8       move container to workspace 18:f8
-bindsym $mod+$move_mod+F9       move container to workspace 19:f9
+bindsym $mod+$move_mod+F1       move container to workspace 2:f1
+bindsym $mod+$move_mod+F2       move container to workspace 4:f2
+bindsym $mod+$move_mod+F3       move container to workspace 6:f3
+bindsym $mod+$move_mod+F4       move container to workspace 8:f4
+bindsym $mod+$move_mod+F5       move container to workspace 10:f5
+bindsym $mod+$move_mod+F6       move container to workspace 12:f6
+bindsym $mod+$move_mod+F7       move container to workspace 14:f7
+bindsym $mod+$move_mod+F8       move container to workspace 16:f8
+bindsym $mod+$move_mod+F9       move container to workspace 18:f9
 bindsym $mod+$move_mod+F10      move container to workspace 20:f10
 bindsym $mod+$move_mod+m        move container to workspace 90:mail
 bindsym $mod+$move_mod+t        move container to workspace 91:todo
