@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+
 Plug 'VundleVim/Vundle.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
 Plug 'rdnetto/YCM-Generator'
@@ -10,14 +11,15 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'python-mode/python-mode'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-scriptease'
 
-Plug 'blindFS/vim-taskwarrior'
 call plug#end()
 
 """"""""""Plugin Settings""""""""""
 """solarized
+syntax enable
+set background=dark
 silent! colorscheme solarized
-set bg=dark
 
 """YCM
 "c++ completion (default compile settings)
@@ -77,7 +79,7 @@ let g:EasyMotion_smartcase = 1
 """User Settings"""""
 syntax on
 set relativenumber
-set cursorline
+" set cursorline
 set breakindent
 set laststatus=2
 set mouse=
