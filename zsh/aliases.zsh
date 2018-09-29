@@ -1,5 +1,7 @@
 alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
 
+# mount 
+
 # SSH KNUTH
 alias knuth='ssh jrutledge@knuth.cs.hmc.edu'
 
@@ -13,6 +15,7 @@ alias -s pdf='pdf-open'
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
 then
+  alias userpermmount='sudo mount -o gid=users,fmask=113,dmask=002'
   alias e='emacsclient -nc'
   alias ls='ls --color=auto'
   alias vim='vim --servername vim' # for vimtex latexmk callbacks
