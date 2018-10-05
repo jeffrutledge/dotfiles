@@ -1,0 +1,6 @@
+#!/bin/sh
+# Convert a markdown document to a pdf using pandoc
+#
+# args[in]
+#       $1 filename without .md
+pandoc -f markdown -t latex -o $1.pdf $1.md
