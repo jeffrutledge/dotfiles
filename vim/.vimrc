@@ -59,12 +59,6 @@ autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
 
-"""pymode
-let g:pymode_python = 'python3'
-let g:pymode_breakpoint = 0
-let g:pymode_rope_completion = 0
-let g:pymode_rope = 0
-
 """easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 map <space>f <Plug>(easymotion-bd-f)
