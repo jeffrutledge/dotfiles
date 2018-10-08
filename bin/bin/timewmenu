@@ -6,7 +6,7 @@ choice=$(
 
 for i in {1..$(timew get dom.tag.count)}
 do
-  timew get dom.tag.$i
+  /usr/bin/timew get dom.tag.$i
 done | eval 'dmenu "$@"'
 
 )

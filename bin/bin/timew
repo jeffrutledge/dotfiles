@@ -1,0 +1,5 @@
+#!/bin/zsh
+# 
+# wraps timew to refresh py3status
+
+/usr/bin/timew "$@" && py3-cmd refresh timewarrior
