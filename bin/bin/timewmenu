@@ -2,13 +2,12 @@
 # 
 # Opens demnu to starts a task in timew
 
-DMENU='dmenu -i -fn DejaVuSansMono-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
 choice=$(
 
 for i in {1..$(timew get dom.tag.count)}
 do
   timew get dom.tag.$i
-done | eval $DMENU
+done | eval 'dmenu "$@"'
 
 )
 

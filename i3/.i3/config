@@ -283,6 +283,16 @@ mode "display" {
 }
 bindsym $mod+e mode "display"
 
+# timew
+mode "timew" {
+    bindsym b mode "default", exec --no-startup-id $HOME/bin/timewmenu -i -fn DejaVuSansMono-10 -nb "$S_base02" -nf "$S_base1" -sb "$S_blue" -sf "$S_base3"
+    bindsym e mode "default", exec --no-startup-id timew stop
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+grave mode "timew"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
     # These bindings trigger as soon as you enter the resize mode
