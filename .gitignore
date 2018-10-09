@@ -7,7 +7,7 @@ vim/.vim/autoload/plug.vim
 vim/.vim/.netrwhist
 *.spl
 
-git/gitconfig.local.symlink
+*.local
 
 i3/i3wm_mod.local.arch
 
