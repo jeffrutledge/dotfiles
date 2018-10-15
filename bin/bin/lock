@@ -1,2 +1,2 @@
 #!/bin/zsh
-/usr/bin/i3lock -i $HOME/.lock_screen_image.png
+/usr/bin/i3lock -t -i $HOME/.lock_screen_image.png
