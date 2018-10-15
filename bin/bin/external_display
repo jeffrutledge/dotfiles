@@ -12,8 +12,12 @@ case $1 in
     ;;
   desk)
     echo "setting up displays for desktop" >&2
-    xrandr --output LVDS1 --primary --auto --pos 0x730 --output HDMI1 --auto --pos 1280x0
+    xrandr --output LVDS1 --primary --auto --pos 320x1080 --output HDMI1 --auto
     ;;
+  # desk)
+  #   echo "setting up displays for desktop" >&2
+  #   xrandr --output LVDS1 --primary --auto --pos 0x730 --output HDMI1 --auto --pos 1280x0
+  #   ;;
   underscan)
     echo "turning display on above with underscan" >&2
     xrandr --output LVDS1 --primary --auto --output HDMI1 --auto --above LVDS1 --set underscan on --set "underscan hborder" $2 --set "underscan vborder" $3
