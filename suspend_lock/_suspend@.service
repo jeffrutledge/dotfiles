@@ -6,7 +6,7 @@ Before=sleep.target
 User=%I
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/i3lock -i /home/%I/.lock_screen_image.png
+ExecStart=/home/%I/bin/lock
 
 [Install]
 WantedBy=sleep.target

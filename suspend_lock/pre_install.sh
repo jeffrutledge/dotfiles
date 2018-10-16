@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/zsh
 
-cp ./suspend@.service /etc/systemd/system/
-systemctl enable suspend@$USER
+sudo cp $DOTFILES/suspend_lock/_suspend@.service /etc/systemd/system/suspend@.service
+
+sudo systemctl enable suspend@$USER
 
 cursive_monagram_dir=~/safe/personal/graphics/sketches/cursive_monagram
 
