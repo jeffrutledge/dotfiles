@@ -11,13 +11,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'python-mode/python-mode'
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-scriptease'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
 call plug#end()
 
 """"""""""Plugin Settings""""""""""
-"""solarized
-syntax enable
+"""solarized syntax enable
 set background=dark
 silent! colorscheme solarized
 
@@ -33,7 +32,16 @@ let g:ycm_auto_trigger = 1
 let g:ycm_python_binary_path = '/usr/bin/python'
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-
+let g:ycm_filetype_blacklist = {
+			\ 'tagbar' : 1,
+			\ 'qf' : 1,
+			\ 'notes' : 1,
+			\ 'unite' : 1,
+			\ 'text' : 1,
+			\ 'pandoc' : 1,
+			\ 'infolog' : 1,
+			\ 'mail' : 1
+			\}
 """ctrlp
 let g:ctrlp_open_multiple_files = '2h'
 let g:ctrlp_open_new_file = 'h'
@@ -68,6 +76,10 @@ map <space>l <Plug>(easymotion-bd-jk)
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
 " let g:EasyMotion_disable_two_key_combo = 0
+""" vimwiki
+let g:vimwiki_map_prefix = '<Leader>vw'
+let g:vimwiki_list = [{'path': '~/safe/vimwiki/', 'index': 'index'}]
+" let g:vimwiki_list = [{'path': '~/safe/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""
