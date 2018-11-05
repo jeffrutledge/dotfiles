@@ -27,6 +27,16 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 let g:ycm_confirm_extra_conf = 0
 "let g:ycm_warning_symbol = '->'
 highlight YcmWarningSign guifg=DodgerBlue1
+"Mappings
+nnoremap <leader>jj :YcmCompleter GoTo<CR>
+nnoremap <leader>ji :YcmCompleter GoToInclude<CR>
+nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>jD :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gt :YcmCompleter GetType<CR>
+nnoremap <leader>gp :YcmCompleter GetParent<CR>
+nnoremap <leader>gd :YcmCompleter GetDoc<CR>
+nnoremap <leader>fi :YcmCompleter FixIt<CR>
+
 "Misc
 let g:ycm_auto_trigger = 1
 let g:ycm_python_binary_path = '/usr/bin/python'
