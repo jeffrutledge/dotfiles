@@ -15,7 +15,7 @@ alias -s pdf='pdf-open'
 # Linux Exclusive aliases
 if [[ "$(uname -s)" == "Linux" ]]
 then
-  alias userpermmount='sudo mount -o gid=users,fmask=113,dmask=002'
+  alias userpermmount='sudo mount -ouser,umask=0000'
   alias e='emacsclient -nc'
   alias ls='ls --color=auto'
   alias vim='vim --servername vim' # for vimtex latexmk callbacks

@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
-Plug 'rdnetto/YCM-Generator'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'altercation/vim-colors-solarized'
 Plug 'lervag/vimtex'
 Plug 'vim-airline/vim-airline'
