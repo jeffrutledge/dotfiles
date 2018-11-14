@@ -9,8 +9,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
-Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'easymotion/vim-easymotion'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
 call plug#end()
@@ -123,13 +125,14 @@ autocmd! GUIEnter * set vb t_vb=
 """""""""""""""""""""
 
 """Mappings""""""""""
+"" quickfix list
+nnoremap [e :lne<CR>
+nnoremap ]e :lp<CR>
 " toggle spell
-nmap <leader>s :setlocal spell! spelllang=en_us<CR>
+nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
 " write buffer
-nmap <leader>w :w<CR>
-imap <leader>w <Esc>:w<CR>a
+nnoremap <leader>w :w<CR>
+inoremap <leader>w <Esc>:w<CR>a
 " delete buffer
-nmap <leader>db :bd<CR>
-" escape
-imap jw <Esc>
+nnoremap <leader>db :bd<CR>
 """""""""""""""""""""
