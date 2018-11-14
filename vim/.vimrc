@@ -126,8 +126,8 @@ autocmd! GUIEnter * set vb t_vb=
 
 """Mappings""""""""""
 "" quickfix list
-nnoremap [e :lne<CR>
-nnoremap ]e :lp<CR>
+nnoremap ]e :lne<CR>
+nnoremap [e :lp<CR>
 " toggle spell
 nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
 " write buffer
