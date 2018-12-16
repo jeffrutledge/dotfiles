@@ -1,0 +1,13 @@
+#!/bin/zsh
+# 
+# Mounts encrypted records directory and unmounts when finished
+
+if encfs ~/safe/personal/.records ~/safe/personal/records
+then
+  cd ~/safe/personal/records
+  zsh
+  cd ~
+  fusermount -u ~/safe/personal/records
+  echo unmounted records
+fi
+
