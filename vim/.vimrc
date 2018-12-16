@@ -59,12 +59,11 @@ let g:ctrlp_open_multiple_files = '2h'
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_map = '<leader>f'
 nmap <leader>b :CtrlPBuffer<CR>
-if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files.
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" use ripgrep
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
 endif
 
 """Auto Format
