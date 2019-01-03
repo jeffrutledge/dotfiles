@@ -1,7 +1,5 @@
 alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
 
-# mount 
-
 # SSH KNUTH
 alias knuth='ssh jrutledge@knuth.cs.hmc.edu'
 
@@ -18,9 +16,10 @@ then
   alias userpermmount='sudo mount -ouser,umask=0000'
   alias e='emacsclient -nc'
   alias ls='ls --color=auto'
-  alias vim='vim --servername vim' # for vimtex latexmk callbacks
   alias rswifi='connmanctl disable wifi && sleep 0.1 && connmanctl enable wifi'
 fi
+
+# alias vim='vim --servername vim' # for vimtex latexmk callbacks
 
 # Mac OSX Exclusive aliases
 if [[ "$(uname -s)" == "Darwin" ]]
