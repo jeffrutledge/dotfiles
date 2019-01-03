@@ -17,9 +17,12 @@ then
   alias e='emacsclient -nc'
   alias ls='ls --color=auto'
   alias rswifi='connmanctl disable wifi && sleep 0.1 && connmanctl enable wifi'
+  if [[ $(vim -h | grep servername) ]]
+  then
+    alias vim='vim --servername vim' # for vimtex latexmk callbacks
+  fi
 fi
 
-# alias vim='vim --servername vim' # for vimtex latexmk callbacks
 
 # Mac OSX Exclusive aliases
 if [[ "$(uname -s)" == "Darwin" ]]
