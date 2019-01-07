@@ -88,9 +88,9 @@ bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && $SHELL"
 bindsym $mod+apostrophe exec emacsclient -nc
 # start chromium
 bindsym $mod+c exec chromium #--app=https://google.com
-
-# start dmenu with desktop applications only
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn DejaVuSansMono-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
+# start dmenu to launch desktop application
+bindsym $mod+o exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn DejaVuSansMono-10 -nb $S_base02 -nf $S_base1 -sb $S_blue -sf $S_base3'
+# start passmenu
 bindsym $mod+slash exec --no-startup-id passmenu -i -fn DejaVuSansMono-10 -nb "$S_base02" -nf "$S_base1" -sb "$S_blue" -sf "$S_base3"
 
 # kill focused window
@@ -270,7 +270,7 @@ mode "exit" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+p mode "exit"
+bindsym $mod+e mode "exit"
 
 # external display
 set $external_display $HOME/bin/external_display
@@ -283,7 +283,7 @@ mode "display" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+e mode "display"
+bindsym $mod+d mode "display"
 
 # timew
 mode "timew" {
