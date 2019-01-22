@@ -2,14 +2,21 @@
 # 
 # Opens demnu to starts a task in timew
 
-choice=$(
+tag_list_path=~/dotfiles/timewarrior/_timewmenu_tags
 
-for i in {1..$(timew get dom.tag.count)}
-do
-  /usr/bin/timew get dom.tag.$i
-done | eval 'dmenu "$@"'
+if [ -f $tag_list_path ]
+then
+  choice=$(cat $tag_list_path | eval 'dmenu "$@"')
+else
+  choice=$(
 
-)
+  for i in {1..$(timew get dom.tag.count)}
+  do
+    /usr/bin/timew get dom.tag.$i
+  done | eval 'dmenu "$@"'
+
+  )
+fi
 
 if [ $choice ]; then
   timew start $choice
