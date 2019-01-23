@@ -1,0 +1,8 @@
+# Allow video group to adjust brightness
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
+# Adjust screen brightness according to power state
+# 1st rule for when on AC
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/jrutledge/.Xauthority", RUN+="/usr/bin/xbacklight -ctrl acpi_video0 80"
+# 2nd rule for when on battery
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/jrutledge/.Xauthority", RUN+="/usr/bin/xbacklight -ctrl acpi_video0 30"
