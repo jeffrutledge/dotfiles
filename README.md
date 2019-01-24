@@ -1,7 +1,7 @@
 # Dotfiles
 
 Uses GNU `stow`.
-Directories starting with `_` are not meant to be stowed.
+Files and Directories starting with `_` are not meant to be stowed.
 
 ## Usage
 Run `stow_group.sh [dotfile group]`.
