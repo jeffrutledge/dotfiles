@@ -5,11 +5,11 @@ emacs
 git
 ipython
 tex
+haskeline
 pacman
 X
 i3
 tlp
-mail
 dunst
 zathura
 dynamic_desktop_background
