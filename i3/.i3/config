@@ -58,7 +58,7 @@ new_window pixel 1
 
 # class                 border      backgr.     text        indicator     child_border
 client.focused          $S_blue     $S_base02   $S_base1    $S_cyan       $S_blue
-client.focused_inactive $S_violet   $S_base03   $S_base01   $S_cyan       $S_base02
+client.focused_inactive $S_violet   $S_base03   $S_base01   $S_base01     $S_base02
 client.unfocused        $S_base02   $S_base03   $S_base00   $S_base01     $S_base02
 client.urgent           $S_red      $S_base3    $S_base01   $S_magenta    $S_red
 client.placeholder      #000000     #0c0c0c     #ffffff     #000000       #0c0c0c
