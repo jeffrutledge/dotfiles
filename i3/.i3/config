@@ -106,7 +106,7 @@ exec_always --no-startup-id dunst -config ~/.dunstrc
 # Assigned Windows
 ###########################################################
 
-assign [class="Thunderbird"] 90:mail
+assign [class="Thunderbird"] 90:msgs
 for_window [class="Spotify"] move to workspace 92:music
 
 ###########################################################
@@ -134,7 +134,7 @@ workspace 14:f7  output $monitor_external
 workspace 16:f8  output $monitor_external
 workspace 18:f9  output $monitor_external
 workspace 20:f10 output $monitor_external
-workspace 90:mail output $monitor_external
+workspace 90:msgs output $monitor_external
 workspace 91:todo output $monitor_external
 workspace 92:music output $monitor_external
 
@@ -186,7 +186,7 @@ bindsym $mod+F7     workspace 14:f7
 bindsym $mod+F8     workspace 16:f8
 bindsym $mod+F9     workspace 18:f9
 bindsym $mod+F10    workspace 20:f10
-bindsym $mod+m      workspace 90:mail
+bindsym $mod+m      workspace 90:msgs
 bindsym $mod+t      workspace 91:todo
 bindsym $mod+period workspace 92:music
 
@@ -229,7 +229,7 @@ bindsym $mod+$move_mod+F7       move container to workspace 14:f7
 bindsym $mod+$move_mod+F8       move container to workspace 16:f8
 bindsym $mod+$move_mod+F9       move container to workspace 18:f9
 bindsym $mod+$move_mod+F10      move container to workspace 20:f10
-bindsym $mod+$move_mod+m        move container to workspace 90:mail
+bindsym $mod+$move_mod+m        move container to workspace 90:msgs
 bindsym $mod+$move_mod+t        move container to workspace 91:todo
 bindsym $mod+$move_mod+greater  move container to workspace 92:music
 
