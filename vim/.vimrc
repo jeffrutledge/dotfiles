@@ -1,35 +1,73 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+
+" Base
+"" Aesthetics
 Plug 'altercation/vim-colors-solarized'
-Plug 'lervag/vimtex'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+"" Functionality
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'rhysd/vim-clang-format'
-Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'easymotion/vim-easymotion'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
 Plug 'godlygeek/tabular'
+
+" Language Specific
+"" python
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+"" cpp
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'rhysd/vim-clang-format'
+"" latex
+Plug 'lervag/vimtex'
+"" markdown
 Plug 'plasticboy/vim-markdown'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
 call plug#end()
 
 """"""""""Plugin Settings""""""""""
-"""solarized syntax enable
+" Base
+"" Aesthetics
+""" solarized
+syntax enable
 set background=dark
 silent! colorscheme solarized
+""" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
 
-"""YCM
-"c++ completion (default compile settings)
+"" Functionality
+
+""" ctrlp
+let g:ctrlp_open_multiple_files = '2h'
+let g:ctrlp_open_new_file = 'h'
+let g:ctrlp_map = '<leader>f'
+nmap <leader>b :CtrlPBuffer<CR>
+"""" use ripgrep
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
+
+""" EasyMotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+map <space>f <Plug>(easymotion-bd-f)
+map <space>w <Plug>(easymotion-bd-w)
+map <space>e <Plug>(easymotion-bd-e)
+map <space>l <Plug>(easymotion-bd-jk)
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+""" YCM
+"""" c++ completion (default compile settings)
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-" Don't ask about config files
+"""" Don't ask about config files
 let g:ycm_confirm_extra_conf = 0
-"let g:ycm_warning_symbol = '->'
-highlight YcmWarningSign guifg=DodgerBlue1
-"Mappings
+" let g:ycm_warning_symbol = '->'
+highlight YcmWarningSign ctermfg=Blue
+"""" Mappings
 nnoremap <leader>jj :YcmCompleter GoTo<CR>
 nnoremap <leader>ji :YcmCompleter GoToInclude<CR>
 nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
@@ -38,8 +76,7 @@ nnoremap <leader>gt :YcmCompleter GetType<CR>
 nnoremap <leader>gp :YcmCompleter GetParent<CR>
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
-
-"Misc
+"""" Misc
 let g:ycm_auto_trigger = 1
 let g:ycm_python_binary_path = '/usr/bin/python'
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
@@ -54,43 +91,15 @@ let g:ycm_filetype_blacklist = {
 			\ 'infolog' : 1,
 			\ 'mail' : 1
 			\}
-"""ctrlp
-let g:ctrlp_open_multiple_files = '2h'
-let g:ctrlp_open_new_file = 'h'
-let g:ctrlp_map = '<leader>f'
-nmap <leader>b :CtrlPBuffer<CR>
-" use ripgrep
-if executable('rg')
-  set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-  let g:ctrlp_use_caching = 0
-endif
 
-"""Auto Format
-" ClangFormat
+" Langauge Specific
+"" Auto Format
+"" ClangFormat
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>af :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>af :ClangFormat<CR>
-" Lint Auto Format
+"" PymodeLint Auto Format
 autocmd FileType python nnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
-
-"""airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
-
-"""easymotion
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-map <space>f <Plug>(easymotion-bd-f)
-map <space>w <Plug>(easymotion-bd-w)
-map <space>e <Plug>(easymotion-bd-e)
-map <space>l <Plug>(easymotion-bd-jk)
-" Turn on case insensitive feature
-let g:EasyMotion_smartcase = 1
-" let g:EasyMotion_disable_two_key_combo = 0
-""" vimwiki
-let g:vimwiki_map_prefix = '<Leader>vw'
-let g:vimwiki_list = [{'path': '~/safe/vimwiki/', 'index': 'index'}]
-" let g:vimwiki_list = [{'path': '~/safe/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""
