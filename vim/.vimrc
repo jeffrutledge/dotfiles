@@ -8,10 +8,12 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "" Functionality
+Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
 Plug 'godlygeek/tabular'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
+Plug 'w0rp/ale'
 
 " Language Specific
 "" python
@@ -34,8 +36,10 @@ syntax enable
 set background=dark
 silent! colorscheme solarized
 """ airline
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
+let g:airline#extensions#ale#enabled = 1
 
 "" Functionality
 
@@ -60,12 +64,17 @@ map <space>l <Plug>(easymotion-bd-jk)
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
 
+" ALE
+let g:ale_fix_on_save = 1
+nmap <silent> [e <Plug>(ale_previous_wrap)
+nmap <silent> ]e <Plug>(ale_next_wrap)
+
 """ YCM
 """" c++ completion (default compile settings)
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 """" Don't ask about config files
 let g:ycm_confirm_extra_conf = 0
-" let g:ycm_warning_symbol = '->'
+let g:ycm_warning_symbol = '--'
 highlight YcmWarningSign ctermfg=Blue
 """" Mappings
 nnoremap <leader>jj :YcmCompleter GoTo<CR>
@@ -133,9 +142,9 @@ autocmd! GUIEnter * set vb t_vb=
 """""""""""""""""""""
 
 """Mappings""""""""""
-"" quickfix list
-nnoremap ]e :lne<CR>
-nnoremap [e :lp<CR>
+"" loclist
+" nnoremap ]e :lne<CR>
+" nnoremap [e :lp<CR>
 " toggle spell
 nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
 " write buffer
