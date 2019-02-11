@@ -36,13 +36,11 @@ syntax enable
 set background=dark
 silent! colorscheme solarized
 """ airline
-
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled   = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
-let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled       = 1
 
 "" Functionality
-
 """ ctrlp
 let g:ctrlp_open_multiple_files = '2h'
 let g:ctrlp_open_new_file = 'h'
@@ -54,7 +52,6 @@ if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
 endif
-
 """ EasyMotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 map <space>f <Plug>(easymotion-bd-f)
@@ -63,6 +60,8 @@ map <space>e <Plug>(easymotion-bd-e)
 map <space>l <Plug>(easymotion-bd-jk)
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
+""" Tabular
+
 
 " ALE
 let g:ale_fix_on_save = 1
