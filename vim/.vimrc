@@ -36,9 +36,9 @@ syntax enable
 set background=dark
 silent! colorscheme solarized
 """ airline
-let g:airline#extensions#tabline#enabled   = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'mixed-indent-file' ]
-let g:airline#extensions#ale#enabled       = 1
+let g:airline#extensions#ale#enabled = 1
 
 "" Functionality
 """ ctrlp
