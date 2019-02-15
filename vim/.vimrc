@@ -8,11 +8,10 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "" Functionality
-Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --clang-completer --system-libclang' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --rust-completer --clang-completer --system-libclang' }
 Plug 'w0rp/ale'
 
 " Language Specific
@@ -25,6 +24,10 @@ Plug 'rhysd/vim-clang-format'
 Plug 'lervag/vimtex'
 "" markdown
 Plug 'plasticboy/vim-markdown'
+"" haskell
+Plug 'itchyny/vim-haskell-indent'
+"" rust
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -100,7 +103,7 @@ let g:ycm_filetype_blacklist = {
 			\ 'mail' : 1
 			\}
 
-" Langauge Specific
+" Language Specific
 "" Auto Format
 "" ClangFormat
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>af :<C-u>ClangFormat<CR>
@@ -108,6 +111,8 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>af :ClangFormat<CR>
 "" PymodeLint Auto Format
 autocmd FileType python nnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
+"" rust
+let g:rustfmt_autosave = 1
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""
