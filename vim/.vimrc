@@ -13,6 +13,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --rust-completer --clang-completer --system-libclang' }
 Plug 'w0rp/ale'
+Plug 'romainl/vim-cool'
 
 " Language Specific
 "" python
