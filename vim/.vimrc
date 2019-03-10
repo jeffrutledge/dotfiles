@@ -10,10 +10,11 @@ Plug 'vim-airline/vim-airline-themes'
 "" Functionality
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular' " Markdown Dependency
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py  --rust-completer --clang-completer --system-libclang' }
 Plug 'w0rp/ale'
-Plug 'romainl/vim-cool'
+Plug 'romainl/vim-cool' " Auto disables search highlight
+Plug 'tpope/vim-surround'
 
 " Language Specific
 "" python
