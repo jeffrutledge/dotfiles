@@ -37,7 +37,6 @@ call plug#end()
 " Base
 "" Aesthetics
 """ solarized
-syntax enable
 set background=dark
 silent! colorscheme solarized
 """ airline
@@ -118,6 +117,7 @@ let g:rustfmt_autosave = 1
 """""""""""""""""""""""""""""""""""
 
 """User Settings"""""
+filetype plugin indent on
 syntax on
 set relativenumber
 " set cursorline
