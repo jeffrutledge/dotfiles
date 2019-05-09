@@ -1,4 +1,0 @@
-#!/bin/zsh
-# create an ssh tunnel to carcer for minecraft server
-ssh -L 127.0.0.1:25565:localhost:25565 jrutledge@carcer.math.hmc.edu
-echo "using local address 127.0.0.1:25565"
