@@ -1,5 +1,5 @@
 #!/bin/zsh
 # 
-# wraps timew to refresh py3status
+# wraps timew to refresh i3blocks
 
-/usr/bin/timew "$@" && py3-cmd refresh timewarrior
+/usr/bin/timew "$@" && pkill -SIGRTMIN+10 i3blocks

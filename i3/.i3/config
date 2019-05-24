@@ -324,7 +324,7 @@ bindsym $mod+r mode "resize"
 bar {
     font pango:DejaVu Sans Mono 8
     position bottom
-    status_command py3status
+    status_command i3blocks
     strip_workspace_numbers yes
 
     colors {
