@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+
 if [[ -z "$INTERFACE" ]] ; then
     INTERFACE="${BLOCK_INSTANCE:-wlp2s0}"
 fi

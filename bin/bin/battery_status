@@ -1,0 +1,30 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+
+BAT_INFO="/sys/class/power_supply/BAT0"
+
+# If directory doesn't exist then don't display anything
+[[ ! -d $BAT_INFO ]] && exit
+
+PERC=$(cat $BAT_INFO/capacity)
+
+STATUS=''
+case $(cat $BAT_INFO/status) in
+  Charging) STATUS='⚡';;
+  Discharging) ;;
+  Full) ;;
+esac
+
+if [[ $PERC -ge 40 ]]; then
+  COLOR=''
+elif [[ $PERC -ge 20 ]]; then
+  COLOR=$(colorscheme yellow)
+else
+  COLOR=$(colorscheme red)
+fi
+
+echo $STATUS$PERC%
+echo $STATUS$PERC%
+echo $COLOR
+exit
