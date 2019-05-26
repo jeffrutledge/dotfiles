@@ -1,0 +1,33 @@
+#!/bin/zsh
+# Return the hex color code for a color of a given color scheme
+#
+# args[in]
+#       $1 color string
+#
+
+# Solarized color scheme for the X Window System
+#
+# http://ethanschoonover.com/solarized
+
+
+# Dark
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+case $1 in
+  yellow)       echo '#b58900' ;;
+  orange)       echo '#cb4b16' ;;
+  red)          echo '#dc322f' ;;
+  magenta)      echo '#d33682' ;;
+  violet)       echo '#6c71c4' ;;
+  blue)         echo '#268bd2' ;;
+  cyan)         echo '#2aa198' ;;
+  green)        echo '#859900' ;;
+esac
