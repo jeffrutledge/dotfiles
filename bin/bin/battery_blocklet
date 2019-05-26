@@ -1,6 +1,8 @@
 #!/bin/zsh
 #
 # Output is formatted for i3blocks
+#
+
 
 BAT_INFO="/sys/class/power_supply/BAT0"
 

@@ -9,13 +9,17 @@ signal=10
 command=curl -Ss 'https://wttr.in?0&T&Q?m' | cut -c 16- | head -2 | xargs echo
 interval=3600
 
+[load]
+command=cpuload_blocklet
+interval=30
+
 [wifi]
-command=wifi_status
+command=wifi_blocklet
 #INTERFACE=wlp2s0
 interval=5
 
 [battery]
-command=battery_status
+command=battery_blocklet
 interval=30
 
 [time]

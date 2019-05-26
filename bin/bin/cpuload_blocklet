@@ -1,0 +1,16 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+#
+
+LOAD=$(cat /proc/loadavg | cut -d ' ' -f1)
+
+COLOR=''
+if [[ $LOAD -ge $(nproc) ]]; then
+  COLOR=$(colorscheme red)
+fi
+
+echo $LOAD
+echo $LOAD
+echo $COLOR
+exit
