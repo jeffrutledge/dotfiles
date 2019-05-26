@@ -4,13 +4,16 @@ command=
 interval=once
 signal=10
 
-
 # Query the weather hourly
 [weather]
 command=curl -Ss 'https://wttr.in?0&T&Q?m' | cut -c 16- | head -2 | xargs echo
 interval=3600
 
-# Update time every 5 seconds
+[wifi]
+command=wifi_status
+#INTERFACE=wlp2s0
+interval=5
+
 [time]
-command=date '+%Y-%m-%d %T '
+command=date '+%Y-%m-%d %T'
 interval=1
