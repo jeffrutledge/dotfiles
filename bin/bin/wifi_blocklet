@@ -10,11 +10,17 @@ fi
 # connection (think desktop), the corresponding block should not be displayed.
 [[ ! -d /sys/class/net/${INTERFACE}/wireless ]] && exit
 
-# If the wifi interface exists but no connection is active, "down" shall be displayed.
 if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]; then
     echo "W: down"
     echo "W: down"
     colorscheme red
+    exit
+fi
+
+if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]]; then
+    echo "W: dormant"
+    echo "W: dormant"
+    colorscheme yellow
     exit
 fi
 
