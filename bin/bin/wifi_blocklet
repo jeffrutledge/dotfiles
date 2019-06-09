@@ -1,30 +1,33 @@
 #!/bin/zsh
 #
 # Output is formatted for i3blocks
+#
 
 if [[ -z "$INTERFACE" ]] ; then
-    INTERFACE="${BLOCK_INSTANCE:-wlp2s0}"
+  INTERFACE="${BLOCK_INSTANCE:-wlp2s0}"
 fi
 
 # As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
 # connection (think desktop), the corresponding block should not be displayed.
 [[ ! -d /sys/class/net/${INTERFACE}/wireless ]] && exit
 
-if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]; then
-    echo "W: down"
-    echo "W: down"
-    colorscheme red
-    exit
+STATUS='W'
+COLOR=''
+if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]]
+then
+  COLOR=$(colorscheme green)
+elif [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]]
+then
+  COLOR=$(colorscheme blue)
+elif [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]
+then
+  COLOR=$(colorscheme red)
+else
+  STATUS='W: ?'
+  COLOR=$(colorscheme yellow)
 fi
 
-if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]]; then
-    echo "W: dormant"
-    echo "W: dormant"
-    colorscheme yellow
-    exit
-fi
-
-echo "W"
-echo "W"
-colorscheme green
+echo $STATUS
+echo $STATUS
+echo $COLOR
 exit
