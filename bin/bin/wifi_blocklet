@@ -15,6 +15,10 @@ STATUS='W'
 COLOR=''
 if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]]
 then
+	# This gets the current wifi service that is connected to
+	SERVICE=$(connmanctl services | awk '/.A(O|R) *\w* *wifi/ {print $3}')
+  STRENGTH=$(connmanctl services ${SERVICE} | awk '/Strength/ {print $3}')
+	STATUS='W: '$STRENGTH
   COLOR=$(colorscheme green)
 elif [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]]
 then
