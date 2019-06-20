@@ -1,8 +1,8 @@
 # Updates on Command
-[timew_status]
-command=
-interval=once
-signal=10
+# [timew_status]
+# command=
+# interval=once
+# signal=10
 
 # Query the weather hourly
 [weather]
