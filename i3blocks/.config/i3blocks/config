@@ -16,7 +16,6 @@ interval=30
 
 [wifi]
 command=wifi_blocklet
-#INTERFACE=wlp2s0
 interval=5
 
 [battery]
