@@ -4,8 +4,9 @@
 #
 
 if [[ -z "$INTERFACE" ]] ; then
-  INTERFACE="${BLOCK_INSTANCE:-wlan0}"
+  INTERFACE="${BLOCK_INSTANCE:-wlp2s0}"
 fi
+
 
 # As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
 # connection (think desktop), the corresponding block should not be displayed.
@@ -16,7 +17,7 @@ COLOR=''
 if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]]
 then
 	# This gets the current wifi service that is connected to
-	SERVICE=$(connmanctl services | awk '/.A(O|R) *\w* *wifi/ {print $3}')
+	SERVICE=$(connmanctl services | awk '/.A(O|R) [[:graph:]]+[[:blank:]]+wifi/ {print $3}')
   STRENGTH=$(connmanctl services ${SERVICE} | awk '/Strength/ {print $3}')
 	STATUS='W: '$STRENGTH
   COLOR=$(colorscheme green)
