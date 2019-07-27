@@ -3,8 +3,14 @@
 # Output is formatted for i3blocks
 #
 
+# If INTERFACE is not defined then try some
 if [[ -z "$INTERFACE" ]] ; then
-  INTERFACE="${BLOCK_INSTANCE:-wlp2s0}"
+  for INTERFACE in wlan0 wlp2s0
+  do
+    if [[ -d /sys/class/net/${INTERFACE}/wireless ]] then
+      break
+    fi
+  done
 fi
 
 
