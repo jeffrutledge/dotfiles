@@ -2,12 +2,16 @@
 #
 # Output is formatted for i3blocks
 #
+# args
+#   $1 button
 
 # If INTERFACE is not defined then try some
-if [[ -z "$INTERFACE" ]] ; then
+if [ -z "$INTERFACE" ]
+then
   for INTERFACE in wlan0 wlp2s0
   do
-    if [[ -d /sys/class/net/${INTERFACE}/wireless ]] then
+    if [ -d /sys/class/net/${INTERFACE}/wireless ]
+    then
       break
     fi
   done
@@ -16,21 +20,21 @@ fi
 
 # As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
 # connection (think desktop), the corresponding block should not be displayed.
-[[ ! -d /sys/class/net/${INTERFACE}/wireless ]] && exit
+[ ! -d /sys/class/net/${INTERFACE}/wireless ] && exit
 
 STATUS='W'
 COLOR=''
-if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]]
+if [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]
 then
 	# This gets the current wifi service that is connected to
 	SERVICE=$(connmanctl services | awk '/.A(O|R) [[:graph:]]+[[:blank:]]+wifi/ {print $3}')
   STRENGTH=$(connmanctl services ${SERVICE} | awk '/Strength/ {print $3}')
 	STATUS='W: '$STRENGTH
   COLOR=$(colorscheme green)
-elif [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]]
+elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]
 then
   COLOR=$(colorscheme blue)
-elif [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]
+elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]
 then
   COLOR=$(colorscheme red)
 else
