@@ -7,7 +7,7 @@ set $move_mod Shift
 set $second_monitor_mod Mod4
 
 set $monitor_internal LVDS1
-set $monitor_external HDMI1
+set $monitor_external DP1
 
 ##### Solarized Colors
 # Solarized color scheme for the X Window System
