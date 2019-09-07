@@ -20,7 +20,7 @@ case $1 in
     ;;
   off)
     echo "turning display off" >&2
-    xrandr --output LVDS1 --primary --auto --output HDMI1 --off
+    xrandr --output LVDS1 --primary --auto --output DP1 --off --output HDMI1 --off
     ;;
   \?)
     echo "Invalid option: -$OPTARG" >&2
