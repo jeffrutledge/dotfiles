@@ -5,9 +5,7 @@
 if encfs ~/safe/personal/.records ~/safe/personal/records
 then
   echo mounted records
-  cd ~/safe/personal/records
-  zsh
-  cd ~
+  gnucash
   fusermount -u ~/safe/personal/records && echo unmounted records || exit 1
 else
   exit 1
