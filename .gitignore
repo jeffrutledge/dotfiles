@@ -8,6 +8,7 @@ vim/.vim/.netrwhist
 *.spl
 
 *.local
+.local*
 
 i3/i3wm_mod.local.arch
 

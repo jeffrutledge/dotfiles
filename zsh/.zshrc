@@ -6,7 +6,8 @@ export DOTFILES=~/dotfiles
 
 # all of our zsh files
 typeset -U config_files
-config_files=($DOTFILES/**/*.zsh)
+config_files=($DOTFILES/**/*.zsh $DOTFILES/**/.*.zsh)
+echo $config_files
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
