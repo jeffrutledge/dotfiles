@@ -12,7 +12,7 @@ case $1 in
     ;;
   desk)
     echo "setting up displays for desktop" >&2
-    xrandr --output LVDS1 --primary --auto --pos 640x1440 --output DP1 --auto
+    xrandr --output LVDS1 --primary --auto --pos 0x900 --output DP1 --auto --pos 1280x0
     ;;
   underscan)
     echo "turning display on above with underscan" >&2
