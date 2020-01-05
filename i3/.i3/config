@@ -282,7 +282,7 @@ mode "display" {
     bindsym a mode "default", exec --no-startup-id $external_display on
     bindsym r mode "default", exec --no-startup-id $external_display right
     bindsym d mode "default", exec --no-startup-id $external_display desk
-    bindsym D mode "default", exec --no-startup-id $external_display desk-above
+    bindsym Shift+D mode "default", exec --no-startup-id $external_display desk-above
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
