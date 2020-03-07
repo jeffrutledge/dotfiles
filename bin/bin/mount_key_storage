@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+dev_path=$1
+mnt_loc=$2
+
+if sudo cryptsetup open $dev_path key_storage && sudo mount /dev/mapper/key_storage $mnt_loc
+then
+  echo mounted key_storage
+  cd $mnt_loc
+  zsh
+  cd -
+  sudo umount $2 && sudo cryptsetup close key_storage && echo unmonted key_storage || exit 1
+else
+  exit 1
+fi
