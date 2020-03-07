@@ -14,6 +14,7 @@ alias -s pdf='pdf-open'
 if [[ "$(uname -s)" == "Linux" ]]
 then
   alias userpermmount='sudo mount -ouser,umask=0000'
+  alias rskbd="xmodmap -e 'clear Lock' && xmodmap -e 'keycode 0x42=Escape'"
   alias e='nvim'
   alias ls='ls --color=auto'
   alias rswifi='connmanctl disable wifi && sleep 0.1 && connmanctl enable wifi'
