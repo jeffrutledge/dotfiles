@@ -16,7 +16,7 @@ case $1 in
     ;;
   desk-lowres)
     echo "setting up displays for desktop" >&2
-    xrandr --output LVDS1 --primary --auto --pos 0x900 --output DP1 --mode 1920x1080i --pos 1280x0
+    xrandr --output LVDS1 --primary --auto --pos 0x900 --output DP1 --mode 1280x720 --pos 1280x0
     ;;
   desk-above)
     echo "setting up displays for desktop above" >&2
