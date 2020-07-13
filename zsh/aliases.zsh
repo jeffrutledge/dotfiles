@@ -17,7 +17,6 @@ then
   alias rskbd="xmodmap -e 'clear Lock' && xmodmap -e 'keycode 0x42=Escape'"
   alias e='nvim'
   alias ls='ls --color=auto'
-  alias rswifi='connmanctl disable wifi && sleep 0.1 && connmanctl enable wifi'
   if [[ $(vim -h | grep servername) ]]
   then
     alias vim='vim --servername vim' # for vimtex latexmk callbacks
