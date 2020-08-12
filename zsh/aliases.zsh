@@ -15,6 +15,8 @@ if [[ "$(uname -s)" == "Linux" ]]
 then
   alias userpermmount='sudo mount -ouser,umask=0000'
   alias rskbd="xmodmap -e 'clear Lock' && xmodmap -e 'keycode 0x42=Escape'"
+  # unloads and reloads apple trackpad driver
+  alias rstrackpad="sudo modprobe -r bcm5974 && sudo modprobe bcm5974"
   alias e='nvim'
   alias ls='ls --color=auto'
   if [[ $(vim -h | grep servername) ]]
