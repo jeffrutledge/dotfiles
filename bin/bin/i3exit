@@ -11,8 +11,7 @@ case "$1" in
         systemctl suspend
         ;;
     hibernate)
-        echo hibernate note configured
-        # systemctl hibernate
+        systemctl hibernate
         ;;
     reboot)
         systemctl reboot

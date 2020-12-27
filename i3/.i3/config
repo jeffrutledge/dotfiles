@@ -266,7 +266,7 @@ mode "exit" {
     bindsym l mode "default", exec --no-startup-id $i3exit lock
     bindsym e mode "default", exec --no-startup-id $i3exit logout
     bindsym s mode "default", exec --no-startup-id $i3exit suspend
-    # bindsym h mode "default", exec --no-startup-id $i3exit hibernate
+    bindsym h mode "default", exec --no-startup-id $i3exit hibernate
     bindsym r mode "default", exec --no-startup-id $i3exit reboot
     bindsym p mode "default", exec --no-startup-id $i3exit poweroff
 
