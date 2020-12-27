@@ -1,0 +1,10 @@
+#!/bin/sh
+status=$(cat /sys/class/power_supply/BAT0/status)
+charge_now=$(cat /sys/class/power_supply/BAT0/charge_now)
+alarm=$(cat /sys/class/power_supply/BAT0/alarm)
+
+if [ "$status" = Discharging -a "$charge_now" -lt "$alarm" ]
+then
+  echo "Battery charge is below alarm level ($charge_now < $alarm), hibernating..."
+  systemctl hibernate
+fi

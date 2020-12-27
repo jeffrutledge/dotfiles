@@ -1,0 +1,7 @@
+[Unit]
+Description=Run script to hibernate if low bat
+
+[Service]
+Environment=DISPLAY=:0
+Type=oneshot
+ExecStart=/home/jrutledge/bin/lowbat-hibernate
