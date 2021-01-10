@@ -3,6 +3,12 @@
 dev_path=$1
 mnt_loc=$2
 
+if [ "$#" -ne 2 ]
+then
+  echo "Usage: $0 DEV_PATH MNT_LOC"
+  exit 1
+fi
+
 if sudo cryptsetup open $dev_path key_storage && sudo mount /dev/mapper/key_storage $mnt_loc
 then
   echo mounted key_storage
