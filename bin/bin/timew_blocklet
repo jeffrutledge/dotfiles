@@ -1,0 +1,20 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+#
+
+if [ $(timew get dom.active) -ne 1 ]
+then
+  exit
+fi
+
+tag=$(timew get dom.active.tag.1)
+duration=$(timew get dom.active.duration.1 | sed 's/\(P\|T\|S\)//g;s/\(H\)/:/g;s/M.*//')
+
+out="TW $tag: $duration"
+color=''
+
+echo $out
+echo $out
+echo $color
+exit

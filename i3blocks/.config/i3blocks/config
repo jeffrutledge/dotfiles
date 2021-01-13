@@ -1,8 +1,8 @@
 # Updates on Command
-# [timew_status]
-# command=
-# interval=once
-# signal=10
+[timew_status]
+command=timew_blocklet
+interval=30
+signal=10
 
 ##### Disabled to deload wttr.in
 # # Query the weather hourly
