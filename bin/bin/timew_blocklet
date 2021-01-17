@@ -1,20 +1,56 @@
-#!/bin/zsh
-#
-# Output is formatted for i3blocks
-#
+#!/usr/bin/python
 
-if [ $(timew get dom.active) -ne 1 ]
-then
-  exit
-fi
+import subprocess
+from datetime import datetime
 
-tag=$(timew get dom.active.tag.1)
-duration=$(timew get dom.active.duration.1 | sed 's/\(P\|T\|S\)//g;s/\(H\)/:/g;s/M.*//')
+import pandas as pd
 
-out="TW $tag: $duration"
-color=''
 
-echo $out
-echo $out
-echo $color
-exit
+def tw_get(dom):
+    bstdout = subprocess.run(['timew', 'get', f'dom.{dom}'],
+                             check=True,
+                             stdout=subprocess.PIPE).stdout
+    return bstdout.decode('utf-8').strip()
+
+
+def format_td(x):
+    ts = x.total_seconds()
+
+    outstr = ''
+    hours, remainder = divmod(ts, 3600)
+    hours = int(hours)
+    if hours > 0:
+        outstr += f'{hours}'
+
+    minutes, seconds = divmod(remainder, 60)
+    minutes = int(minutes)
+    if hours > 0:
+        outstr += f':{minutes:02d}'
+    elif minutes > 0:
+        outstr += f'{minutes}'
+
+    return outstr
+
+
+if __name__ == '__main__':
+    outstr = 'ERROR'
+    color = '#dc322f'
+    if tw_get('active') == '1':
+        tag = tw_get('active.tag.1')
+
+        start = tw_get('active.start.1')
+        duration = datetime.today() - pd.to_datetime(start)
+
+        outstr = f'{tag} {format_td(duration)}'
+        color = '#859900'
+    else:
+        last_end = tw_get('tracked.1.end')
+        duration = datetime.today() - pd.to_datetime(last_end)
+
+        outstr = f'GAP {format_td(duration)}'
+        color = '#268bd2' if duration < pd.Timedelta(minutes=10) else '#b58900'
+
+    outstr = f'TW: {outstr}'
+    print(outstr)
+    print(outstr)
+    print(color)
