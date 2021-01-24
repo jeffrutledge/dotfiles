@@ -1,0 +1,40 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+#
+# args[in]
+#       $1 button clicked
+
+set -e
+
+out=B
+
+bstatus=$(bluetoothctl show | grep 'Powered:' | cut -d' ' -f2)
+if ! [ -z "$1" ]
+then
+  if [ "$bstatus" = 'yes' ]
+  then
+    connmanctl disable bluetooth > /dev/null
+  else
+    connmanctl enable bluetooth > /dev/null
+    bluetoothctl power on > /dev/null
+  fi
+  color=$S_yellow
+else
+  if [ "$bstatus" = 'yes' ]
+  then
+    color=$S_blue
+    if bluetoothctl info > /dev/null
+    then
+      color=$S_green
+    fi
+  else
+    color=$S_red
+  fi
+fi
+
+
+
+echo B
+echo B
+echo $color

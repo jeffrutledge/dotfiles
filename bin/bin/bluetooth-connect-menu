@@ -1,0 +1,19 @@
+#!/bin/zsh
+# 
+# Power and Connect to Paired dvices
+
+set -e
+
+paired_device_names=$(bluetoothctl devices | cut -d' ' -f'3-')
+
+sel_device=$(echo $paired_device_names | dmenu "$@")
+sel_mac_address=$(bluetoothctl devices | grep "$sel_device"| cut -d' ' -f2)
+
+if bluetoothctl show | grep 'Powered: no'
+then
+  connmanctl enable bluetooth
+  bluetoothctl power on
+  sleep 1
+fi
+
+bluetoothctl connect "$sel_mac_address"
