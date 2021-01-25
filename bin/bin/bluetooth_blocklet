@@ -29,7 +29,7 @@ else
       color=$S_green
     fi
   else
-    color=$S_red
+    color=''
   fi
 fi
 
