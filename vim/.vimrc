@@ -90,7 +90,8 @@ nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
 """" Misc
 let g:ycm_auto_trigger = 1
-let g:ycm_python_binary_path = '/usr/bin/python'
+let g:ycm_python_interpreter_path = '/usr/bin/python'
+let g:ycm_python_binary_path = 'python'
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 let g:ycm_filetype_blacklist = {
