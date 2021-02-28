@@ -7,3 +7,4 @@ let g:vim_markdown_math = 1
 " Turn on spell check
 set spell
 set spell spelllang=en_us
+let g:vim_markdown_new_list_item_indent = 2
