@@ -1,3 +1,4 @@
+alias gamp='/home/jrutledge/safe/personal/developer/python/gamp/bin/gamp'
 alias iver3rd='rdesktop -g 97% -P -z -x l -r sound:off -u iver -p i 192.168.1.10:3389'
 
 # SSH KNUTH
