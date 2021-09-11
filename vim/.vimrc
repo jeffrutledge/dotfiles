@@ -62,12 +62,9 @@ map <space>f <Plug>(easymotion-bd-f)
 map <space>w <Plug>(easymotion-bd-w)
 map <space>e <Plug>(easymotion-bd-e)
 map <space>l <Plug>(easymotion-bd-jk)
-" Turn on case insensitive feature
+"""" Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
-""" Tabular
-
-
-" ALE
+""" ALE
 let g:ale_fix_on_save = 1
 nmap <silent> [e <Plug>(ale_previous_wrap)
 nmap <silent> ]e <Plug>(ale_next_wrap)
@@ -106,13 +103,13 @@ let g:ycm_filetype_blacklist = {
 			\}
 
 " Language Specific
-"" Auto Format
 "" ClangFormat
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>af :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>af :ClangFormat<CR>
 "" PymodeLint Auto Format
 autocmd FileType python nnoremap <buffer><Leader>af :PymodeLintAuto<CR>
 autocmd FileType python vnoremap <buffer><Leader>af :PymodeLintAuto<CR>
+"" Pymode
 "" rust
 let g:rustfmt_autosave = 1
 """""""""""""""""""""""""""""""""""
