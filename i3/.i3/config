@@ -100,6 +100,15 @@ bindsym $mod+Shift+b exec --no-startup-id timew stop
 bindsym $mod+$move_mod+q kill
 
 ###########################################################
+# dunst Notifications
+###########################################################
+
+bindsym $mod+x exec --no-startup-id dunstctl close
+bindsym $mod+$move_mod+x exec --no-startup-id dunstctl close-all
+bindsym $mod+z exec --no-startup-id dunstctl context
+bindsym $mod+$move_mod+z exec --no-startup-id dunstctl history-pop
+
+###########################################################
 # Auto startup
 ###########################################################
 
