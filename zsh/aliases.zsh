@@ -20,6 +20,8 @@ then
   alias rstrackpad="sudo modprobe -r bcm5974 && sudo modprobe bcm5974"
   alias e='nvim'
   alias ls='ls --color=auto'
+  # update keyring first
+  alias pacman-update-all='sudo pacman -S archlinux-keyring && sudo pacman -Syu'
   if [[ $(vim -h | grep servername) ]]
   then
     alias vim='vim --servername vim' # for vimtex latexmk callbacks
