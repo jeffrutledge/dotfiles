@@ -81,9 +81,9 @@ bindsym $mod+Shift+r restart
 ###########################################################
 
 # start a terminal
-bindsym $mod+Return exec uxterm
+bindsym $mod+Return exec xterm -e "cd `xcwd` && $SHELL"
 # start a terminal in the same directory
-bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && $SHELL"
+bindsym $mod+Shift+Return exec uxterm
 # start an emacs window
 bindsym $mod+apostrophe exec emacsclient -nc
 # start chromium
