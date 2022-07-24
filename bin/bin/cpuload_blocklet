@@ -4,13 +4,18 @@
 #
 
 LOAD=$(cat /proc/loadavg | cut -d ' ' -f1)
+NLOAD=$(printf '%.2f' $(( $LOAD / $(nproc) )))
 
 COLOR=''
-if [[ $LOAD -ge $(nproc) ]]; then
+if (( $NLOAD > 0.95 ))
+then
   COLOR=$(colorscheme red)
+elif (( $NLOAD > 0.85 ))
+then
+  COLOR=$(colorscheme yellow)
 fi
 
-echo $LOAD
-echo $LOAD
+echo $NLOAD
+echo $NLOAD
 echo $COLOR
 exit
