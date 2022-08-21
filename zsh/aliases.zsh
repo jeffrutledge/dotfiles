@@ -22,6 +22,7 @@ then
   alias ls='ls --color=auto'
   # update keyring first
   alias pacman-update-all='sudo pacman -S archlinux-keyring && sudo pacman -Syu'
+  alias pacman-remove-orphans='pacman -Qtdq | sudo pacman -Rns -'
   if [[ $(vim -h | grep servername) ]]
   then
     alias vim='vim --servername vim' # for vimtex latexmk callbacks
