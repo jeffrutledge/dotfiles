@@ -3,5 +3,6 @@ Description=Run python script to fetch weather and update desktop bg
 
 [Service]
 Environment=DISPLAY=:0
+Environment=PYTHONPATH=%h/dotfiles/dynamic_desktop_background/_lib/src
 Type=oneshot
-ExecStart=/usr/bin/python3 /home/jrutledge/dotfiles/dynamic_desktop_background/_lib/update_desktop_bg_to_weather.py
+ExecStart=/usr/bin/python3 -m dynamic_desktop_background
