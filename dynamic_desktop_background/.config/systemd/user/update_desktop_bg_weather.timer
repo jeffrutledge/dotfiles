@@ -3,7 +3,8 @@ Description=Run service updating the desktop background to display current weath
 
 [Timer]
 OnBootSec=1min
-OnUnitActiveSec=15min
+OnCalendar=*:00/15
+Persistent=True
 Unit=update_desktop_bg_weather.service
 
 [Install]
