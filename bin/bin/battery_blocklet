@@ -21,10 +21,10 @@ case $(cat $BAT_INFO/status) in
 esac
 
 EXIT=0
-if [[ $PERC -ge 40 ]]
+if [[ $PERC -ge 20 ]]
 then
   COLOR=''
-elif [[ $PERC -ge 20 ]]
+elif [[ $PERC -ge 15 ]]
 then
   COLOR=$(colorscheme yellow)
 elif [[ $PERC -ge 10 ]]
