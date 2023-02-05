@@ -10,6 +10,8 @@ BAT_INFO="/sys/class/power_supply/BAT0"
 [[ ! -d $BAT_INFO ]] && exit
 
 PERC=$(cat $BAT_INFO/capacity)
+MINUTES=$(( $(cat $BAT_INFO/charge_now) * 60 /  $(cat $BAT_INFO/current_avg) ))
+TIME=$(printf '%dh%02d' $(( $MINUTES / 60 )) $(($MINUTES % 60)))
 
 STATUS=''
 case $(cat $BAT_INFO/status) in
@@ -18,15 +20,21 @@ case $(cat $BAT_INFO/status) in
   Full) ;;
 esac
 
-if [[ $PERC -ge 40 ]]; then
+EXIT=0
+if [[ $PERC -ge 40 ]]
+then
   COLOR=''
-elif [[ $PERC -ge 20 ]]; then
+elif [[ $PERC -ge 20 ]]
+then
   COLOR=$(colorscheme yellow)
-else
+elif [[ $PERC -ge 10 ]]
+then
   COLOR=$(colorscheme red)
+else
+  EXIT=33 # URGENT FLAG
 fi
 
-echo $STATUS$PERC%
+echo $STATUS$PERC% $TIME
 echo $STATUS$PERC%
 echo $COLOR
-exit
+exit $EXIT
