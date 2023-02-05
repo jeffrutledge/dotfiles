@@ -26,6 +26,10 @@ interval=5
 command=battery_blocklet
 interval=30
 
+[duplicati]
+command=duplicati_blocklet
+interval=300
+
 [time]
 command=date '+%Y-%m-%d %T'
 interval=1
