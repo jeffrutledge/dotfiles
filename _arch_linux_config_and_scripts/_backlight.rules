@@ -1,4 +1,4 @@
-# stored in /etc/udev/rules.d/
+# stored in /etc/udev/rules.d/backlight.rules
 
 # Allow video group to adjust brightness
 ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"

@@ -1,4 +1,4 @@
-# stored in /etc/udev/rules.d/
+# stored in /etc/udev/rules.d/lowbat.rules
 
 # Suspend the system when battery level drops to 6% or lower
-SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[0-6]", RUN+="/usr/bin/systemctl hibernate"
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[0-5]", RUN+="/usr/bin/systemctl hibernate"
