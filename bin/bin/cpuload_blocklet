@@ -5,12 +5,18 @@
 
 LOAD=$(cat /proc/loadavg | cut -d ' ' -f1)
 
+NORM_LOAD=$(printf %0.2f $(( $LOAD / $(nproc) )))
+
 COLOR=''
-if [[ $LOAD -ge $(nproc) ]]; then
+if (( $NORM_LOAD > 1 ))
+then
   COLOR=$(colorscheme red)
+elif (( $NORM_LOAD > 0.85 ))
+then
+  COLOR=$(colorscheme yellow)
 fi
 
-echo $LOAD
-echo $LOAD
+echo $NORM_LOAD
+echo $NORM_LOAD
 echo $COLOR
 exit
