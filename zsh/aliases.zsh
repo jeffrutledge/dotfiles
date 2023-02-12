@@ -21,7 +21,7 @@ then
   alias e='nvim'
   alias ls='ls --color=auto'
   # update keyring first
-  alias pacman-update-all='sudo pacman -S archlinux-keyring && sudo pacman -Syu'
+  alias pacman-update-all='sudo pacman -S archlinux-keyring && sudo pacman -Syu && sudo aura -Ayu'
   alias pacman-remove-orphans='pacman -Qtdq | sudo pacman -Rns -'
   if [[ $(vim -h | grep servername) ]]
   then
