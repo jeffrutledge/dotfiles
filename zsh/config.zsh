@@ -33,6 +33,7 @@ bindkey -v
 manual_package_paths=(
   $HOME'/manual_packages/z/z.sh'
   '/usr/share/fzf/completion.zsh'
+  '/usr/share/fzf/key-bindings.zsh'
   '/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
 )
 if [[ "$(uname -s)" == "Linux" ]]
