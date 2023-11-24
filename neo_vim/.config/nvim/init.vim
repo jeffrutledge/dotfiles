@@ -4,3 +4,5 @@ source ~/.vimrc
 
 " live substitution
 set inccommand=nosplit
+
+lua require('neorg_cfg')

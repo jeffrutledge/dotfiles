@@ -1,5 +1,5 @@
 xterm*termName: xterm-256color
-xterm*faceName: dejavusansmono:pixelsize=11
+xterm*faceName: dejavusansmnerdfontmono:pixelsize=11
 xterm*borderWidth:0
 Xcursor.size: 8
 

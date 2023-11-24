@@ -15,6 +15,7 @@ i3blocks
 feh
 dmenu
 ttf-dejavu
+ttf-dejavu-nerd
 openssh
 encfs
 pulseaudio

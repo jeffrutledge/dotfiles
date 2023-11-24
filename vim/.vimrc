@@ -16,6 +16,10 @@ Plug 'w0rp/ale'
 Plug 'romainl/vim-cool' " Auto disables search highlight
 Plug 'tpope/vim-surround'
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-neorg/neorg', { 'branch': 'main', 'do': ':Neorg sync-parsers'}
+
 " Language Specific
 "" python
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
@@ -46,6 +50,7 @@ let g:airline#extensions#ale#enabled = 1
 
 "" Functionality
 """ ctrlp
+let g:ctrlp_root_markers = ['.ctrlp_root']
 let g:ctrlp_open_multiple_files = '2h'
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_map = '<leader>f'
@@ -142,7 +147,7 @@ autocmd! GUIEnter * set vb t_vb=
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
-:set guifont=dejavusansmono
+:set guifont=DejaVuSansMNerdFontMono-Regular
 """""""""""""""""""""
 
 """Mappings""""""""""
