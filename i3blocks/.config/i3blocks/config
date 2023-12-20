@@ -18,17 +18,22 @@ interval=30
 command=bluetooth_blocklet $button
 interval=5
 
+[duplicati]
+command=duplicati_blocklet
+interval=300
+
 [wifi]
 command=wifi_blocklet
 interval=5
 
+[audio]
+command=audio_blocklet
+interval=30
+signal=10
+
 [battery]
 command=battery_blocklet
 interval=30
-
-[duplicati]
-command=duplicati_blocklet
-interval=300
 
 [time]
 command=date '+%Y-%m-%d %T'

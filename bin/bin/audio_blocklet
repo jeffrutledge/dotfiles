@@ -1,0 +1,22 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+#
+
+# This is the first volume (usually left front, but reasonable to assume they are all the same)
+perc=$(pactl get-sink-volume @DEFAULT_SINK@ | head -n 1 | cut -d, -f1 | cut -d/ -f2 | sed 's/ //g')
+muted=$(pactl get-sink-mute @DEFAULT_SINK@ | sed 's/ //g' | cut -d':' -f2)
+
+full_text="A: $perc"
+color=$(colorscheme blue)
+
+if [[ "$muted" == "yes" ]]
+then
+  full_text="A:m$perc"
+  color=""
+fi
+
+echo $full_text
+echo $full_text
+echo $color
+exit 0
