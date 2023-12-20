@@ -10,8 +10,15 @@ c.tabs.tabs_are_windows = True
 c.downloads.remove_finished = 0
 
 # notifications
+config.set('content.notifications.enabled', True, 'https://calendar.google.com')
+config.set('content.notifications.enabled', False, 'https://www.facebook.com')
 config.set('content.notifications.enabled', False, 'https://www.youtube.com')
 config.set('content.notifications.enabled', False, 'https://www.reddit.com')
+
+# let google calendar open cal links
+config.set('content.register_protocol_handle', True, 'https://calendar.google.com?cid=%25s')
+# let gmail open mail links
+config.set('content.register_protocol_handle', True, 'https://mail.google.com?extsrc=mailto&url=%25s')
 
 # Settings in default generated config.py
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
@@ -28,6 +35,6 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 config.set('content.javascript.enabled', True, 'qute://*/*')
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
-
+# keybindings
 config.bind('<ctrl-j>', 'completion-item-focus next', mode='command')
 config.bind('<ctrl-k>', 'completion-item-focus prev', mode='command')
