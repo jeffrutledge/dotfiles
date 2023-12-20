@@ -12,6 +12,8 @@ vim/.vim/.netrwhist
 
 i3/i3wm_mod.local.arch
 
+qutebrowser/.config/qutebrowser/qsettings
+
 # Ignore all of emacs.d, which is mostly compiled/downloaded scripts.
 emacs/.emacs.d/*
 # But don't ignore these specific locations.
