@@ -23,7 +23,7 @@ command=duplicati_blocklet
 interval=300
 
 [wifi]
-command=wifi_blocklet
+command=wifi_blocklet $button
 interval=5
 
 [audio]

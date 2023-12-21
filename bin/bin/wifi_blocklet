@@ -2,8 +2,19 @@
 #
 # Output is formatted for i3blocks
 #
-# args
+# args[in]
 #   $1 button
+
+
+if ! [ -z "$1" ]
+then
+  echo $1 >> ~/temp/wifi_blocklet_button
+  echo W: rs
+  echo W: rs
+  echo $(colorscheme orange)
+  rswifi >/dev/null 2>&1 &!
+  exit
+fi
 
 # If INTERFACE is not defined then try some
 if [ -z "$INTERFACE" ]

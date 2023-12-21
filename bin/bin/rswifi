@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-current_service=$(connmanctl services | rg '\*' | cut -d' ' -f9)
+current_service=$(connmanctl services | rg '\*' | tr -s ' ' | cut -d' ' -f3)
 connmanctl disconnect $current_service
 sleep 5
 connmanctl connect $current_service
