@@ -1,0 +1,22 @@
+#!/bin/zsh
+#
+# Output is formatted for i3blocks
+#
+
+total=$(cat /proc/meminfo | grep '^MemTotal:' | tr -s ' ' | cut -d' ' -f 2)
+avail=$(cat /proc/meminfo | grep '^MemAvailable:' | tr -s ' ' | cut -d' ' -f 2)
+pct_avail=$(( 100 - $avail * 100 / $total ))
+
+color=''
+if (( $pct_avail > 85 ))
+then
+  color=$(colorscheme red)
+elif (( $pct_avail > 70 ))
+then
+  color=$(colorscheme yellow)
+fi
+
+echo $pct_avail%
+echo $pct_avail%
+echo $color
+exit

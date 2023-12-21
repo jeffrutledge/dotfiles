@@ -10,6 +10,10 @@
 # command=curl -Ss 'https://wttr.in?0&T&Q?m' | cut -c 16- | head -2 | xargs echo
 # interval=3600
 
+[mem]
+command=mem_blocklet
+interval=30
+
 [load]
 command=cpuload_blocklet
 interval=30
