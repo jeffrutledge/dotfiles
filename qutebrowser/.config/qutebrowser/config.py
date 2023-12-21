@@ -9,6 +9,9 @@ c.tabs.tabs_are_windows = True
 
 c.downloads.remove_finished = 0
 
+config.bind(',M', 'hint links spawn /Applications/VLC.app {url} {hint-url}')
+config.bind(',m', 'spawn /Applications/VLC.app {url}')
+
 # notifications
 config.set('content.notifications.enabled', True, 'https://calendar.google.com')
 config.set('content.notifications.enabled', False, 'https://www.facebook.com')
@@ -16,9 +19,9 @@ config.set('content.notifications.enabled', False, 'https://www.youtube.com')
 config.set('content.notifications.enabled', False, 'https://www.reddit.com')
 
 # let google calendar open cal links
-config.set('content.register_protocol_handle', True, 'https://calendar.google.com?cid=%25s')
+config.set('content.register_protocol_handler', True, 'https://calendar.google.com?cid=%25s')
 # let gmail open mail links
-config.set('content.register_protocol_handle', True, 'https://mail.google.com?extsrc=mailto&url=%25s')
+config.set('content.register_protocol_handler', True, 'https://mail.google.com?extsrc=mailto&url=%25s')
 
 # Settings in default generated config.py
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
