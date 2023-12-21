@@ -1,1 +1,1 @@
-export BROWSER=qutebrowser
+# export BROWSER=qutebrowser
