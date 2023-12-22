@@ -11,6 +11,10 @@
 # interval=3600
 
 [mem]
+command=metar_taf_blocklet $button
+interval=30
+
+[mem]
 command=mem_blocklet
 interval=30
 
