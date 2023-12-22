@@ -5,7 +5,7 @@
 # args[in]
 #   $1 button
 
-
+# if clicked then rswifi
 if ! [ -z "$1" ]
 then
   echo $1 >> ~/temp/wifi_blocklet_button
@@ -28,10 +28,14 @@ then
   done
 fi
 
-
-# As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
-# connection (think desktop), the corresponding block should not be displayed.
+# if no interface then don't show it
 [ ! -d /sys/class/net/${INTERFACE}/wireless ] && exit
+
+# ping google DNS to get some connection stats
+ping_info=$(ping -i 0.02 -q -w 1 -c 20 8.8.8.8)
+loss_pct=$(<<< $ping_info grep 'packet loss' | cut -d, -f3 | cut -d' ' -f 2 | tr -d %)
+avg_ms=$(printf %.0f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 2))
+std_ms=$(printf %.2f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 4))
 
 STATUS='W'
 COLOR=''
@@ -41,6 +45,10 @@ then
 	SERVICE=$(connmanctl services | awk '/.A(O|R) [[:graph:]]+[[:blank:]]+wifi/ {print $3}')
   STRENGTH=$(connmanctl services ${SERVICE} | awk '/Strength/ {print $3}')
 	STATUS='W: '$STRENGTH
+  if (( $loss_pct > 50 )) 
+  then
+    COLOR=$(colorscheme red)
+  fi
 elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]
 then
   COLOR=$(colorscheme blue)
@@ -52,7 +60,7 @@ else
   COLOR=$(colorscheme yellow)
 fi
 
-echo $STATUS
+echo $STATUS "($loss_pct% ${avg_ms}󰦒${std_ms}ms)"
 echo $STATUS
 echo $COLOR
 exit
