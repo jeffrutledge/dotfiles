@@ -23,7 +23,7 @@ metar_no_remark=$(<<< $metar sed -r 's/ RMK.*//g')
 
 case $1 in
   5) notify-send -t 60000 -a metar_blocklet METAR-TAF "$metar_split_remark\n$taf" ;;
-  4) i3-msg -q exec xdg-open "https://e6bx.com/weather/$airport/?showDecoded=1&focuspoint=metardecoder" ;;
+  4) i3-msg -q exec "chromium --new-window https://e6bx.com/weather/$airport/?showDecoded=1&focuspoint=metardecoder" ;;
 esac
 
 
