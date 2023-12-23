@@ -7,33 +7,34 @@
 
 set -e
 
-out=B
-
 bstatus=$(bluetoothctl show | grep 'Powered:' | cut -d' ' -f2)
-if ! [ -z "$1" ]
+case $1 in
+  1)
+    if [ "$bstatus" = 'yes' ]
+    then
+      connmanctl disable bluetooth > /dev/null
+    else
+      connmanctl enable bluetooth > /dev/null
+      bluetoothctl power on > /dev/null
+    fi
+    color=$(colorscheme yellow)
+    ;;
+  5) i3-msg -q exec "bluetooth-connect-menu" ;;
+esac
+
+if [ -z "$1" ]
 then
   if [ "$bstatus" = 'yes' ]
   then
-    connmanctl disable bluetooth > /dev/null
-  else
-    connmanctl enable bluetooth > /dev/null
-    bluetoothctl power on > /dev/null
-  fi
-  color=$S_yellow
-else
-  if [ "$bstatus" = 'yes' ]
-  then
-    color=$S_blue
+    color=$(colorscheme blue)
     if bluetoothctl info > /dev/null
     then
-      color=$S_green
+      color=$(colorscheme green)
     fi
   else
     color=''
   fi
 fi
-
-
 
 echo B
 echo B
