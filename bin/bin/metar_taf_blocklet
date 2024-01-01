@@ -5,8 +5,10 @@
 # args[in]
 #   $1 button
 
-# airport=KORD
-airport=KSBA
+airport=KORD
+# airport=KSBA
+# airport=KMCC
+# airport=KOAK
 
 taf=$(curl -s -X 'GET' \
   "https://aviationweather.gov/cgi-bin/data/taf.php?ids=$airport" \
