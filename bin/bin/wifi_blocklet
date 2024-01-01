@@ -45,7 +45,12 @@ then
   avg_ms=$(printf %.0f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 2))
   std_ms=$(printf %.2f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 4))
 
-	STATUS="W: $STRENGTH ($loss_pct% ${avg_ms}󰦒${std_ms}ms)"
+	STATUS="W $STRENGTH"
+  if (( $loss_pct > 5 )) || (( $avg_ms + $std_ms > 100 ))
+  then
+    STATUS=$STATUS" ($loss_pct% ${avg_ms}󰦒${std_ms}ms)"
+    COLOR=$(colorscheme yellow)
+  fi
   if (( $loss_pct > 50 )) 
   then
     COLOR=$(colorscheme magenta)
@@ -57,8 +62,8 @@ elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]
 then
   COLOR=$(colorscheme red)
 else
-  STATUS='W: ?'
-  COLOR=$(colorscheme yellow)
+  STATUS='W ?'
+  COLOR=$(colorscheme orange)
 fi
 
 echo $STATUS
