@@ -10,14 +10,16 @@ BAT_INFO="/sys/class/power_supply/BAT0"
 [[ ! -d $BAT_INFO ]] && exit
 
 PERC=$(cat $BAT_INFO/capacity)
-MINUTES=$(( $(cat $BAT_INFO/charge_now) * 60 /  $(cat $BAT_INFO/current_avg) ))
-TIME=$(printf '%dh%02d' $(( $MINUTES / 60 )) $(($MINUTES % 60)))
 
 STATUS=''
+TIME=''
 case $(cat $BAT_INFO/status) in
   Charging) STATUS='⚡';;
-  Discharging) ;;
-  Full) ;;
+  Discharging)
+    MINUTES=$(( $(cat $BAT_INFO/charge_now) * 60 /  $(cat $BAT_INFO/current_avg) ))
+    TIME=$(printf ' %dh%02d' $(( $MINUTES / 60 )) $(($MINUTES % 60)))
+    ;;
+  Full) STATUS='f';;
 esac
 
 EXIT=0
@@ -34,7 +36,7 @@ else
   EXIT=33 # URGENT FLAG
 fi
 
-echo $STATUS$PERC% $TIME
+echo $STATUS$PERC%$TIME
 echo $STATUS$PERC%
 echo $COLOR
 exit $EXIT
