@@ -46,7 +46,7 @@ then
   std_ms=$(printf %.2f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 4))
 
 	STATUS="W $STRENGTH"
-  if (( $loss_pct > 5 )) || (( $avg_ms + $std_ms > 100 ))
+  if (( $loss_pct > 5 )) || (( $avg_ms + $std_ms > 200 ))
   then
     STATUS=$STATUS" ($loss_pct% ${avg_ms}󰦒${std_ms}ms)"
     COLOR=$(colorscheme yellow)
