@@ -16,7 +16,7 @@ then
   COLOR=$(colorscheme yellow)
 fi
 
-echo $NORM_LOAD
-echo $NORM_LOAD
+echo C $NORM_LOAD
+echo C $NORM_LOAD
 echo $COLOR
 exit

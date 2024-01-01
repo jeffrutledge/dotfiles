@@ -16,7 +16,7 @@ then
   color=$(colorscheme yellow)
 fi
 
-echo $pct_avail%
-echo $pct_avail%
+echo M $pct_avail%
+echo M $pct_avail%
 echo $color
 exit

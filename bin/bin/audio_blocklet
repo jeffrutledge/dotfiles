@@ -7,12 +7,12 @@
 perc=$(pactl get-sink-volume @DEFAULT_SINK@ | head -n 1 | cut -d, -f1 | cut -d/ -f2 | sed 's/ //g')
 muted=$(pactl get-sink-mute @DEFAULT_SINK@ | sed 's/ //g' | cut -d':' -f2)
 
-full_text="A: $perc"
+full_text="A $perc"
 color=$(colorscheme blue)
 
 if [[ "$muted" == "yes" ]]
 then
-  full_text="A:m$perc"
+  full_text="A m$perc"
   color=""
 fi
 
