@@ -6,7 +6,7 @@
 #   $1 button
 
 # if clicked then rswifi
-if ! [ -z "$1" ]
+if [[ "$1" == 1 ]]
 then
   echo $1 >> ~/temp/wifi_blocklet_button
   echo W: rs
@@ -32,6 +32,7 @@ fi
 [ ! -d /sys/class/net/${INTERFACE}/wireless ] && exit
 
 STATUS='W'
+ping_stats=''
 COLOR=''
 if [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'up' ]
 then
@@ -44,16 +45,16 @@ then
   loss_pct=$(<<< $ping_info grep 'packet loss' | cut -d, -f3 | cut -d' ' -f 2 | tr -d %)
   avg_ms=$(printf %.0f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 2))
   std_ms=$(printf %.2f $(<<< $ping_info grep 'rtt min' | cut -d' ' -f4 | cut -d'/' -f 4))
+  ping_stats="$(printf %.0f $loss_pct)% ${avg_ms}󰦒${std_ms}ms"
 
-	STATUS="W $STRENGTH"
-  if (( $loss_pct > 5 )) || (( $avg_ms + $std_ms > 200 ))
-  then
-    STATUS=$STATUS" ($loss_pct% ${avg_ms}󰦒${std_ms}ms)"
-    COLOR=$(colorscheme yellow)
-  fi
-  if (( $loss_pct > 50 )) 
+  STATUS="W $(printf %02d $STRENGTH)"
+  if (( $loss_pct == 100 )) 
   then
     COLOR=$(colorscheme magenta)
+  elif (( $loss_pct > 5 )) || (( $avg_ms + $std_ms > 200 ))
+  then
+    # STATUS=$STATUS" ($ping_stats)"
+    COLOR=$(colorscheme yellow)
   fi
 elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'dormant' ]
 then
@@ -62,9 +63,14 @@ elif [ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]
 then
   COLOR=$(colorscheme red)
 else
-  STATUS='W ?'
+  STATUS='W ??'
   COLOR=$(colorscheme orange)
 fi
+
+case $1 in
+  5) i3-msg -q exec "" ;;
+  4) notify-send -t 2000 -a wifi_blocklet "$STATUS" "$ping_stats" ;;
+esac
 
 echo $STATUS
 echo $STATUS
