@@ -68,8 +68,7 @@ else
 fi
 
 case $1 in
-  5) i3-msg -q exec "" ;;
-  4) notify-send -t 2000 -a wifi_blocklet "$STATUS" "$ping_stats" ;;
+  5) notify-send -t 2000 -a wifi_blocklet "$STATUS" "$ping_stats" ;;
 esac
 
 echo $STATUS

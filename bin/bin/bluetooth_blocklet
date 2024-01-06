@@ -19,7 +19,7 @@ case $1 in
     fi
     color=$(colorscheme yellow)
     ;;
-  5) i3-msg -q exec "bluetooth-connect-menu" ;;
+  4) i3-msg -q exec "bluetooth-connect-menu" ;;
 esac
 
 if [ -z "$1" ]
