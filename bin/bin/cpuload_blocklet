@@ -5,7 +5,7 @@
 
 LOAD=$(cat /proc/loadavg | cut -d ' ' -f1)
 
-NORM_LOAD=$(printf '%.0f' $(( $LOAD * 100 / $(nproc) )))
+NORM_LOAD=$(printf '%02.0f' $(( $LOAD * 100 / $(nproc) )))
 
 COLOR=''
 if (( $NORM_LOAD > 100 ))
