@@ -5,7 +5,7 @@
 
 total=$(cat /proc/meminfo | grep '^MemTotal:' | tr -s ' ' | cut -d' ' -f 2)
 avail=$(cat /proc/meminfo | grep '^MemAvailable:' | tr -s ' ' | cut -d' ' -f 2)
-pct_avail=$(( 100 - $avail * 100 / $total ))
+pct_avail=$(printf '%02.0f' $(( 100 - $avail * 100 / $total )))
 
 color=''
 if (( $pct_avail > 85 ))
