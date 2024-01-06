@@ -10,15 +10,29 @@ airport=KORD
 # airport=KMCC
 # airport=KOAK
 
-taf=$(curl -s -X 'GET' \
-  "https://aviationweather.gov/cgi-bin/data/taf.php?ids=$airport" \
-  -H 'accept: */*'\
-)
+cache_dir=~/.cache/metar_taf_blocklet/
+mkdir -p $cache_dir
 
-metar=$(curl -s -X 'GET' \
-  "https://aviationweather.gov/cgi-bin/data/metar.php?ids=$airport" \
-  -H 'accept: */*'\
-)
+if [[ ! -e $cache_dir/last_cache_epoch
+  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-30sec' +%s) )) ]]
+then
+  taf=$(curl -m 1 -s -X 'GET' \
+    "https://aviationweather.gov/cgi-bin/data/taf.php?ids=$airport" \
+    -H 'accept: */*'\
+  )
+  [[ $? == 0 ]] && echo $taf > $cache_dir/taf
+
+  metar=$(curl -m 1 -s -X 'GET' \
+    "https://aviationweather.gov/cgi-bin/data/metar.php?ids=$airport" \
+    -H 'accept: */*'\
+  )
+  [[ $? == 0 ]] && echo $metar > $cache_dir/metar
+
+  date +%s > $cache_dir/last_cache_epoch
+fi
+taf=$(cat $cache_dir/taf)
+metar=$(cat $cache_dir/metar)
+
 metar_cleaned=$(<<< $metar sed -r 's/( SLP[0-9]{3}\b| T[0-9]{8}\b| [0-9]{5}$)//g')
 metar_split_remark=$(<<< $metar sed -r 's/ RMK/\n  RMK/g')
 metar_no_remark=$(<<< $metar sed -r 's/ RMK.*//g')
@@ -30,6 +44,12 @@ esac
 
 
 color=''
+if [[ ! -e $cache_dir/last_cache_epoch
+  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-70min' +%s) )) ]]
+then
+  color=$(colorscheme yellow)
+fi
+
 echo $metar_no_remark
 echo $metar_no_remark
 echo $color
