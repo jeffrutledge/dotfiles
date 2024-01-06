@@ -14,6 +14,10 @@
 command=metar_taf_blocklet $button
 interval=30
 
+[duplicati]
+command=duplicati_blocklet
+interval=300
+
 [mem]
 command=mem_blocklet
 interval=30
@@ -25,10 +29,6 @@ interval=30
 [bluetooth]
 command=bluetooth_blocklet $button
 interval=5
-
-[duplicati]
-command=duplicati_blocklet
-interval=300
 
 [wifi]
 command=wifi_blocklet $button
