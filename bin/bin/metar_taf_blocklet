@@ -9,12 +9,19 @@ airport=KORD
 # airport=KSBA
 # airport=KMCC
 # airport=KOAK
+# airport=KMIA
 
 cache_dir=~/.cache/metar_taf_blocklet/
 mkdir -p $cache_dir
 
-if [[ ! -e $cache_dir/last_cache_epoch
-  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-30sec' +%s) )) ]]
+if [[
+  # no cache
+  ! -e $cache_dir/last_cache_epoch
+  # cache old
+  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-30sec' +%s) ))
+  # blocklet interaction
+  || ! -z $1
+  ]]
 then
   taf=$(curl -m 1 -s -X 'GET' \
     "https://aviationweather.gov/cgi-bin/data/taf.php?ids=$airport" \
