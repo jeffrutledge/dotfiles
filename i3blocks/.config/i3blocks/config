@@ -15,7 +15,7 @@ command=metar_taf_blocklet $button
 interval=30
 
 [duplicati]
-command=duplicati_blocklet
+command=duplicati_blocklet $button
 interval=300
 
 [mem]
