@@ -38,8 +38,14 @@ def format_td(x):
 
 
 if __name__ == '__main__':
+    baseurl = 'http://localhost:8200'
+    if len(sys.argv) > 1:
+        button = sys.argv[1]
+        if button == '4':
+            cmd_open_duplicati_ui = [
+                'i3-msg', '-q', 'exec', f'"chromium --new-window {baseurl}"']
+            subprocess.run(cmd_open_duplicati_ui, check=True)
     try:
-        baseurl = 'http://localhost:8200'
         login_result = requests.get(baseurl, allow_redirects=True, verify=True)
         login_result.encoding = 'utf-8-sig'
         token = urllib.parse.unquote(login_result.cookies["xsrf-token"])
