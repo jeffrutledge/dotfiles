@@ -15,7 +15,14 @@ then
   cd $mnt_loc
   zsh
   cd -
-  sudo umount $2 && sudo cryptsetup close key_storage && echo unmonted key_storage || exit 1
+  sudo umount $2 && sudo cryptsetup close key_storage
+  while [ $? -ne 0 ]
+  do
+    read -q "reply?Could not unmount key_storage. Are you ready to try again?"
+    echo
+    sudo umount $2 && sudo cryptsetup close key_storage
+  done
+  echo unmonted key_storage
 else
   exit 1
 fi
