@@ -7,7 +7,7 @@ then
   echo mounted records
   cd ~/safe/personal/records
   zsh
-  cd ~
+  cd -
   fusermount -u ~/safe/personal/records
   while [ $? -ne 0 ]
   do
