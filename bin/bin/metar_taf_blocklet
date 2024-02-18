@@ -54,7 +54,7 @@ esac
 
 color=''
 if [[ ! -e $cache_dir/last_cache_epoch
-  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-70min' +%s) )) ]]
+  || ! (( $(cat $cache_dir/last_cache_epoch) > $(date -d '-60min' +%s) )) ]]
 then
   color=$(colorscheme yellow)
 fi
