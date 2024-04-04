@@ -1,2 +1,8 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+
+# Setting this is not ideal, but it is a good guess.
+# It is not already set because the suspend unit cannot be run in the user systemd.
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+
+/usr/bin/pactl set-sink-mute @DEFAULT_SINK@ true
 /usr/bin/i3lock -t -i $HOME/.lock_screen_image.png
