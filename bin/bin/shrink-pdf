@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+if (( $# < 1 ))
+then
+  echo "${0:t} SRC_PDF [DST_PDF]"
+  exit 1
+fi
+
+src=${1?}
+src_ext=${src:e}
+dst=${2:-${src:t:r}_smaller${src_ext:+.$src_ext}}
+
+# from: https://askubuntu.com/a/256449
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH \
+  -sOutputFile=$dst $src
