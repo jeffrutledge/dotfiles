@@ -1,5 +1,5 @@
 #!/bin/sh
-
+systemctl --user daemon-reload
 if systemctl --now --user enable duplicati.service
 then
   echo enabled and started duplicati.service
