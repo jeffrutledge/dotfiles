@@ -5,11 +5,11 @@
 # args[in]
 #   $1 button
 
-airport=KORD
+# airport=KORD
 # airport=KSBA
 # airport=KMCC
 # airport=KOAK
-# airport=KMIA
+airport=KMIA
 
 cache_dir=~/.cache/metar_taf_blocklet/
 mkdir -p $cache_dir

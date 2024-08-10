@@ -1,0 +1,25 @@
+#!/bin/zsh
+# 
+# Mounts encrypted records directory and opens journal file with a new entry.
+# When closed it unmounts records directory.
+
+if encfs ~/safe/personal/.records ~/safe/personal/records
+then
+  echo mounted records
+  cd ~/safe/personal/records
+  journal_file="~/safe/personal/records/notes/$(date +%Y).md"
+  ls -l $journal_file
+  echo '\n#'$(date +"%Y-%m-%d %H:%M")'\n' >> $journal_file
+  pnvim $journal_file
+  cd -
+  fusermount -u ~/safe/personal/records
+  while [ $? -ne 0 ]
+  do
+    read -q "reply?Could not unmount records. Are you ready to try again?"
+    echo
+    fusermount -u ~/safe/personal/records
+  done
+  echo unmounted records
+else
+  exit 1
+fi

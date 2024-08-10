@@ -1,0 +1,5 @@
+#!/bin/zsh
+# 
+# Opens nvim and sources a config to disable leaky options.
+
+nvim -c "source ~/.vim/private.vim" "$@"
