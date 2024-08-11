@@ -336,6 +336,7 @@ bar {
     position bottom
     status_command i3blocks
     strip_workspace_numbers yes
+    tray_output none
 
     colors {
         background $S_base03
