@@ -42,6 +42,7 @@ call plug#end()
 "" Aesthetics
 """ solarized
 set background=dark
+set notermguicolors
 silent! colorscheme solarized
 """ airline
 let g:airline#extensions#tabline#enabled = 1
