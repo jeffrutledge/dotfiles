@@ -16,10 +16,6 @@ Plug 'w0rp/ale'
 Plug 'romainl/vim-cool' " Auto disables search highlight
 Plug 'tpope/vim-surround'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-neorg/neorg', { 'branch': 'main', 'do': ':Neorg sync-parsers'}
-
 " Language Specific
 "" python
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
