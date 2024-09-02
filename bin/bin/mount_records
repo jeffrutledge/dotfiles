@@ -2,7 +2,7 @@
 # 
 # Mounts encrypted records directory and unmounts when finished
 
-if encfs ~/safe/personal/.records ~/safe/personal/records
+if gocryptfs ~/safe/personal/.records_crypt ~/safe/personal/records
 then
   echo mounted records
   cd ~/safe/personal/records
