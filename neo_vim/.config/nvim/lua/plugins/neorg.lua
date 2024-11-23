@@ -7,6 +7,7 @@ require('neorg').setup {
             },
         },
         ["core.summary"] = {},
+        ["core.export"] = {},
         ["core.esupports.metagen"] = {
             config = {
                 type = "auto",
