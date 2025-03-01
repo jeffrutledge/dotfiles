@@ -11,11 +11,11 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.36.0" # rocks.nvim can also manage itself :D
-"rocks-config.nvim" = "2.2.0"
-neorg = "9.1.1"
-"rocks-git.nvim" = "2.0.1"
+"rocks.nvim" = "2.43.1"
+"rocks-config.nvim" = "3.1.0"
+neorg = "9.2.0"
+"rocks-git.nvim" = "2.5.2"
 
 [plugins.nvim-treesitter]
 git = "nvim-treesitter/nvim-treesitter"
-rev = "v0.9.2^{}"
+rev = "v0.9.3^{}"
