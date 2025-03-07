@@ -159,6 +159,8 @@ inoremap <leader>w <Esc>:w<CR>a
 " delete buffer
 nnoremap <leader>db :bd<CR>
 " insert date
-nnoremap <leader>it i<C-R>=strftime("%Y%m%d %H%M")<CR><Esc>
-inoremap <leader>it <C-R>=strftime("%Y%m%d %H%M")<CR>
+nnoremap <leader>it i<C-R>=strftime("%Y-%m-%d %H%M %Z")<CR><Esc>
+inoremap <leader>it <C-R>=strftime("%Y-%m-%d %H%M %Z")<CR>
+nnoremap <leader>id i<C-R>=strftime("%Y-%m-%d")<CR><Esc>
+inoremap <leader>id <C-R>=strftime("%Y-%m-%d")<CR>
 """""""""""""""""""""
