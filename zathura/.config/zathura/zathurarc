@@ -37,8 +37,8 @@ set render-loading              true
 set render-loading-fg           "#002b36" # base03
 set render-loading-bg           "#839496" # base0
 
-# Recolor book content's color
-set recolor                     true
-set recolor-lightcolor          "#002b36" # base03
-set recolor-darkcolor           "#839496" # base0
-set recolor-keephue             true      # keep original color
+# # Recolor book content's color
+# set recolor                     true
+# set recolor-lightcolor          "#002b36" # base03
+# set recolor-darkcolor           "#839496" # base0
+# set recolor-keephue             true      # keep original color
