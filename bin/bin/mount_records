@@ -11,6 +11,7 @@ then
   fusermount -u ~/safe/personal/records
   while [ $? -ne 0 ]
   do
+    fuser -mv ~/safe/personal/records
     read -q "reply?Could not unmount records. Are you ready to try again?"
     echo
     fusermount -u ~/safe/personal/records
