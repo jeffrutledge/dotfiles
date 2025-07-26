@@ -18,4 +18,4 @@ neorg = "9.3.0"
 
 [plugins.nvim-treesitter]
 git = "nvim-treesitter/nvim-treesitter"
-rev = "v0.9.3"
+rev = "v0.10.0"
