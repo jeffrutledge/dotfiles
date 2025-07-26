@@ -13,6 +13,8 @@ if sudo cryptsetup open $dev_path key_storage && sudo mount /dev/mapper/key_stor
 then
   echo mounted key_storage
   cd $mnt_loc
+  sudo chgrp $USER $mnt_loc
+  sudo chmod g+w $mnt_loc
   zsh
   cd -
   sudo umount $2 && sudo cryptsetup close key_storage
