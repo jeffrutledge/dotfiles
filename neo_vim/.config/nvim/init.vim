@@ -6,3 +6,4 @@ source ~/.vimrc
 set inccommand=nosplit
 
 lua require('rocks')
+lua require('plugins/orgmode')

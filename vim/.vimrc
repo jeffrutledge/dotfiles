@@ -30,6 +30,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'itchyny/vim-haskell-indent'
 "" rust
 Plug 'rust-lang/rust.vim'
+"" org
+Plug 'nvim-orgmode/orgmode'
 
 call plug#end()
 
