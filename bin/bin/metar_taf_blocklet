@@ -24,14 +24,14 @@ if [[
   ]]
 then
   taf=$(curl -m 1 -s -X 'GET' \
-    "https://aviationweather.gov/cgi-bin/data/taf.php?ids=$airport" \
+    "https://aviationweather.gov/api/data/taf?ids=$airport" \
     -H 'accept: */*'\
   )
   taf_ret=$?
   [[ $taf_ret == 0 ]] && echo $taf > $cache_dir/taf
 
   metar=$(curl -m 1 -s -X 'GET' \
-    "https://aviationweather.gov/cgi-bin/data/metar.php?ids=$airport" \
+    "https://aviationweather.gov/api/data/metar?ids=$airport" \
     -H 'accept: */*'\
   )
   metar_ret=$?
