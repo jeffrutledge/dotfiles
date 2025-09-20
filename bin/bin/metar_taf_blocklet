@@ -39,8 +39,8 @@ then
 
   [[ $taf_ret == 0 && $metar_ret == 0 ]] && date +%s > $cache_dir/last_cache_epoch
 fi
-taf=$(cat $cache_dir/taf)
-metar=$(cat $cache_dir/metar)
+taf=$(cat $cache_dir/taf | sed -r 's/^TAF //')
+metar=$(cat $cache_dir/metar | sed -r 's/^METAR //')
 
 metar_cleaned=$(<<< $metar sed -r 's/( SLP[0-9]{3}\b| T[0-9]{8}\b| [0-9]{5}$)//g')
 metar_split_remark=$(<<< $metar sed -r 's/ RMK/\n  RMK/g')
